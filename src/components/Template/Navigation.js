@@ -33,7 +33,7 @@ class Navigation extends Component {
                        <Link to={l.path}>{l.label}</Link>
                     ))}
                 <button>
-                    Get the App &nbsp;&nbsp; >
+                    Get the App &nbsp;&nbsp; &rsaquo;
                 </button>
             </div>
             }

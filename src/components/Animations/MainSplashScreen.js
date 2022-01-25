@@ -61,7 +61,7 @@ class MainSplashScreen extends Component {
                 this.slideCompleted = true;
 
                 let timeout = setTimeout(function () {
-                   // onSlideCompleted();
+                   onSlideCompleted();
                     clearTimeout(timeout);
                 }, 4000);
 
@@ -104,12 +104,16 @@ class MainSplashScreen extends Component {
 
                 <div key="splash_ending" alt="Bank of you">
                     <img/>
-                    <div className="carouselFrameCaption carouselLastItem">
-                        <div className="row col-md-6 carouselLastItemGroup">
-                           <span className="carouselEndingPreText">We are building</span>
-                           <span className="carouselFrameCaptionItem1">Bank of</span>
+                    <div className="row carouselFrameCaption carouselLastItem">
+                        <div className=" col-md-6 col-lg-6 carouselLastItemGroup">
+                            <div className="margin-left">
+                                <div className="align-left">
+                                  <span className="carouselEndingPreText">We are building</span>
+                                  <span className="carouselFrameCaptionItem1">Bank of</span>
+                                </div>
+                            </div>
                         </div>
-                        <div className="col-md-6 carouselLastItemGroup2">
+                        <div className="col-md-5 col-lg-5 carouselLastItemGroup2">
                            <span className="carouselFrameCaptionItem2">You</span>
                         </div>
                     </div>

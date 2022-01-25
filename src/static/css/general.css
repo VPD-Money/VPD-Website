@@ -10,6 +10,7 @@ body, html, #app, #app>div {
 img
 {
   width: 100%;
+  image-rendering: optimizeQuality;
 }
 
 

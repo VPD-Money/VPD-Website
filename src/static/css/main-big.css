@@ -8,7 +8,7 @@
     background: transparent;
     overflow: hidden;
     display: flex;
-    max-height: 12vh;
+    max-height: 10vh;
     position: fixed;
     z-index: 99999;
 }
@@ -26,9 +26,9 @@
 {
     background: #002E45;
     border-radius: 0px 0px 10px 10px;
-    padding: 30px;
+    padding: 25px;
     width: 100%;
-    max-width: 15vw;
+    max-width: 13vw;
     margin-left: 5vw;
     flex: 1;
 }
@@ -41,7 +41,7 @@
     letter-spacing: 0px;
     color: #FFFFFF;
     text-align: center;
-    padding: 20px 50px 15px 16px;
+    padding: 20px 40px 15px 16px;
     text-decoration: none;
 }
 
@@ -55,7 +55,7 @@
     border-radius: 12px;
     padding: 10px 10px 10px 20px;
     width: 10em;
-    height: 3.2em;
+    height: 3em;
     box-shadow: none;
     margin-right: 60px;
     border: none;
