@@ -1,0 +1,62 @@
+@import-normalize;
+
+@import 'big/_index.css';
+
+.NavHeader
+{
+    width: 100%;
+    background: transparent;
+    overflow: hidden;
+    display: flex;
+    max-height: 12vh;
+    position: fixed;
+    z-index: 99999;
+}
+
+.Navlinks
+{
+    flex: 1;
+    text-align: right;
+    margin-left: 20px;
+    padding-top: 30px;
+    position: relative;
+}
+
+.MainLogo
+{
+    background: #002E45;
+    border-radius: 0px 0px 10px 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 15vw;
+    margin-left: 5vw;
+    flex: 1;
+}
+
+
+.Navlinks a
+{
+    list-style: none;
+    font: normal normal normal 1.2em Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 50px 15px 16px;
+    text-decoration: none;
+}
+
+.Navlinks button
+{
+    text-align: left;
+    font: normal normal 600 1.2em Poppins;
+    letter-spacing: 0px;
+    background: #0BA830;
+    color: white;
+    border-radius: 12px;
+    padding: 10px 10px 10px 20px;
+    width: 10em;
+    height: 3.2em;
+    box-shadow: none;
+    margin-right: 60px;
+    border: none;
+}

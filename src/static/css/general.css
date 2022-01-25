@@ -1,0 +1,15 @@
+@import-normalize;
+
+body, html, #app, #app>div {
+  background-color: ghostwhite;
+  height: 100%;
+  margin: 0;
+}
+
+
+img
+{
+  width: 100%;
+}
+
+

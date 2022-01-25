@@ -1,0 +1,18 @@
+.carouselFrame
+{
+   position: relative;
+   background-image: url('../../cssimages/blue_soft_bg.png');
+   background-size: cover;
+   height: 100vh;
+   background-repeat:no-repeat;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -ms-background-size: cover;
+   -o-background-size: cover;
+   z-index: 9999;
+}
+
+.carouselFrame img{
+   border-radius: 90px;
+   width: 100%;
+}
