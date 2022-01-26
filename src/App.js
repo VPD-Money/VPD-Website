@@ -5,13 +5,14 @@ import Main from './layouts/Main'; // fallback for lazy pages
 import media_query_values from "./data/MediaQuery";
 import ('./static/css/general.css');
 
+
 const { PUBLIC_URL } = process.env;
 
 // Every route - we lazy load so that each page can be chunked
 // NOTE that some of these chunks are very small. We should optimize
 // which pages are lazy loaded in the future.
 const AboutUs = lazy(() => import('./pages/AboutUs'));
-// const Contact = lazy(() => import('./pages/Contact'));
+const Contact = lazy(() => import('./pages/Contact'));
 const Index = lazy(() => import('./pages/Index'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 // const Projects = lazy(() => import('./pages/Projects'));
@@ -39,7 +40,7 @@ const App = () => {
                 <Route path="/aboutus" element={<AboutUs/>}/>
                 {/*<Route path="/projects" component={Projects} />*/}
                 {/*<Route path="/stats" component={Stats} />*/}
-                {/*<Route path="/contact" component={Contact} />*/}
+                <Route path="/contactus" element={<Contact/>}/>
                 {/*<Route path="/resume" component={Resume} />*/}
                 <Route path='*' element={<NotFound/>}/>
             </Routes>

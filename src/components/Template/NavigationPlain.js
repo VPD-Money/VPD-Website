@@ -7,7 +7,7 @@ import {useMediaQuery} from "react-responsive";
 import media_query_values from "../../data/MediaQuery";
 import $ from "jquery";
 
-class Navigation extends Component {
+class NavigationPlain extends Component {
 
     constructor(props) {
         super(props);
@@ -27,12 +27,12 @@ class Navigation extends Component {
         if (isMobile && isPortrait || isTablet && isPortrait) this.showBurger = true;
 
         return <header className="NavHeader">
-            <div className="MainLogo"><Link to="/" ><img src="/images/main_logo.svg"/></Link></div>
+            <div className="MainLogo-alt"><Link to='/' search={{sliderLoaded: false}}> <img src="/images/main_logo.svg"/></Link></div>
             {!this.showBurger &&
-            <div className="Navlinks">
-                    {routes.filter((l) => !l.index).map((l) => (
-                       <Link to={l.path}>{l.label}</Link>
-                    ))}
+            <div className="Navlinks-alt">
+                {routes.filter((l) => !l.index).map((l) => (
+                    <Link to={l.path}>{l.label}</Link>
+                ))}
                 <button>
                     Get the App &nbsp;&nbsp;&nbsp;<img src="/images/icons/arrow-right-white.svg"/>
                 </button>
@@ -43,7 +43,7 @@ class Navigation extends Component {
     }
 
     componentDidMount() {
-        $(document).on("click", ".MainLogo a", function () {
+        $(document).on("click", ".MainLogo-alt a", function () {
             localStorage.setItem("slider-completed","true");
         });
     }
@@ -63,4 +63,4 @@ function attachDeviceTypeHook(Component) {
     }
 }
 
-export default attachDeviceTypeHook(Navigation);
+export default attachDeviceTypeHook(NavigationPlain);

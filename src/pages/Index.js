@@ -1,28 +1,37 @@
 import React, {Component} from 'react';
-import { Link } from 'react-router-dom';
+import { Link,useLocation } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive'
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-// import { createStore } from 'redux';
+import $ from 'jquery';
 import Main from '../layouts/Main';
 import media_query_values from '../data/MediaQuery';
 import MainSplashScreen from '../components/Animations/MainSplashScreen';
 import Navigation from '../components/Template/Navigation';
-import ScrollToTop from '../components/Template/ScrollToTop';
+import Footer from '../components/Template/Footer';
 
 
 class Index extends Component {
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.screenImageLetter = '';
+
         this.state = {
             slideCompleted: false
         };
+
     }
 
+
    render(){
+       let sliderCompletedState = localStorage.getItem("slider-completed");
+       if(sliderCompletedState === "true") this.state.slideCompleted = true;
+       localStorage.setItem("slider-completed","false");
+
        const {slideCompleted} = this.state;
+
        const {isBigScreen,isDesktopOrLaptop,isTablet,isMobile,isPortrait,isRetina} = JSON.parse(this.props.deviceType);
+
 
        if (isMobile && isPortrait) this.screenImageLetter = '_m';
        else if (isMobile && !isPortrait) this.screenImageLetter = '_d';
@@ -34,14 +43,15 @@ class Index extends Component {
        else this.screenImageLetter = '_b';
 
        return <Main description={"A bank of you"}>
-           {!slideCompleted && <MainSplashScreen  onSlideCompleted={ () => { this.setState({slideCompleted: true })} } /> }
+           {!slideCompleted && <MainSplashScreen  onSlideCompleted={ () => { this.setState({slideCompleted: true }); localStorage.setItem("slider-completed", "true"); } } /> }
            {
                slideCompleted &&
                <HelmetProvider>
-                  <ScrollToTop />
                        <div className="row container-fluid">
                            <div className="layer-wrapper">
                                <Navigation />
+
+                               {/*layer 1 begin*/}
                                <div className="layer-1">
                                    <div className="bannerFrame">
                                        <div class="layer-1-overlay"></div>
@@ -69,7 +79,9 @@ class Index extends Component {
                                        </div>
                                    </div>
                                </div>
+                               {/*layer 1 end*/}
 
+                               {/*layer 2 begin*/}
                                <div className="layer-2">
 
                                    <div className="layer-2-main-text-group">
@@ -107,12 +119,12 @@ class Index extends Component {
 
                                            </div>
                                            <div className="col-md-4">
-                                               <div className="iphone-feature-pod">
+                                               <div className="iphone-feature-pod" id="iphone-feature-pod-1">
                                                    <img src={"/images/icons/ai_savings.svg"}/>
                                                    <label>Utility Payment</label>
                                                </div>
-                                              <img src={"/images/iphone_screens/iphone_dashboard"+ (this.screenImageLetter) + ".png"} />
-                                               <button>Start Creating your Banking Experience&nbsp; &nbsp;&nbsp;<span>&rsaquo;&rsaquo;</span></button>
+                                               <img className="iphone_frame" src={"/images/iphone_screens/iphone_dashboard"+ (this.screenImageLetter) + ".png"} />
+                                               <button>Start Creating your Banking Experience&nbsp; &nbsp;&nbsp;<span><img src="/images/icons/arrow-right-white.svg"/><img src="/images/icons/arrow-right-white.svg"/></span></button>
                                            </div>
                                            <div className="col-md-4">
                                               <div className="iphone-feature-pod">
@@ -141,6 +153,104 @@ class Index extends Component {
                                </div>
                               {/*layer 2 end*/}
 
+                               {/*layer 3 begin*/}
+                               <div className="layer-3">
+                                   <div className="layer-3-ribbon">
+
+                                       <div className="col-md-12">
+                                           <label className="layer-3-ribbon-title">ACCOUNT FEATURES</label>
+
+                                           <div className="layer-3-ribbon-groups">
+                                                   <div className="layer-3-ribbon-groups-title">
+                                                     <div className="layer-3-ribbon-groups-title-flex">
+                                                       <div className="layer-3-ribbon-groups-title-image">
+                                                          <img src={"/images/icons/features_borderless"+ (this.screenImageLetter) + ".png"}/>
+                                                       </div>
+                                                      <label>Free Borderless<br/>account opening</label>
+                                                     </div>
+                                                       <div className="layer-3-ribbon-groups-content">
+                                                           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                                       </div>
+                                                   </div>
+
+                                                   <div className="layer-3-ribbon-groups-title">
+                                                       <div className="layer-3-ribbon-groups-title-flex">
+                                                       <div className="layer-3-ribbon-groups-title-image">
+                                                          <img src={"/images/icons/features_transfer"+ (this.screenImageLetter) + ".png"}/>
+                                                       </div>
+                                                       <label>Borderless Funds<br/>Transfer</label>
+                                                       </div>
+                                                       <div className="layer-3-ribbon-groups-content">
+                                                           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                                       </div>
+                                                   </div>
+
+                                                    <div className="layer-3-ribbon-groups-title">
+                                                        <div className="layer-3-ribbon-groups-title-flex">
+                                                        <div className="layer-3-ribbon-groups-title-image">
+                                                           <img src={"/images/icons/features_card"+ (this.screenImageLetter) + ".png"}/>
+                                                        </div>
+                                                        <label>Link multiple accounts<br/>to a single card</label>`
+                                                        </div>
+                                                        <div className="layer-3-ribbon-groups-content">
+                                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                                        </div>
+                                                   </div>
+
+                                           </div>
+                                       </div>
+
+                                   </div>
+                               </div>
+                               {/*layer 3 end*/}
+
+                               {/*layer 4 begin*/}
+                               <div className="layer-4">
+
+                                   <div className="layer-4-group">
+                                       <div className="layer-4-section">
+                                            <label className="layer-4-section-title">ABOUT VPD MONEY</label>
+                                            <label className="layer-4-section-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</label>
+                                            <label className="layer-4-section-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</label>
+                                            <label className="layer-4-section-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</label>
+                                            <label className="layer-4-section-button">
+                                                <button>Learn More &nbsp;&nbsp; >></button>
+                                            </label>
+                                       </div>
+                                       <div className="layer-4-section">
+                                           <img src={"/images/about_vpd_stack"+ (this.screenImageLetter) + ".png"}/>
+                                       </div>
+                                   </div>
+
+                               </div>
+                               {/*layer 4 end*/}
+
+                               {/*layer 5 begin*/}
+                               <div className="layer-5">
+                                   <div className="layer-5-group">
+                                       <div className="layer-5-section-1">
+                                         <label className="headingLabel">Personal</label>
+                                         <label className="headingLabelAlt">Personal</label>
+                                         <img src={"/images/iphone_screens/index_personal_phone"+ (this.screenImageLetter) + ".png"}/>
+                                         <div>
+                                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                             <button>Learn More&nbsp;&nbsp;>></button>
+                                         </div>
+                                       </div>
+                                       <div className="layer-5-section-2">
+                                           <label className="headingLabel">Business</label>
+                                           <label className="headingLabelAlt">Business</label>
+                                           <img src={"/images/iphone_screens/index_business_phone"+ (this.screenImageLetter) + ".png"}/>
+                                           <div>
+                                               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                               <button>Learn More&nbsp;&nbsp;>></button>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               {/*layer 5 end*/}
+
+                               <Footer />
                           </div>
                        </div>
               </HelmetProvider>
@@ -150,6 +260,44 @@ class Index extends Component {
 
        </Main>;
    }
+
+
+    componentDidMount() {
+        $(document).on("mouseenter",".layer-5-section-1 img",function(){
+            $(".layer-5-section-1 img").animate({'margin-left' : '6vw'});
+            $(".layer-5-section-1 .headingLabelAlt").show();
+            $(".layer-5-section-1 .headingLabelAlt").animate({'margin-left' : '25vw','margin-top' : '22vh'});
+            $(".layer-5-section-1 .headingLabel").css('color' , '#012E45');
+            $(".layer-5-section-1 div").fadeIn(800);
+
+        });
+
+        $(document).on("mouseleave",".layer-5-section-1",function(){
+            $(".layer-5-section-1 img").animate({'margin-left' : '15vw'});
+            $(".layer-5-section-1 .headingLabelAlt").animate({'margin-left' : '20vw','margin-top' : '-3.7vh'});
+            $(".layer-5-section-1 .headingLabelAlt").fadeOut(500);
+            setTimeout(function ()
+                          { $(".layer-5-section-1 .headingLabel").css('color' , '#33B8FF'); } ,500);
+            $(".layer-5-section-1 div").fadeOut(100);
+        });
+
+        $(document).on("mouseenter",".layer-5-section-2 img",function(){
+            $(".layer-5-section-2 img").animate({'margin-left' : '6vw'});
+            $(".layer-5-section-2 .headingLabelAlt").show();
+            $(".layer-5-section-2 .headingLabelAlt").animate({'margin-left' : '25vw','margin-top' : '22vh'});
+            $(".layer-5-section-2 .headingLabel").css('color' , '#011B29');
+            $(".layer-5-section-2 div").fadeIn(800);
+        });
+
+        $(document).on("mouseleave",".layer-5-section-2",function(){
+            $(".layer-5-section-2 img").animate({'margin-left' : '15vw'});
+            $(".layer-5-section-2 .headingLabelAlt").animate({'margin-left' : '20vw','margin-top' : '-3.7vh'});
+            $(".layer-5-section-2 .headingLabelAlt").fadeOut(500);
+            setTimeout(function ()
+            { $(".layer-5-section-2 .headingLabel").css('color' , '#33B8FF'); } ,500);
+            $(".layer-5-section-2 div").fadeOut(100);
+        });
+    }
 
 };
 
@@ -162,8 +310,13 @@ function attachDeviceTypeHook(Component) {
         const isPortrait = useMediaQuery(media_query_values.portrait)
         const isRetina = useMediaQuery(media_query_values.retina)
         let objVals = JSON.stringify({isBigScreen,isDesktopOrLaptop,isTablet,isMobile,isPortrait,isRetina});
+        const location = useLocation()
+        console.log("Location:");
+        console.log(location);
 
-        return <Component {...props} deviceType={objVals} />;
+        console.log("Props1:");
+        console.log(props);
+        return <Component {...props} deviceType={objVals} pageParam={location} />;
     }
 }
 

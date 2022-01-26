@@ -11,6 +11,8 @@ const StrictApp = () => (
 );
 
 const rootElement = document.getElementById('root');
+//Clear local storage
+localStorage.clear();
 
 // hydrate is required by react-snap.
 if (rootElement.hasChildNodes()) {
