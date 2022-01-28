@@ -1,0 +1,10 @@
+<svg id="Group_2121" data-name="Group 2121" xmlns="http://www.w3.org/2000/svg" width="234" height="91" viewBox="0 0 234 91">
+  <rect id="Rectangle_998" data-name="Rectangle 998" width="234" height="91" rx="10" fill="#fff"/>
+  <g id="Group_2120" data-name="Group 2120" transform="translate(39 23)">
+    <g id="Group_2118" data-name="Group 2118" transform="translate(44)">
+      <text id="Get_it_on" data-name="Get it on" transform="translate(0 15)" fill="#0076b5" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">Get it on</tspan></text>
+      <text id="App_Store" data-name="App Store" transform="translate(0 40)" fill="#0076b5" font-size="24" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">App Store</tspan></text>
+    </g>
+    <path id="Icon_awesome-apple" data-name="Icon awesome-apple" d="M22.409,18.893a6.564,6.564,0,0,1,3.516-5.962,7.555,7.555,0,0,0-5.955-3.136c-2.5-.2-5.224,1.455-6.223,1.455-1.055,0-3.473-1.385-5.372-1.385C4.451,9.928.281,12.994.281,19.23A17.525,17.525,0,0,0,1.294,24.94c.9,2.58,4.148,8.909,7.538,8.8,1.772-.042,3.023-1.259,5.33-1.259,2.236,0,3.4,1.259,5.372,1.259,3.417-.049,6.356-5.8,7.214-8.388a6.97,6.97,0,0,1-4.338-6.462ZM18.429,7.348a6.622,6.622,0,0,0,1.688-5.1A7.456,7.456,0,0,0,15.342,4.7a6.726,6.726,0,0,0-1.8,5.055,5.905,5.905,0,0,0,4.887-2.412Z" transform="translate(-0.281 4.75)" fill="#0076b5"/>
+  </g>
+</svg>

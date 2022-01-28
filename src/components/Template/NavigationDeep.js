@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Link, useLocation} from 'react-router-dom';
+import { Link,useLocation } from 'react-router-dom';
 
 import Hamburger from './Hamburger';
 import routes from '../../data/Routes';
@@ -7,7 +7,7 @@ import {useMediaQuery} from "react-responsive";
 import media_query_values from "../../data/MediaQuery";
 import $ from "jquery";
 
-class Navigation extends Component {
+class NavigationDeep extends Component {
 
     constructor(props) {
         super(props);
@@ -28,13 +28,13 @@ class Navigation extends Component {
 
         if (isMobile && isPortrait || isTablet && isPortrait) this.showBurger = true;
 
-        return <header className="NavHeader">
-            <div className="MainLogo"><Link to="/" ><img src="/images/main_logo.svg"/></Link></div>
+        return <header className="NavHeader-nosticky">
+            <div className="MainLogo-deep"><Link to='/' > <img src="/images/main_logo.svg"/></Link></div>
             {!this.showBurger &&
-            <div className="Navlinks">
-                    {routes.filter((l) => !l.index).map((l) => (
-                       <Link class={(currentPath==l.path? "nav-active":"" )} to={l.path}>{l.label}</Link>
-                    ))}
+            <div className="Navlinks-deep">
+                {routes.filter((l) => !l.index).map((l) => (
+                    <Link class={(currentPath==l.path? "Navlinks-deep-active":"" )} to={l.path}>{l.label}</Link>
+                ))}
                 <button>
                     Get the App &nbsp;&nbsp;&nbsp;<img src="/images/icons/arrow-right-white.svg"/>
                 </button>
@@ -45,7 +45,7 @@ class Navigation extends Component {
     }
 
     componentDidMount() {
-        $(document).on("click", ".MainLogo a", function () {
+        $(document).on("click", ".MainLogo-deep a", function () {
             localStorage.setItem("slider-completed","true");
         });
     }
@@ -66,4 +66,4 @@ function attachDeviceTypeHook(Component) {
     }
 }
 
-export default attachDeviceTypeHook(Navigation);
+export default attachDeviceTypeHook(NavigationDeep);

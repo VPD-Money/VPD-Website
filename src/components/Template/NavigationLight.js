@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Link } from 'react-router-dom';
+import { Link,useLocation } from 'react-router-dom';
 
 import Hamburger from './Hamburger';
 import routes from '../../data/Routes';
@@ -7,7 +7,7 @@ import {useMediaQuery} from "react-responsive";
 import media_query_values from "../../data/MediaQuery";
 import $ from "jquery";
 
-class NavigationPlain extends Component {
+class NavigationLight extends Component {
 
     constructor(props) {
         super(props);
@@ -24,14 +24,16 @@ class NavigationPlain extends Component {
             isRetina
         } = JSON.parse(this.props.deviceType);
 
+        let currentPath=this.props.location.pathname;
+
         if (isMobile && isPortrait || isTablet && isPortrait) this.showBurger = true;
 
-        return <header className="NavHeader">
-            <div className="MainLogo-alt"><Link to='/' search={{sliderLoaded: false}}> <img src="/images/main_logo.svg"/></Link></div>
+        return <header className="NavHeader-nosticky">
+            <div className="MainLogo-light"><Link to='/'> <img src="/images/main_logo.svg"/></Link></div>
             {!this.showBurger &&
-            <div className="Navlinks-alt">
+            <div className="Navlinks-light">
                 {routes.filter((l) => !l.index).map((l) => (
-                    <Link to={l.path}>{l.label}</Link>
+                    <Link class={(currentPath==l.path? "Navlinks-light-active":"" )} to={l.path}>{l.label}</Link>
                 ))}
                 <button>
                     Get the App &nbsp;&nbsp;&nbsp;<img src="/images/icons/arrow-right-white.svg"/>
@@ -43,7 +45,7 @@ class NavigationPlain extends Component {
     }
 
     componentDidMount() {
-        $(document).on("click", ".MainLogo-alt a", function () {
+        $(document).on("click", ".MainLogo-light a", function () {
             localStorage.setItem("slider-completed","true");
         });
     }
@@ -51,6 +53,7 @@ class NavigationPlain extends Component {
 };
 function attachDeviceTypeHook(Component) {
     return function WrappedComponent(props) {
+        const location = useLocation();
         const isBigScreen = useMediaQuery(media_query_values.bigscreen)
         const isDesktopOrLaptop = useMediaQuery(media_query_values.desktop)
         const isTablet = useMediaQuery(media_query_values.tablet)
@@ -59,8 +62,8 @@ function attachDeviceTypeHook(Component) {
         const isRetina = useMediaQuery(media_query_values.retina)
         let objVals = JSON.stringify({isBigScreen,isDesktopOrLaptop,isTablet,isMobile,isPortrait,isRetina});
 
-        return <Component {...props} deviceType={objVals} />;
+        return <Component {...props} deviceType={objVals} location={location} />;
     }
 }
 
-export default attachDeviceTypeHook(NavigationPlain);
+export default attachDeviceTypeHook(NavigationLight);

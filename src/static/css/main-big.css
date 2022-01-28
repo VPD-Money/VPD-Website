@@ -1,7 +1,11 @@
-@import-normalize;
-
 @import 'big/_index.css';
 @import 'big/_contact.css';
+@import 'big/_about.css';
+@import 'big/_personal.css';
+@import 'big/_business.css';
+@import 'big/_careers.css';
+
+
 
 .NavHeader
 {
@@ -11,6 +15,17 @@
     display: flex;
     max-height: 10vh;
     position: fixed;
+    z-index: 99999;
+}
+
+.NavHeader-nosticky
+{
+    width: 100%;
+    background: transparent;
+    overflow: hidden;
+    display: flex;
+    max-height: 10vh;
+    position: absolute;
     z-index: 99999;
 }
 
@@ -69,7 +84,7 @@
     width: 1em;
 }
 
-.MainLogo-alt
+.MainLogo-light
 {
     padding: 25px;
     width: 100%;
@@ -78,7 +93,7 @@
     flex: 1;
 }
 
-.Navlinks-alt
+.Navlinks-light
 {
     flex: 1;
     text-align: right;
@@ -87,7 +102,7 @@
     position: relative;
 }
 
-.Navlinks-alt a
+.Navlinks-light a
 {
     list-style: none;
     font: normal normal normal 1.2em Poppins;
@@ -98,7 +113,7 @@
     text-decoration: none;
 }
 
-.Navlinks-alt button
+.Navlinks-light button
 {
     text-align: left;
     font: normal normal 600 1.2em Poppins;
@@ -114,7 +129,107 @@
     border: none;
 }
 
-.Navlinks-alt button img{
+.Navlinks-light button img{
     color: white;
     width: 1em;
+}
+
+.Navlinks-light-active
+{
+    color: #0993DC!important;
+}
+
+
+.MainLogo-deep
+{
+    padding: 25px;
+    width: 100%;
+    max-width: 13vw;
+    margin-left: 8vw;
+    flex: 1;
+}
+
+.Navlinks-deep
+{
+    flex: 1;
+    text-align: right;
+    margin-left: 60px;
+    padding-top: 30px;
+    position: relative;
+}
+
+.Navlinks-deep a
+{
+    list-style: none;
+    font: normal normal normal 1.2em Poppins;
+    letter-spacing: 0px;
+    color: #0993DC;
+    text-align: center;
+    padding: 20px 40px 15px 16px;
+    text-decoration: none;
+}
+
+.Navlinks-deep button
+{
+    text-align: left;
+    font: normal normal 600 1.2em Poppins;
+    letter-spacing: 0px;
+    background: #0BA830;
+    color: white;
+    border-radius: 12px;
+    padding: 8px 20px 8px 20px;
+    width: 11em;
+    height: 3em;
+    box-shadow: none;
+    margin-right: 120px;
+    border: none;
+}
+
+
+.Navlinks-deep button img{
+    color: white;
+    width: 1em;
+}
+
+.Navlinks-deep-active
+{
+    color: #FFFFFF!important;
+}
+
+
+.footer
+{
+    background: #EDF2F5 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding-top: 10vh;
+    padding-bottom: 2vh;
+    z-index:99;
+    position:relative;
+}
+
+.footer-ribbon
+{
+    background: #0076B5 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    margin: 0vh 12vw 2vh 12vw;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.footer-ribbon label
+{
+    font: normal normal bold 3.5em Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    width: 30vw;
+    margin-right: 8vw;
+}
+
+.footer-ribbon img
+{
+    width: 10vw;
+    margin-left: 4vw;
+    margin-top: -10vh;
 }

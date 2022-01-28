@@ -5,7 +5,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import Main from '../layouts/Main';
 import media_query_values from '../data/MediaQuery';
 import contact_info from '../data/ContactInfo';
-import NavigationPlain from '../components/Template/NavigationPlain';
+import NavigationLight from '../components/Template/NavigationLight';
 import Footer from '../components/Template/Footer';
 
 
@@ -34,7 +34,7 @@ class Contact extends Component {
                 <HelmetProvider>
                     <div className="row container-fluid">
                         <div className="layer-wrapper">
-                            <NavigationPlain />
+                            <NavigationLight />
 
                             <div className="contact-layer-1">
                                   <div className="contact-layer-1-group">

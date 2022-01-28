@@ -1,0 +1,319 @@
+.business-layer-1
+{
+    height: 90vh;
+    z-index: 9999;
+    /*width: 100vw;*/
+
+}
+
+.business-layer-1 .bg_image
+{
+    position: absolute;
+    width:99vw;
+    height:100%;
+}
+
+.business-layer-1-component
+{
+    position: absolute;
+    margin-top: 20vh;
+    z-index: 99999;
+    display: inline-flex;
+    width: 100vw;
+}
+
+.business-layer-1-component-sub-1
+{
+    display: inline-block;
+    width: 35vw;
+    margin-left: 10vw;
+    margin-top: 1vh;
+}
+
+.business-layer-1-component-category
+{
+    font: normal normal 400 1.3em Poppins;
+    letter-spacing: 1.8px;
+    color: #24A361;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 2vh;
+}
+
+.business-layer-1-component-heading
+{
+    display: block;
+    text-align: left;
+    font: normal normal bold 4em Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    width: 28vw;
+    margin-top: 5.8vh;
+}
+
+.business-layer-1-component-heading-alt
+{
+    display: block;
+    text-align: left;
+    font: normal normal 300 1.4em Poppins;
+    letter-spacing: 0px;
+    color: #00A6FF;
+    width: 40vw;
+    margin-top: 1.5vh;
+}
+
+.business-layer-1-component-sub-2
+{
+    display: inline-flex;
+    margin-left: 10vw;
+}
+
+.business-layer-1-component-sub-2 img
+{
+    width: 25.5vw;
+    margin-top: 5vh;
+    margin-left: -3vw;
+}
+
+
+.business-layer-1-component-sub-1-mini-2 button
+{
+    text-align: left;
+    font: normal normal 600 1.5em Poppins;
+    letter-spacing: 0px;
+    background: #0BA830;
+    color: white;
+    border-radius: 12px;
+    padding: 8px 20px 8px 20px;
+    width: 12em;
+    height: 3.2em;
+    box-shadow: none;
+    border: none;
+    margin-top: -0.1vw;
+    margin-left: -0.1vw;
+    margin-right: 8vw;
+    padding-left: 2vw;
+}
+
+.business-layer-1-component-sub-1-mini-2 button img{
+    color: white;
+    width: 1em;
+    margin-left: 1.5vw;
+}
+
+.business-layer-1-component-sub-1-mini-2
+{
+    color: #FFFFFF;
+    display: flex;
+    width: 50.5vw;
+    height: 7.5vh;
+    padding:0.3em;
+    background: rgba(255, 255, 255, 0.08) 0% 0% no-repeat padding-box;
+    border-radius: 12px 12px 24px 12px;
+    opacity: 1;
+    backdrop-filter: blur(10px);
+}
+
+.business-layer-1-component-sub-1-mini-1
+{
+    margin-top: 8vh;
+    color: #FFFFFF;
+    display: flex;
+    width: 70vw;
+    height: 3vw;
+    padding-top:4vh;
+    padding-left:21vw;
+    border-radius: 12px 12px 24px 12px;
+    opacity: 1;
+    backdrop-filter: blur(0px);
+}
+
+.business-layer-1-component-sub-1-mini-1 label
+{
+    color: transparent;
+    font: normal normal 400 1em Poppins;
+
+}
+
+.business-layer-1-component-sub-1-mini-1 label:nth-child(3)
+{
+    margin-left: -1vw;
+    margin-right: 0.5vw;
+}
+
+
+
+.component-icon-group
+{
+    display: block;
+    position: absolute;
+}
+
+.component-icon-group:nth-child(2)
+{
+    left: 21.5vw;
+}
+
+.component-icon-group:nth-child(3)
+{
+    left: 25.5vw;
+}
+
+.component-icon-group:nth-child(4)
+{
+    left: 29.5vw;
+}
+
+.component-icon-group:nth-child(5)
+{
+    left: 33.5vw;
+}
+
+.component-icon-group:nth-child(6)
+{
+    left: 37.5vw;
+}
+
+.component-icon-group:nth-child(7)
+{
+    left: 41.5vw;
+}
+
+.component-icon-group:nth-child(8)
+{
+    left: 45.5vw;
+}
+
+
+.component-icon-group img
+{
+    display: block;
+    width: 2.2vw;
+    margin-top: 1vh;
+    margin-right: 2vw;
+    cursor: pointer;
+}
+
+
+.business-layer-2
+{
+    height: 100vh;
+    background: #FFFFFF;
+}
+
+.business-layer-2-group
+{
+    padding-top: 25vh;
+    display: inline-flex;
+}
+
+.business-layer-2-group-1
+{
+    width: 50vw;
+}
+
+.business-layer-2-group-1 img
+{
+    width: 15vw;
+    margin-left: 20vw;
+}
+
+.business-layer-2-group-2
+{
+    width: 50vw;
+    display: block;
+}
+
+.business-layer-2-group-2-header
+{
+    margin-top: 6vh;
+    margin-bottom: -1vh;
+    text-align: left;
+    font: normal normal bold 3.2em Poppins;
+    letter-spacing: 0px;
+    color: #002E45;
+    line-height: 1.2em;
+    width: 36vw;
+}
+
+.business-layer-2-group-2-text-1, .business-layer-2-group-2-text-2
+{
+    margin-top: 3.5vh;
+    text-align: left;
+    font: normal normal normal 1.3em Poppins;
+    letter-spacing: 0px;
+    line-height: 1.8em;
+    color: #505050;
+    width: 35vw;
+}
+
+
+.business-layer-2-group-2-slider
+{
+    display: inline-flex;
+    margin-left: -5vw;
+}
+
+#business-layer-2-slide-left
+{
+    width: 0.8vw;
+    margin-right: 3.5vw;
+}
+
+#business-layer-2-slide-right
+{
+    width: 0.8vw;
+    margin-left: 1vw;
+    cursor: pointer;
+}
+
+.business-layer-2-slide-icon-group
+{
+ margin-right: 3vw;
+}
+
+.business-layer-2-slide-icon-group img
+{
+    width: 3vw;
+    padding-top: 2vh;
+    display: block;
+}
+
+.business-layer-2-slide-icon-group label
+{
+    text-align: left;
+    display: block;
+    font: normal normal 500 1em Poppins;
+    letter-spacing: 0px;
+    color: #505050;
+    margin-top: 1.5vh;
+    line-height: 1.2em;
+    height: 1.2vh;
+    width: 5vw;
+}
+
+
+.business-layer-2-slide-icon-group-preview
+{
+    margin-right: 1vw;
+    opacity: 0.5;
+}
+
+.business-layer-2-slide-icon-group-preview img
+{
+    width: 2.2vw;
+    padding-top: 2vh;
+    display: block;
+}
+
+.business-layer-2-slide-icon-group-preview label
+{
+    text-align: left;
+    display: block;
+    font: normal normal 500 1em Poppins;
+    letter-spacing: 0px;
+    color: #505050;
+    margin-top: 1.5vh;
+    line-height: 1.2em;
+    width: 4vw;
+}

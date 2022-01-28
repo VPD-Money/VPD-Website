@@ -14,6 +14,9 @@ const { PUBLIC_URL } = process.env;
 const AboutUs = lazy(() => import('./pages/AboutUs'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Index = lazy(() => import('./pages/Index'));
+const Personal = lazy(() => import('./pages/Personal'));
+const Business = lazy(() => import('./pages/Business'));
+const Careers = lazy(() => import('./pages/Careers'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 // const Projects = lazy(() => import('./pages/Projects'));
 // const Resume = lazy(() => import('./pages/Resume'));
@@ -38,10 +41,10 @@ const App = () => {
             <Routes>
                 <Route exact path="/" element={<Index/>}/>
                 <Route path="/aboutus" element={<AboutUs/>}/>
-                {/*<Route path="/projects" component={Projects} />*/}
-                {/*<Route path="/stats" component={Stats} />*/}
                 <Route path="/contactus" element={<Contact/>}/>
-                {/*<Route path="/resume" component={Resume} />*/}
+                <Route path="/personal" element={<Personal/>}/>
+                <Route path="/business" element={<Business/>}/>
+                <Route path="/careers" element={<Careers/>}/>
                 <Route path='*' element={<NotFound/>}/>
             </Routes>
         </Suspense>

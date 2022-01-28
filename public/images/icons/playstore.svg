@@ -1,0 +1,10 @@
+<svg id="Group_2122" data-name="Group 2122" xmlns="http://www.w3.org/2000/svg" width="234" height="91" viewBox="0 0 234 91">
+  <rect id="Rectangle_997" data-name="Rectangle 997" width="234" height="91" rx="10" fill="#fff"/>
+  <g id="Group_2119" data-name="Group 2119" transform="translate(36 23)">
+    <path id="Icon_awesome-google-play" data-name="Icon awesome-google-play" d="M22.873,16.474,7.355.914,27.1,12.248l-4.226,4.226ZM3.3,0A2.733,2.733,0,0,0,1.779,2.482V33.511A2.733,2.733,0,0,0,3.3,35.993l18.042-18ZM33.2,15.863l-4.141-2.4L24.441,18l4.62,4.535,4.226-2.4a2.821,2.821,0,0,0-.084-4.275ZM7.355,35.086,27.1,23.752l-4.226-4.226Z" transform="translate(-1.779 5)" fill="#0076b5"/>
+    <g id="Group_2118" data-name="Group 2118" transform="translate(51.356)">
+      <text id="Get_it_on" data-name="Get it on" transform="translate(0 15)" fill="#0076b5" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">Get it on</tspan></text>
+      <text id="Play_store" data-name="Play store" transform="translate(0 40)" fill="#0076b5" font-size="24" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="0" y="0">Play store</tspan></text>
+    </g>
+  </g>
+</svg>

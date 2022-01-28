@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Link,useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive'
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import $ from 'jquery';
@@ -310,13 +310,8 @@ function attachDeviceTypeHook(Component) {
         const isPortrait = useMediaQuery(media_query_values.portrait)
         const isRetina = useMediaQuery(media_query_values.retina)
         let objVals = JSON.stringify({isBigScreen,isDesktopOrLaptop,isTablet,isMobile,isPortrait,isRetina});
-        const location = useLocation()
-        console.log("Location:");
-        console.log(location);
 
-        console.log("Props1:");
-        console.log(props);
-        return <Component {...props} deviceType={objVals} pageParam={location} />;
+        return <Component {...props} deviceType={objVals} />;
     }
 }
 

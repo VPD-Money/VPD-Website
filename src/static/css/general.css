@@ -1,9 +1,10 @@
-@import-normalize;
 
-body, html, #app, #app>div {
+body, html {
   background-color: ghostwhite;
   height: 100%;
   margin: 0;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 

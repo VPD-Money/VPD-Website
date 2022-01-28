@@ -2,11 +2,18 @@ import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import {useMediaQuery} from "react-responsive";
 import media_query_values from "../../data/MediaQuery";
+import store_info from "../../data/Stores";
 
 class Footer extends Component {
 
     render() {
-        return <div></div>
+        return <div className="footer">
+            <div className="footer-ribbon">
+                <label>Let’s make your money count.</label>
+                <a href={store_info.playstore}><img src="/images/icons/playstore.svg"/></a>
+                <a href={store_info.appstore}><img src="/images/icons/appstore.svg"/></a>
+            </div>
+        </div>
     }
 
 }
