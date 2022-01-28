@@ -75,6 +75,50 @@ class Contact extends Component {
                                 </div>
                             </div>
 
+                            <div className="careers-layer-4-group">
+                                <div className="careers-layer-4-group-box">
+                                    <img src="/images/icons/career-values-teamwork.svg"/>
+                                    <label className="careers-layer-4-group-box-title">Integrity</label>
+                                    <label className="careers-layer-4-group-box-text">Lorem ipsum dolor sit amet, conur sadipscing elitr, sed diam nonumy eirmod tempor invnt ut labore et</label>
+                                </div>
+
+                                <div className="careers-layer-4-group-box">
+                                    <img src="/images/icons/career-values-teamwork.svg"/>
+                                    <label className="careers-layer-4-group-box-title">Honesty</label>
+                                    <label className="careers-layer-4-group-box-text">Lorem ipsum dolor sit amet, conur sadipscing elitr, sed diam nonumy eirmod tempor invnt ut labore et</label>
+                                </div>
+
+                                <div className="careers-layer-4-group-box">
+                                    <img src="/images/icons/career-values-teamwork.svg"/>
+                                    <label className="careers-layer-4-group-box-title">Teamwork</label>
+                                    <label className="careers-layer-4-group-box-text">Lorem ipsum dolor sit amet, conur sadipscing elitr, sed diam nonumy eirmod tempor invnt ut labore et</label>
+                                </div>
+
+
+                            </div>
+
+                            <div className="careers-layer-4-group">
+                                <div className="careers-layer-4-group-box">
+                                    <img src="/images/icons/career-values-teamwork.svg"/>
+                                    <label className="careers-layer-4-group-box-title">Customer Satisfaction</label>
+                                    <label className="careers-layer-4-group-box-text">Lorem ipsum dolor sit amet, conur sadipscing elitr, sed diam nonumy eirmod tempor invnt ut labore et</label>
+                                </div>
+
+                                <div className="careers-layer-4-group-box">
+                                    <img src="/images/icons/career-values-teamwork.svg"/>
+                                    <label className="careers-layer-4-group-box-title">Trustworthiness</label>
+                                    <label className="careers-layer-4-group-box-text">Lorem ipsum dolor sit amet, conur sadipscing elitr, sed diam nonumy eirmod tempor invnt ut labore et</label>
+                                </div>
+
+                                <div className="careers-layer-4-group-box">
+                                    <img src="/images/icons/career-values-teamwork.svg"/>
+                                    <label className="careers-layer-4-group-box-title">Accountability</label>
+                                    <label className="careers-layer-4-group-box-text">Lorem ipsum dolor sit amet, conur sadipscing elitr, sed diam nonumy eirmod tempor invnt ut labore et</label>
+                                </div>
+
+
+                            </div>
+
                         </div>
 
 

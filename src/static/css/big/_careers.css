@@ -94,7 +94,7 @@
 .careers-layer-3
 {
     background: #F3F5F6;
-    height: 100vh;
+    height: 90vh;
 }
 
 .careers-layer-3-group
@@ -110,7 +110,7 @@
 .careers-layer-3-group-section-1 label:first-child
 {
     display: block;
-    font: normal normal 600 2.8em Open Sans;
+    font: normal normal 600 2.8em Poppins;
     letter-spacing: 0px;
     color: #0076B5;
     width: 30vw;
@@ -145,7 +145,7 @@
 .careers-layer-4
 {
     background: #EDF2F5;
-    height: 100vh;
+    padding-bottom: 15vh;
 }
 
 .careers-layer-4-group
@@ -179,4 +179,57 @@
     margin-left: 20vw;
     width: 60vw;
     line-height: 1.7em;
+}
+
+.careers-layer-4-group:nth-child(2)
+{
+    margin-top: 10vh;
+    display: inline-flex;
+}
+
+.careers-layer-4-group:nth-child(3)
+{
+    margin-top: 1vh;
+    display: inline-flex;
+}
+
+.careers-layer-4-group-box
+{
+    background: rgba(255, 255, 255, 0.3) 0% 0% no-repeat padding-box;
+    box-shadow: 10px 10px 40px #00000029;
+    border-radius: 20px;
+    padding: 6vh 2vw 4vh 2vw;
+    width: 20vw;
+    text-align: left;
+    margin-right: 3vw;
+}
+
+
+.careers-layer-4-group .careers-layer-4-group-box:first-child
+{
+    margin-left: 17.5vw;
+}
+
+.careers-layer-4-group-box img
+{
+    width: 6vw;
+    display: block;
+}
+
+.careers-layer-4-group-box-title
+{
+    font: normal normal 500 1.5em Poppins;
+    letter-spacing: 0px;
+    color: #3BC47D;
+    padding-top: 3vh;
+}
+
+.careers-layer-4-group-box-text
+{
+    text-align: left;
+    font: normal normal normal 1.2em Poppins;
+    letter-spacing: 0px;
+    color: #575757;
+    padding-top: 2vh;
+    line-height: 2em;
 }
