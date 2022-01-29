@@ -47,7 +47,6 @@ class Index extends Component {
            {
                slideCompleted &&
                <HelmetProvider>
-                       <div className="row container-fluid">
                            <div className="layer-wrapper">
                                <Navigation />
 
@@ -64,10 +63,10 @@ class Index extends Component {
                                                The bank of <span>You</span>
                                            </div>
                                            <div className="row main_banner_text_action_section">
-                                               <div className="col-lg-9">
+                                               <div className="col-10">
                                                    <div className="main_banner_text_action_section_white_bar">&nbsp;</div>
                                                </div>
-                                               <div className="col-lg-3">
+                                               <div className="col-2">
                                                   <button>Get Started</button>
                                                </div>
                                            </div>`
@@ -91,7 +90,7 @@ class Index extends Component {
                                    </div>
 
                                    <div className="row layer-2-main-iphone-group">
-                                           <div className="col-md-4">
+                                           <div className="col-4">
                                               <div className="iphone-feature-pod">
                                                  <img src={"/images/icons/cashback.svg"}/>
                                                  <label>Cashback</label>
@@ -118,7 +117,7 @@ class Index extends Component {
                                                </div>
 
                                            </div>
-                                           <div className="col-md-4">
+                                           <div className="col-4">
                                                <div className="iphone-feature-pod" id="iphone-feature-pod-1">
                                                    <img src={"/images/icons/ai_savings.svg"}/>
                                                    <label>Utility Payment</label>
@@ -126,7 +125,7 @@ class Index extends Component {
                                                <img className="iphone_frame" src={"/images/iphone_screens/iphone_dashboard"+ (this.screenImageLetter) + ".png"} />
                                                <button>Start Creating your Banking Experience&nbsp; &nbsp;&nbsp;<span><img src="/images/icons/arrow-right-white.svg"/><img src="/images/icons/arrow-right-white.svg"/></span></button>
                                            </div>
-                                           <div className="col-md-4">
+                                           <div className="col-4">
                                               <div className="iphone-feature-pod">
                                                    <img src={"/images/icons/transfer.svg"}/>
                                                    <label>Overdraft</label>
@@ -157,7 +156,7 @@ class Index extends Component {
                                <div className="layer-3">
                                    <div className="layer-3-ribbon">
 
-                                       <div className="col-md-12">
+                                       <div className="col-12">
                                            <label className="layer-3-ribbon-title">ACCOUNT FEATURES</label>
 
                                            <div className="layer-3-ribbon-groups">
@@ -252,7 +251,6 @@ class Index extends Component {
 
                                <Footer />
                           </div>
-                       </div>
               </HelmetProvider>
 
            }

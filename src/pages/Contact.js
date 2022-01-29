@@ -39,8 +39,7 @@ class Contact extends Component {
                             <div className="contact-layer-1">
                                   <div className="contact-layer-1-group">
                                       <div className="contact-layer-1-section-1">
-                                          <label>Feel Free</label>
-                                          <label>to reach out</label>
+                                          <label>Feel Free to reach out</label>
                                           <label>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</label>
 
                                           <div className="contact-ng-address">

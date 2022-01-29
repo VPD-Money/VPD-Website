@@ -11,12 +11,8 @@ const Main = (props) => (
             {props.title && <title>{props.title}</title>}
             <meta name="description" content={props.description} />
         </Helmet>
-        <div id="wrapper">
-            <div id="main">
                 {props.children}
-            </div>
-        </div>
-    </HelmetProvider>
+     </HelmetProvider>
 );
 
 Main.propTypes = {

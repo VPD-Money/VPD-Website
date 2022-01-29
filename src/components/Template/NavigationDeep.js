@@ -36,7 +36,7 @@ class NavigationDeep extends Component {
                     <Link class={(currentPath==l.path? "Navlinks-deep-active":"" )} to={l.path}>{l.label}</Link>
                 ))}
                 <button>
-                    Get the App &nbsp;&nbsp;&nbsp;<img src="/images/icons/arrow-right-white.svg"/>
+                    Get the App<img src="/images/icons/arrow-right-white.svg"/>
                 </button>
             </div>
             }

@@ -7,11 +7,149 @@ body, html {
   overflow-x: hidden;
 }
 
+*{
+  box-sizing: border-box;
+}
 
 img
 {
   width: auto;
   image-rendering: optimizeQuality;
+  vertical-align: middle;
+}
+
+label{display:inline-block;max-width:100%;margin-bottom:5px;font-weight:500}
+
+.row
+{
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.layer-wrapper
+{
+  position:absolute;
+  height:100%;
+  width:100%;
 }
 
 
+.col-1
+{
+  width: 8.3%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+}
+
+.col-2
+{
+  width: 16.6%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+}
+
+.col-3
+{
+  width: 25%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+}
+
+.col-4
+{
+  width: 33.3%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+}
+
+.col-5
+{
+  width: 41.6%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+}
+
+.col-6
+{
+  width: 50%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+}
+
+.col-7
+{
+  width: 58.3%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+}
+
+.col-8
+{
+  width: 66.6%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+}
+
+.col-9
+{
+  width: 74.7%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+}
+
+.col-10
+{
+  width: 83.0%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+}
+
+.col-11
+{
+  width: 91.3%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+}
+
+.col-12
+{
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+}
