@@ -35,7 +35,7 @@ class MainSplashScreen extends Component {
         autoFocus: boolean('autoFocus', true, this.tooglesGroupId),
         thumbWidth: number('thumbWidth', 100, {}, this.valuesGroupId),
         selectedItem: number('selectedItem', 0, {}, this.valuesGroupId),
-        interval: number('interval', 300, {}, this.valuesGroupId),
+        interval: number('interval', 3000, {}, this.valuesGroupId),
         transitionTime: number('transitionTime', 1000, {}, this.valuesGroupId),
         swipeScrollTolerance: number('swipeScrollTolerance', 5, {}, this.valuesGroupId),
         ariaLabel: text('ariaLabel', undefined),

@@ -261,6 +261,9 @@ class Index extends Component {
 
 
     componentDidMount() {
+
+        $("#screen-size").text($(window).width());
+
         $(document).on("mouseenter",".layer-5-section-1 img",function(){
             $(".layer-5-section-1 img").animate({'margin-left' : '6vw'});
             $(".layer-5-section-1 .headingLabelAlt").show();

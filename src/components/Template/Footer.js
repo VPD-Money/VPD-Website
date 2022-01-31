@@ -8,6 +8,18 @@ class Footer extends Component {
 
     render() {
         return <div className="footer">
+            <Link to="/personal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Personal</Link>
+            <br/>
+            <Link to="/business">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Business</Link>
+            <br/>
+            <Link to="/careers">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Careers</Link>
+            <br/>
+            <Link to="/terms">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terms</Link>
+            <br/>
+            <Link to="/privacy">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy</Link>
+            <br/><br/>
+            <h3 id="screen-size"></h3>
+            <br/><br/>
             <div className="footer-ribbon">
                 <label>Let’s make your money count.</label>
                 <a href={store_info.playstore}><img src="/images/icons/playstore.svg"/></a>

@@ -78,12 +78,14 @@
 .carouselLastItemGroup
 {
   position: relative;
+  margin-left: 5vw;
 }
 
 .carouselLastItemGroup2
 {
   text-align: left;
   padding-top: 2vh;
+  margin-left: -1.2vw;
 }
 
 .bannerFrame

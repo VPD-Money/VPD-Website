@@ -183,7 +183,7 @@
 
 .careers-layer-4-group:nth-child(2)
 {
-    margin-top: 10vh;
+    margin-top: 5vh;
     display: inline-flex;
 }
 
@@ -212,7 +212,7 @@
 
 .careers-layer-4-group-box img
 {
-    width: 6vw;
+    /*width: 6vw;*/
     display: block;
 }
 
