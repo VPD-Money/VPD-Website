@@ -1,0 +1,235 @@
+.careers-layer-1
+{
+    background: #F3F5F6;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+}
+
+.careers-layer-1-group
+{
+    display: inline-flex;
+}
+
+.careers-layer-1-group-section-1
+{
+    width: 50vw;
+}
+
+.careers-layer-1-group-section-2
+{
+    width: 50vw;
+    margin-left: -10vh;
+}
+
+.careers-layer-1-group-section-1 img
+{
+    width: 45vw;
+    margin-top: -18vh;
+    margin-left: -5vw;
+}
+
+.careers-layer-1-group-section-2-label
+{
+    font: normal normal 600 1em Poppins;
+    letter-spacing: 3px;
+    color: #0076B5;
+    text-transform: uppercase;
+    display: block;
+}
+
+.careers-layer-1-group-section-2-label-2
+{
+    display: block;
+    text-align: left;
+    font: normal normal 600 3em Poppins;
+    letter-spacing: 0px;
+    color: #002E45;
+    width: 30vw;
+    line-height: 7vh;
+    margin-top: 3vh;
+}
+
+.careers-layer-1-group-section-2-desc
+{
+    display: block;
+    text-align: left;
+    font: normal normal normal 1.2em Poppins;
+    letter-spacing: 0px;
+    color: #505050;
+    line-height: 1.8em;
+    margin-top: 3vh;
+    width: 40vw;
+}
+
+.careers-layer-1-group button
+{
+    background: #0BA830 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    border: none;
+    padding: 1.5vh 3vw 1.5vh 3vw;
+    font: normal normal 600 0.8em Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin-top: 5vh;
+}
+
+.careers-layer-2 img
+{
+    display: block;
+    width: 2vw;
+}
+
+.careers-layer-2
+{
+    display: block;
+    margin-top: -20vh;
+}
+
+.careers-layer-2 img
+{
+    display: block;
+    margin-left: 45vw;
+}
+
+.careers-layer-3
+{
+    background: #F3F5F6;
+    height: 90vh;
+}
+
+.careers-layer-3-group
+{
+    display: inline-flex;
+    margin-top: 40vh;
+}
+.careers-layer-3-group-section-1
+{
+    width: 50vw;
+}
+
+.careers-layer-3-group-section-1 label:first-child
+{
+    display: block;
+    font: normal normal 600 2em Poppins;
+    letter-spacing: 0px;
+    color: #0076B5;
+    width: 30vw;
+    margin-top: -4vh;
+    margin-left: 10vw;
+}
+
+.careers-layer-3-group-section-1 label:last-child
+{
+    display: block;
+    font: normal normal normal 1em Poppins;
+    letter-spacing: 0px;
+    color: #505050;
+    width: 35vw;
+    margin-top: 3vh;
+    margin-left: 10vw;
+    line-height: 4vh;
+
+}
+
+.careers-layer-3-group-section-2
+{
+    width: 50vw;
+}
+
+.careers-layer-3-group-section-2 img
+{
+    width: 30vw;
+    margin-left: 10vw;
+}
+
+.careers-layer-4
+{
+    background: #EDF2F5;
+    padding-bottom: 15vh;
+}
+
+.careers-layer-4-group
+{
+    display: block;
+    padding-top: 5vh;
+}
+
+.careers-layer-4-group-section
+{
+  width: 80vw;
+}
+
+.careers-layer-4-group-heading
+{
+    text-align: center;
+    font: normal normal bold 2em Poppins;
+    letter-spacing: 0px;
+    color: #002E45;
+    display: block;
+}
+
+.careers-layer-4-group-text
+{
+    display: block;
+    text-align: center;
+    font: normal normal normal 1.2em Poppins;
+    letter-spacing: 0px;
+    color: #505050;
+    padding-top: 3vh;
+    margin-left: 20vw;
+    width: 60vw;
+    line-height: 1.7em;
+}
+
+.careers-layer-4-group:nth-child(2)
+{
+    margin-top: 5vh;
+    display: inline-flex;
+}
+
+.careers-layer-4-group:nth-child(3)
+{
+    margin-top: 1vh;
+    display: inline-flex;
+}
+
+.careers-layer-4-group-box
+{
+    background: rgba(255, 255, 255, 0.3) 0% 0% no-repeat padding-box;
+    box-shadow: 10px 10px 40px #00000029;
+    border-radius: 20px;
+    padding: 6vh 2vw 4vh 2vw;
+    width: 20vw;
+    text-align: left;
+    margin-right: 3vw;
+}
+
+
+.careers-layer-4-group .careers-layer-4-group-box:first-child
+{
+    margin-left: 17.5vw;
+}
+
+.careers-layer-4-group-box img
+{
+    /*width: 5vw;*/
+    display: block;
+}
+
+.careers-layer-4-group-box-title
+{
+    font: normal normal 500 1.1em Poppins;
+    letter-spacing: 0px;
+    color: #0993DC;
+    padding-top: 3vh;
+}
+
+.careers-layer-4-group-box-text
+{
+    text-align: left;
+    font: normal normal normal 0.9em Poppins;
+    letter-spacing: 0px;
+    color: #575757;
+    padding-top: 2vh;
+    line-height: 1.6em;
+}

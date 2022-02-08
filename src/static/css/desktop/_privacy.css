@@ -1,0 +1,157 @@
+.privacy-layer-1
+{
+    background: #F3F5F6;
+    padding-top: 18vh;
+    padding-bottom: 15vh;
+
+}
+.privacy-group
+{
+    display: inline-flex;
+
+}
+
+.privacy-section-1
+{
+    width: 40vw;
+}
+
+.privacy-section-2
+{
+    width: 50vw;
+    display: block;
+}
+
+.privacy-section-2-tabs
+{
+    display: inline-flex;
+}
+
+.privacy-section-2-tabs label:last-child a
+{
+    text-decoration: none;
+    font: normal normal 600 1em Poppins;
+    letter-spacing: 0px;
+    color: #393939;
+    opacity: 0.5;
+    margin-left: 2vw;
+}
+
+.privacy-section-2-tabs label:first-child
+{
+    text-align: left;
+    font: normal normal 600 1em Poppins;
+    letter-spacing: 0px;
+    color: #0076B5;
+    opacity: 1;
+    border-bottom: 3px solid #0076B5;
+    padding-bottom: 8px;
+
+}
+
+.privacy-section-2-header
+{
+    display: block;
+    font: normal normal 500 2em Poppins;
+    letter-spacing: 0px;
+    color: #0076B5;
+    margin-top: 5vh;
+}
+
+.privacy-section-2-content-pod
+{
+    margin-top: 5vh;
+}
+
+.privacy-section-2-content-pod label:first-child
+{
+    display: block;
+    text-align: left;
+    font: normal normal 600 1.4em Poppins;
+    letter-spacing: 0px;
+    color: #0076B5;
+}
+.privacy-section-2-content-pod label:last-child
+{
+    display: block;
+    text-align: left;
+    font: normal normal normal 1em Poppins;
+    letter-spacing: 0px;
+    color: #393939;
+    line-height: 2em;
+}
+
+.privacy-section-2-content-pod span
+{
+    display: block;
+    text-align: left;
+    font: normal normal 600 1em Poppins;
+    letter-spacing: 0px;
+    color: rgba(0, 0, 0, 0.67);
+    margin-top: 2vh;
+    margin-bottom: 0.5vh;
+}
+
+.privacy-section-2-content-pod tr
+{
+    width: 100%;
+}
+
+.privacy-section-2-content-pod table
+{
+    margin-top: 2vh;
+    width: 100%;
+    font: normal normal normal 0.6em Poppins;
+    word-wrap: normal;
+    table-layout: fixed;
+}
+
+.privacy-section-2-content-pod table td,.privacy-section-2-content-pod table th{
+    padding: 1em;
+    word-wrap: break-word;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(211, 211, 211, 0.47);
+}
+
+.privacy-section-2-content-pod th, .privacy-section-2-content-pod td
+{
+    width: 50%;
+    padding-top: 1.8vh;
+}
+
+
+.privacy-nav-box
+{
+    background: white;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+    padding-left: 3vw;
+    margin-left: 10vw;
+    margin-right: 5vw;
+    border-radius: 10px;
+}
+
+.privacy-nav-box-wrapper
+{
+
+}
+.privacy-nav-box label
+{
+    font: normal normal 600 1.3em Poppins;
+    letter-spacing: 0px;
+    color: #00314B;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.privacy-nav-box div
+{
+    font: normal normal 600 1em Poppins;
+    letter-spacing: 0px;
+    color: #909090;
+    opacity: 1;
+    margin-top: 1.2vh;
+    cursor: pointer;
+}

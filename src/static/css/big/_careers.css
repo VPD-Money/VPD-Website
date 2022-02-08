@@ -67,7 +67,7 @@
     border-radius: 10px;
     border: none;
     padding: 1.5vh 3vw 1.5vh 3vw;
-    font: normal normal 600 1.2em Poppins;
+    font: normal normal 600 1em Poppins;
     letter-spacing: 0px;
     color: #FFFFFF;
     margin-top: 5vh;
@@ -220,7 +220,7 @@
 {
     font: normal normal 500 1.5em Poppins;
     letter-spacing: 0px;
-    color: #3BC47D;
+    color: #0993DC;
     padding-top: 3vh;
 }
 
@@ -231,5 +231,5 @@
     letter-spacing: 0px;
     color: #575757;
     padding-top: 2vh;
-    line-height: 2em;
+    line-height: 1.6em;
 }

@@ -1,7 +1,11 @@
 const routes = [
  {
-    label: 'Features',
-    path: '/features',
+    label: 'Personal',
+    path: '/personal',
+  },
+  {
+    label: 'Business',
+    path: '/business',
   },
   {
     label: 'About Us',

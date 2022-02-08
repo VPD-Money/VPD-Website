@@ -1,10 +1,20 @@
-<svg id="Group_2122" data-name="Group 2122" xmlns="http://www.w3.org/2000/svg" width="234" height="91" viewBox="0 0 234 91">
-  <rect id="Rectangle_997" data-name="Rectangle 997" width="234" height="91" rx="10" fill="#fff"/>
-  <g id="Group_2119" data-name="Group 2119" transform="translate(36 23)">
-    <path id="Icon_awesome-google-play" data-name="Icon awesome-google-play" d="M22.873,16.474,7.355.914,27.1,12.248l-4.226,4.226ZM3.3,0A2.733,2.733,0,0,0,1.779,2.482V33.511A2.733,2.733,0,0,0,3.3,35.993l18.042-18ZM33.2,15.863l-4.141-2.4L24.441,18l4.62,4.535,4.226-2.4a2.821,2.821,0,0,0-.084-4.275ZM7.355,35.086,27.1,23.752l-4.226-4.226Z" transform="translate(-1.779 5)" fill="#0076b5"/>
-    <g id="Group_2118" data-name="Group 2118" transform="translate(51.356)">
-      <text id="Get_it_on" data-name="Get it on" transform="translate(0 15)" fill="#0076b5" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">Get it on</tspan></text>
-      <text id="Play_store" data-name="Play store" transform="translate(0 40)" fill="#0076b5" font-size="24" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="0" y="0">Play store</tspan></text>
-    </g>
+<svg id="Component_37_2" data-name="Component 37 – 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="273" height="88" viewBox="0 0 273 88">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.423" y1="0.75" x2="0.529" y2="0.25" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00e2ff"/>
+      <stop offset="1" stop-color="#00c5ff"/>
+    </linearGradient>
+  </defs>
+  <g id="Rectangle_3351" data-name="Rectangle 3351" fill="#000a0f" stroke="#00a6ff" stroke-width="0.5">
+    <rect width="273" height="88" rx="44" stroke="none"/>
+    <rect x="0.25" y="0.25" width="272.5" height="87.5" rx="43.75" fill="none"/>
+  </g>
+  <text id="Get_it_on" data-name="Get it on" transform="translate(124 33)" fill="#fff" font-size="15" font-family="Poppins-Regular, Poppins"><tspan x="-34" y="0">GET IT ON</tspan></text>
+  <text id="Google_Play" data-name="Google Play" transform="translate(162 63)" fill="#fff" font-size="24" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="-71" y="0">Google Play</tspan></text>
+  <g id="_x34_2.Google_PLay" transform="translate(25.37 15.583)">
+    <path id="Path_3905" data-name="Path 3905" d="M67.145,39.78l-6.238-3.6-6.386,6.386,6.386,6.386,6.26-3.615a3.242,3.242,0,0,0-.021-5.554Z" transform="translate(-21.524 -14.124)" fill="#ffce00"/>
+    <path id="Path_3906" data-name="Path 3906" d="M33,29.516,15.6,12a3.283,3.283,0,0,0-.972,2.333v30.32a3.285,3.285,0,0,0,.972,2.334Z" transform="translate(0 -1.077)" fill="url(#linear-gradient)"/>
+    <path id="Path_3907" data-name="Path 3907" d="M34.137,28.439l6.386-6.386.01-.01-8.557-4.927L20.7,10.487a3.2,3.2,0,0,0-3.285-.065,4.874,4.874,0,0,0-.67.5Z" transform="translate(-1.14)" fill="#00f076"/>
+    <path id="Path_3908" data-name="Path 3908" d="M16.742,67.514a4.874,4.874,0,0,0,.67.5,3.355,3.355,0,0,0,1.6.432,3.293,3.293,0,0,0,1.664-.475l11.3-6.6,8.557-4.927-.01-.01-6.386-6.386Z" transform="translate(-1.14 -21.608)" fill="#f63448"/>
   </g>
 </svg>

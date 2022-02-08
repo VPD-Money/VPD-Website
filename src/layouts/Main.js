@@ -7,7 +7,7 @@ import Analytics from '../components/Template/Analytics';
 const Main = (props) => (
     <HelmetProvider>
         <Analytics />
-        <Helmet titleTemplate="%s | VPD Money" defaultTitle="VPD Money" defer={false}>
+        <Helmet titleTemplate="VPD Money | %s " defaultTitle="VPD Money" defer={false}>
             {props.title && <title>{props.title}</title>}
             <meta name="description" content={props.description} />
         </Helmet>

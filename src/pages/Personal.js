@@ -51,38 +51,38 @@ class Personal extends Component {
                                     <label className="personal-layer-1-component-heading-alt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</label>
 
                                     <div className="personal-layer-1-component-sub-1-mini-1">
-                                        <label id="component-label-1">Payroll</label>
-                                        <label id="component-label-2">Account Statement</label>
-                                        <label id="component-label-3">Invoice</label>
-                                        <label id="component-label-4">Customers</label>
+                                        <label id="component-label-1">Recurring Transactions</label>
+                                        <label id="component-label-2">Utility Payments</label>
+                                        <label id="component-label-3">Cashback</label>
+                                        <label id="component-label-4">Card Transactions</label>
                                         <label id="component-label-5">Sub Accounts</label>
-                                        <label id="component-label-6">PaySlip</label>
-                                        <label id="component-label-7">Product & Services </label>
+                                        <label id="component-label-6">Analytics</label>
+                                        <label id="component-label-7">Borderless Transfers</label>
                                     </div>
                                     <div className="personal-layer-1-component-sub-1-mini-2">
                                         <button>
-                                            Start here &nbsp;&nbsp;&nbsp;<img src="/images/icons/arrow-right-white.svg"/>
+                                            Get the App &nbsp;&nbsp;&nbsp;<img src="/images/icons/arrow-right-white.svg"/>
                                         </button>
                                         <div className="component-icon-group">
-                                            <img label="1" className="component-icon" src="/images/icons/payroll.png"/>
+                                            <img label="1" className="component-icon" src="/images/icons/recurring-transaction.png"/>
                                         </div>
                                         <div className="component-icon-group">
-                                            <img label="2" className="component-icon" src="/images/icons/account-report.png"/>
+                                            <img label="2" className="component-icon" src="/images/icons/utility-payment.png"/>
                                         </div>
                                         <div className="component-icon-group">
-                                            <img label="3" className="component-icon" src="/images/icons/invoice.png"/>
+                                            <img label="3" className="component-icon" src="/images/icons/cashback.png"/>
                                         </div>
                                         <div className="component-icon-group">
-                                            <img label="4" className="component-icon" src="/images/icons/customers.png"/>
+                                            <img label="4" className="component-icon" src="/images/icons/card-transactions.png"/>
                                         </div>
                                         <div className="component-icon-group">
-                                            <img label="5" className="component-icon" src="/images/icons/sub-accounts.png"/>
+                                            <img label="5" className="component-icon" src="/images/icons/subaccount.png"/>
                                         </div>
                                         <div className="component-icon-group">
-                                            <img label="6" className="component-icon" src="/images/icons/payslip.png"/>
+                                            <img label="6" className="component-icon" src="/images/icons/analytics.png"/>
                                         </div>
                                         <div className="component-icon-group">
-                                            <img label="7" className="component-icon" src="/images/icons/product-services.png"/>
+                                            <img label="7" className="component-icon" src="/images/icons/borderless-transfer.png"/>
                                         </div>
                                     </div>
                                 </div>
@@ -103,25 +103,26 @@ class Personal extends Component {
                                     <div className="personal-layer-2-group-2-slider">
                                         <img id="personal-layer-2-slide-left" src="/images/icons/arrow-left-black-faded.svg"/>
                                         <div className="personal-layer-2-slide-icon-group">
-                                            <img src="/images/icons/customers.png"/>
-                                            <label>Onboarding</label>
+                                            <img src="/images/icons/recurring-transaction.png"/>
+                                            <label>Recurring Transactions</label>
                                         </div>
                                         <div className="personal-layer-2-slide-icon-group-preview icon-preview-1">
-                                            <img src="/images/icons/invoice.png"/>
-                                            <label>Invoices</label>
+                                            <img src="/images/icons/utility-payment.png"/>
+                                            <label>Utility Payment</label>
                                         </div>
                                         <div className="personal-layer-2-slide-icon-group-preview icon-preview-2">
-                                            <img src="/images/icons/sub-accounts.png"/>
-                                            <label>Sub Accounts</label>
+                                            <img src="/images/icons/cashback.png"/>
+                                            <label>Cashback</label>
                                         </div>
                                         <div className="personal-layer-2-slide-icon-group-preview icon-preview-3">
-                                            <img src="/images/icons/payroll.png"/>
-                                            <label>Payroll</label>
+                                            <img src="/images/icons/card-transactions.png"/>
+                                            <label>Card Transactions</label>
                                         </div>
                                         <div className="personal-layer-2-slide-icon-group-preview icon-preview-4">
-                                            <img src="/images/icons/account-report.png"/>
-                                            <label>Account Report</label>
+                                            <img src="/images/icons/subaccount.png"/>
+                                            <label>Sub Accounts</label>
                                         </div>
+
                                         <img id="personal-layer-2-slide-right" src="/images/icons/arrow-right-black.svg"/>
 
                                     </div>
@@ -157,56 +158,56 @@ class Personal extends Component {
 
         let slider_values=[
             {
-                title:"Onboarding",
-                url:"/images/icons/customers.png",
+                title:"Recurring Transactions",
+                url:"/images/icons/recurring-transaction.png",
                 image:"/images/personal_frame_details.png",
                 heading:"Sign up in minutes",
                 content1:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
                 content2:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna"
             },
             {
-                title:"Invoices",
-                url:"/images/icons/invoice.png",
+                title:"Utility Payment",
+                url:"/images/icons/utility-payment.png",
                 image:"/images/business_frame_details.png",
                 heading:"Create and send Invoices",
                 content1:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
                 content2:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna"
             },
             {
-                title:"Sub Accounts",
-                url:"/images/icons/sub-accounts.png",
+                title:"Cashback",
+                url:"/images/icons/cashback.png",
                 image:"/images/personal_frame_details.png",
                 heading:"Create multiple Sub accounts",
                 content1:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
                 content2:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna"
             },
             {
-                title:"Payroll",
-                url:"/images/icons/sub-accounts.png",
+                title:"Card Transactions",
+                url:"/images/icons/card-transactions.png",
                 image:"/images/business_frame_details.png",
                 heading:"Sign up in minutes 2",
                 content1:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
                 content2:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna"
             },
             {
-                title:"Account Report",
-                url:"/images/icons/account-report.png",
+                title:"Sub Accounts",
+                url:"/images/icons/subaccount.png",
                 image:"/images/personal_frame_details.png",
                 heading:"Sign up in minutes 3",
                 content1:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
                 content2:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna"
             },
             {
-                title:"Pay Slip",
-                url:"/images/icons/payslip.png",
+                title:"Analytics",
+                url:"/images/icons/analytics.png",
                 image:"/images/business_frame_details.png",
                 heading:"Sign up in minutes 4",
                 content1:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
                 content2:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna"
             },
             {
-                title:"Product & Services",
-                url:"/images/icons/product-services.png",
+                title:"Borderless Transfer",
+                url:"/images/icons/borderless-transfer.png",
                 image:"/images/personal_frame_details.png",
                 heading:"Sign up in minutes 5",
                 content1:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",

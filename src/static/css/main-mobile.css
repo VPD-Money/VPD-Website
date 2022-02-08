@@ -1,3 +1,9 @@
-@import-normalize;
+@import 'mobile/_index.css';
+/*@import 'mobile/_contact.css';*/
+/*@import 'mobile/_about.css';*/
+/*@import 'mobile/_personal.css';*/
+/*@import 'mobile/_business.css';*/
+/*@import 'mobile/_careers.css';*/
+/*@import 'mobile/_terms.css';*/
+/*@import 'mobile/_privacy.css';*/
 
-@import "mobile/_index.css";

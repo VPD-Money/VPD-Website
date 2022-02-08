@@ -1,3 +1,360 @@
-@import-normalize;
-
 @import 'desktop/_index.css';
+@import 'desktop/_contact.css';
+@import 'desktop/_about.css';
+@import 'desktop/_personal.css';
+@import 'desktop/_business.css';
+@import 'desktop/_careers.css';
+@import 'desktop/_terms.css';
+@import 'desktop/_privacy.css';
+
+
+
+.NavHeader
+{
+    width: 100%;
+    background: transparent;
+    overflow: hidden;
+    display: flex;
+    max-height: 10vh;
+    position: fixed;
+    z-index: 99999;
+}
+
+.NavHeader-nosticky
+{
+    width: 100%;
+    background: transparent;
+    overflow: hidden;
+    display: flex;
+    max-height: 10vh;
+    position: absolute;
+    z-index: 99999;
+}
+
+.Navlinks
+{
+    flex: 1;
+    text-align: right;
+    margin-right: 1vw;
+    padding-top: 3vh;
+    position: relative;
+}
+
+.MainLogo
+{
+    background: #002E45;
+    border-radius: 0px 0px 10px 10px;
+    padding: 25px;
+    width: 100%;
+    max-width: 13vw;
+    margin-left: 5vw;
+    flex: 1;
+    text-align: center;
+}
+
+.MainLogo img
+{
+    max-width: 8.5vw;
+}
+
+.MainLogo-deep img, .MainLogo-light img
+{
+    max-width: 9vw;
+}
+
+.Navlinks a
+{
+    list-style: none;
+    font: normal normal normal 0.85em Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 30px 15px 16px;
+    text-decoration: none;
+}
+
+
+.Navlinks button
+{
+    text-align: left;
+    font: normal normal 400 0.85em Poppins;
+    letter-spacing: 0px;
+    background: #0BA830;
+    color: white;
+    border-radius: 12px;
+    padding: 7px 0px 7px 20px;
+    width: 11em;
+    height: 2.8em;
+    box-shadow: none;
+    margin-left: 1vw;
+    margin-right: 50px;
+    border: none;
+}
+
+.Navlinks button img{
+    color: white;
+    width: 0.8em;
+    margin-left: 15px;
+}
+
+.MainLogo-light
+{
+    padding: 25px;
+    width: 100%;
+    max-width: 13vw;
+    margin-left: 7.5vw;
+    flex: 1;
+    text-align: center;
+}
+
+.Navlinks-light
+{
+    flex: 1;
+    text-align: right;
+    margin-left: 60px;
+    padding-top: 30px;
+    position: relative;
+}
+
+.Navlinks-light a
+{
+    list-style: none;
+    font: normal normal normal 0.85em Poppins;
+    letter-spacing: 0px;
+    color: #505050;
+    text-align: center;
+    padding: 20px 40px 15px 16px;
+    text-decoration: none;
+}
+
+.Navlinks-light button
+{
+    text-align: left;
+    font: normal normal 400 0.85em Poppins;
+    letter-spacing: 0px;
+    background: #0BA830;
+    color: white;
+    border-radius: 12px;
+    padding: 7px 20px 7px 20px;
+    width: 11.5em;
+    height: 2.8em;
+    box-shadow: none;
+    margin-left: 1vw;
+    margin-right: 8vw;
+    border: none;
+}
+
+.Navlinks-light button img{
+    color: white;
+    width: 0.8em;
+    margin-left: 15px;
+}
+
+.Navlinks-light-active
+{
+    color: #0993DC!important;
+}
+
+
+.MainLogo-deep
+{
+    padding: 25px;
+    width: 100%;
+    max-width: 13vw;
+    margin-left: 7.5vw;
+    flex: 1;
+    text-align: center;
+}
+
+.Navlinks-deep
+{
+    flex: 1;
+    text-align: right;
+    margin-left: 60px;
+    padding-top: 30px;
+    position: relative;
+}
+
+.Navlinks-deep a
+{
+    list-style: none;
+    font: normal normal normal 0.85em Poppins;
+    letter-spacing: 0px;
+    color: #0993DC;
+    text-align: center;
+    padding: 20px 40px 15px 16px;
+    text-decoration: none;
+}
+
+.Navlinks-deep button
+{
+    text-align: left;
+    font: normal normal 400 0.85em Poppins;
+    letter-spacing: 0px;
+    background: #0BA830;
+    color: white;
+    border-radius: 12px;
+    padding: 7px 20px 7px 20px;
+    width: 11em;
+    height: 2.8em;
+    box-shadow: none;
+    margin-left: 1vw;
+    margin-right: 8vw;
+    border: none;
+}
+
+
+.Navlinks-deep button img{
+    color: white;
+    width: 0.8em;
+    margin-left: 15px;
+}
+
+.Navlinks-deep-active
+{
+    color: #FFFFFF!important;
+}
+
+
+.footer
+{
+    background: #000A0F 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    z-index:99;
+    position:relative;
+    margin-right: -15px;
+}
+
+.footer-header
+{
+    text-align: center;
+}
+
+.footer-header label
+{
+    font: normal normal bold 3em Lora;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    width: 85vw;
+    margin-top: 5vh;
+}
+
+.footer-section-2
+{
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.footer-section-2 img
+{
+    width: 15vw;
+}
+
+.footer-section-2 img:last-child
+{
+    padding-left: 2.5vw;
+}
+
+.footer-section-3
+{
+    margin-top: 18vh;
+    display: flex;
+}
+
+.footer-section-3-group:first-child
+{
+    margin-left: 10vw;
+}
+
+.footer-section-3-group
+{
+    margin-left: 8.5vw;
+
+}
+
+
+.footer-section-3-group-sub
+{
+    margin-top: 5vh;
+}
+
+
+.footer-section-3-group a
+{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-section-3-group-sub img
+{
+    width: 1.2vw;
+    margin-right: 0.5vw;
+}
+
+.footer-section-3-group label
+{
+    font: normal normal normal 0.8em Poppins;
+    letter-spacing: 0px;
+    color: rgba(255, 255, 255, 0.7);
+    display: block;
+    margin-top: 2vh;
+    cursor: inherit;
+}
+
+.footer-section-3-group a
+{
+    cursor: pointer;
+}
+
+.footer-section-3-group .footer-section-3-group-category
+{
+    font: normal normal normal 1em Poppins;
+    letter-spacing: 0px;
+    color: #5A5A5A;
+    display: block;
+    margin-bottom: 3vh;
+}
+
+.footer-section-3-group-socials
+{
+    display: flex;
+}
+
+.footer-section-3-group-socials img
+{
+    width: 1.5vw;
+    margin-right: 1vw;
+}
+
+.footer-section-4
+{
+    margin-top: 12vh;
+    display: flex;
+}
+
+.footer-section-3-group-last
+{
+    margin-left: 10vw;
+}
+
+.footer-section-3-group-last img
+{
+    width: 8vw;
+}
+
+.footer-section-3-group-last div
+{
+    width: 80vw;
+    border-bottom: 1px solid #5A5A5A;
+    margin-top: 5vh;
+}
+
+.footer-section-3-group-last label
+{
+    font: normal normal normal 0.8em Poppins;
+    letter-spacing: 0px;
+    margin-top: 2vh;
+    color: #5A5A5A;
+}

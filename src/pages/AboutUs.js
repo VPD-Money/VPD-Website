@@ -34,7 +34,9 @@ class AboutUs extends Component {
         else if (isDesktopOrLaptop) this.screenImageLetter = '_d';
         else this.screenImageLetter = '_b';
 
-        return <Main title={"About Us"} description={"A bank of you"}>
+        return <Main title={"Meet the team"} description={"Meet the team behind the top business bank app \n" +
+        "and personal banking app for the unbanked in Africa and beyond. \n" +
+        "Get to know us better today."}>
             <HelmetProvider>
                 <div className="row container-fluid">
                     <div className="layer-wrapper">
@@ -62,20 +64,46 @@ class AboutUs extends Component {
                                 <img src={"/images/about_group" + (this.screenImageLetter) + ".png"}/>
                             </div>
                             <div className="about-layer-2-section">
-                                <label>
-                                    The Hub of Banking
-                                </label>
-                                <label>
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                                </label>
-                                <label>
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                                </label>
-                                <label>
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                                </label>
-                            </div>
+                                <div className="about-layer-2-section-group">
+                                    <label>
+                                        The Hub of Banking
+                                    </label>
+                                </div>
 
+                                <div className="about-layer-2-section-group">
+                                    <img src="/images/icons/about-hub-1.svg"/>
+                                    <div className="about-layer-2-section-group-content">
+                                      <span>Lower Costs</span>
+                                      <label>
+                                          VPD provides the versatility you need to build a business or personal bank account without the need for additional tools and processes to make the most of your money.
+                                          With reduced costs and excellent usability, it's as easy as opening your app to move money, make payments or convert your cash as you cross borders. Simply select the services or applications you require to make your personal bank work best for you.
+                                      </label>
+                                    </div>
+                                </div>
+
+
+                                <div className="about-layer-2-section-group">
+                                    <img src="/images/icons/about-hub-2.svg"/>
+                                    <div className="about-layer-2-section-group-content">
+                                        <span>Better User Experience</span>
+                                        <label>
+                                            What makes VPD the best banking experience for you? We allow you to build your own banking experience that's anything but ordinary. With an intuitive design, increased functionality and no limits with a single application, there's a reason we're the bank of you. Simply select the product and services you need to enjoy a customised banking experience.
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div className="about-layer-2-section-group">
+                                    <img src="/images/icons/about-hub-3.svg"/>
+                                    <div className="about-layer-2-section-group-content">
+                                        <span>Borderless Reach</span>
+                                        <label>
+                                            With VPD, there are no limits. With completely borderless and frictionless digital banking, you don't need to worry about multiple accounts and currencies. Our sub-account system makes VPD as flexible as you need to be, giving you the ability to convert money freely for full cross-border functionality. We provide financial freedom in a way that benefits you the most, allowing you to build your own personal bank.
+                                        </label>
+                                    </div>
+                                </div>
+
+
+                            </div>
                         </div>
 
                         <div className="about-layer-3">
@@ -93,12 +121,6 @@ class AboutUs extends Component {
                             </div>
 
                             <div className="about-layer-3-section">
-                                <img src="/images/icons/cards.png"/>
-                                <label>35k Users</label>
-                                <label>Virtual Card</label>
-                            </div>
-
-                            <div className="about-layer-3-section">
                                 <img src="/images/icons/visa.png"/>
                                 <label>Exclusive Partnership</label>
                                 <label>with Visa</label>
@@ -110,11 +132,17 @@ class AboutUs extends Component {
                                 <label>at the CEMEA Visa Everywhere Initiative</label>
                             </div>
 
+                            <div className="about-layer-3-section">
+                                <img src="/images/icons/inclusive_fintech.png"/>
+                                <label>Winner</label>
+                                <label>Inclusive Fintech 50 (IF50) competition’s 2021 cohort.</label>
+                            </div>
+
                         </div>
 
                         <div className="about-layer-4">
                             <label className="about-layer-4-maintext">Our Team</label>
-                            <label className="about-layer-4-subtext">We are a group of fintech professionals united by one goal: To build and introduce a first class digital banking experience that provides an alternative to traditional banking for individuals, businesses in Africa as well as the African diasporas community.</label>
+                            <label className="about-layer-4-subtext">Founded by fintech professionals and staffed by passionate, finance-forward specialists, our team at VPD works together to create the bank of you. Our digital banking experience is built upon our own histories and experiences, providing financial freedom to individuals and businesses. Customised, borderless and low cost online banking, designed by the experts for you.</label>
 
                             <div className="about-layer-4-section">
                                 <div className="about-layer-4-section-element">

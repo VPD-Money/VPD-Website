@@ -61,7 +61,7 @@ class Business extends Component {
                                     </div>
                                    <div className="business-layer-1-component-sub-1-mini-2">
                                        <button>
-                                           Start here &nbsp;&nbsp;&nbsp;<img src="/images/icons/arrow-right-white.svg"/>
+                                           Get the App &nbsp;&nbsp;&nbsp;<img src="/images/icons/arrow-right-white.svg"/>
                                        </button>
                                        <div className="component-icon-group">
                                            <img label="1" className="component-icon" src="/images/icons/payroll.png"/>

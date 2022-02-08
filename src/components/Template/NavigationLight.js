@@ -29,7 +29,7 @@ class NavigationLight extends Component {
         if (isMobile && isPortrait || isTablet && isPortrait) this.showBurger = true;
 
         return <header className="NavHeader-nosticky">
-            <div className="MainLogo-light"><Link to='/'> <img src="/images/main_logo.svg"/></Link></div>
+            <div className="MainLogo-light"><Link to='/'> <img src="/images/main_logo_plain.svg"/></Link></div>
             {!this.showBurger &&
             <div className="Navlinks-light">
                 {routes.filter((l) => !l.index).map((l) => (

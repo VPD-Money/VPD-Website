@@ -117,11 +117,11 @@
 
 .business-layer-1-component-sub-1-mini-1
 {
-    margin-top: 8vh;
+    margin-top: 4vh;
     color: #FFFFFF;
     display: flex;
     width: 70vw;
-    height: 3vw;
+    height: 5vw;
     padding-top:4vh;
     padding-left:21vw;
     border-radius: 12px 12px 24px 12px;
@@ -132,18 +132,18 @@
 .business-layer-1-component-sub-1-mini-1 label
 {
     color: transparent;
-    font: normal normal 400 1em Poppins;
+    font: normal normal 400 0.9em Poppins;
+    width: 4vw;
     text-align: center;
-
 }
 
 
-.business-layer-1-component-sub-1-mini-1 label:nth-child(2),
+.business-layer-1-component-sub-1-mini-1 label:nth-child(1),
 .business-layer-1-component-sub-1-mini-1 label:nth-child(3),
-.business-layer-1-component-sub-1-mini-1 label:nth-child(5),
-.business-layer-1-component-sub-1-mini-1 label:nth-child(7)
+.business-layer-1-component-sub-1-mini-1 label:nth-child(4),
+.business-layer-1-component-sub-1-mini-1 label:nth-child(6)
 {
-    margin-left: -1.2vw;
+    padding-top: 3vh;
 }
 
 
@@ -316,7 +316,7 @@
 {
     text-align: left;
     display: block;
-    font: normal normal 500 1em Poppins;
+    font: normal normal 500 0.8em Poppins;
     letter-spacing: 0px;
     color: #505050;
     margin-top: 1.5vh;

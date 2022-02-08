@@ -193,7 +193,7 @@
 
 .layer-1-sub-text
 {
-  font: normal normal normal 1.5em Poppins;
+  font: normal normal normal 1.2em Poppins;
   letter-spacing: 0px;
   position: absolute;
   color: #FFFFFF;
@@ -201,7 +201,7 @@
   top: 30vh;
   left: 10vw;
   width: 100%;
-  max-width: 25vw;
+  max-width: 22vw;
   text-wrap: normal;
 }
 
@@ -316,14 +316,21 @@
   border: 2px solid #00A6FF33;
   border-radius: 10px;
   opacity: 1;
-  padding: 2em 4.2em 1em 4em;
-  width: 10vw;
-  margin: auto auto;
+  padding: 2em 2em 1em 2em;
+  height: 17.5vh;
+  width: 8.5vw;
   max-height: 13em;
+  text-align: center;
+  vertical-align: center;
 }
 
 .iphone-feature-pod:hover{
   box-shadow: 0px 0px 20px #00A6FF;
+}
+
+.iphone-feature-pod img
+{
+  width: 2.5vw;
 }
 
 .layer-2-main-iphone-group .col-4:nth-child(2) .iphone-feature-pod:first-child
@@ -431,7 +438,7 @@
 {
   padding-top: 10vh;
   padding-left: 6vw;
-  font: normal normal normal 1.2em Poppins;
+  font: normal normal normal 1.1em Poppins;
   color: #24A361;
 }
 
@@ -451,8 +458,8 @@
 .layer-3-ribbon-groups-title-image img
 {
   width: 100%;
-  max-width: 70px;
-  margin-top: 1vh;
+  max-width: 3vw;
+  margin-top: 2vh;
 }
 
 .layer-3-ribbon-groups-title
@@ -467,11 +474,11 @@
 
 .layer-3-ribbon-groups-title label
 {
-  margin-top: 10px;
+  margin-top: 2vh;
   margin-left: 10px;
   line-height: 30px;
   text-align: left;
-  font: normal normal 600 1.8em Poppins;
+  font: normal normal 600 1.5em Poppins;
   letter-spacing: -0.9px;
   color: #195E80;
 }
@@ -481,8 +488,8 @@
   position: relative;
   display: block;
   text-align: left;
-  font: normal normal normal 1.3em Poppins;
-  padding-top: 25px;
+  font: normal normal normal 1.2em Poppins;
+  padding-top: 3vh;
   letter-spacing: 0px;
   color: #505050;
   width: 20vw;
@@ -527,11 +534,12 @@
 }
 .layer-4-section-body
 {
-  font: normal normal 500 1.4em Poppins;
+  font: normal normal 500 1.2em Poppins;
   letter-spacing: 0px;
   color: #505050;
   width: 80%;
   padding-top: 4vh;
+  line-height: 2em;
 }
 
 .layer-4-group .layer-4-section:first-child
@@ -542,12 +550,13 @@
 .layer-4-section-button button
 {
   background: #24A361;
-  font: normal normal 400 1.2em Poppins;
+  font: normal normal 400 1em Poppins;
   border: none;
   border-radius: 10px;
   color: white;
   padding: 1em 2em 1em 2em;
   margin-top: 3.5vh;
+  cursor: pointer;
 }
 
 /*##################### Layer 5 Section ##################*/
@@ -618,14 +627,15 @@
 .layer-5-group .layer-5-section-1 div, .layer-5-group .layer-5-section-2 div
 {
   display: none;
-  font: normal normal 300 18px/35px Poppins;
+  font: normal normal 300 1em Poppins;
   letter-spacing: 0px;
   color: #FFFFFF;
   position: absolute;
-  margin-top: -40vh;
+  margin-top: -45vh;
   margin-left: 25vw;
   text-wrap: normal;
   width: 20vw;
+  line-height: 2em;
 }
 
 .layer-5-group .layer-5-section-1 div button, .layer-5-group .layer-5-section-2 div button
@@ -643,6 +653,12 @@
   border-radius: 10px;
   margin-top: 3vh;
   display: block;
+  cursor: pointer;
+}
+
+.layer-5-group .layer-5-section-1 div a, .layer-5-group .layer-5-section-2 div a
+{
+  text-decoration: none;
 }
 
 .layer-5-section-2

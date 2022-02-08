@@ -62,7 +62,7 @@ class Contact extends Component {
                                     <label>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur</label>
                                 </div>
                                 <div className="careers-layer-3-group-section-2">
-                                    <img src={"/images/about_group" + (this.screenImageLetter) + ".png"}/>
+                                    <img src={"/images/career_group" + (this.screenImageLetter) + ".png"}/>
                                 </div>
                             </div>
                         </div>
@@ -79,21 +79,20 @@ class Contact extends Component {
                                 <div className="careers-layer-4-group-box">
                                     <img src="/images/icons/career-values-integrity.svg"/>
                                     <label className="careers-layer-4-group-box-title">Integrity</label>
-                                    <label className="careers-layer-4-group-box-text">Lorem ipsum dolor sit amet, conur sadipscing elitr, sed diam nonumy eirmod tempor invnt ut labore et</label>
+                                    <label className="careers-layer-4-group-box-text">We are honest, open, and uphold the highest standards of integrity as well as personal excellence in all of our actions.</label>
                                 </div>
 
                                 <div className="careers-layer-4-group-box">
-                                    <img src="/images/icons/career-values-honesty.svg"/>
-                                    <label className="careers-layer-4-group-box-title">Honesty</label>
-                                    <label className="careers-layer-4-group-box-text">Lorem ipsum dolor sit amet, conur sadipscing elitr, sed diam nonumy eirmod tempor invnt ut labore et</label>
+                                    <img src="/images/icons/career-values-security.svg"/>
+                                    <label className="careers-layer-4-group-box-title">Security</label>
+                                    <label className="careers-layer-4-group-box-text">We are honest, open and uphold the highest standards of personal excellence in all of our actions.</label>
                                 </div>
 
                                 <div className="careers-layer-4-group-box">
-                                    <img src="/images/icons/career-values-teamwork.svg"/>
+                                    <img src="/images/icons/career-values-team.svg"/>
                                     <label className="careers-layer-4-group-box-title">Teamwork</label>
-                                    <label className="careers-layer-4-group-box-text">Lorem ipsum dolor sit amet, conur sadipscing elitr, sed diam nonumy eirmod tempor invnt ut labore et</label>
+                                    <label className="careers-layer-4-group-box-text">We work together, across boundaries, to meet the needs of our customers and to reach our goals.</label>
                                 </div>
-
 
                             </div>
 
@@ -101,19 +100,19 @@ class Contact extends Component {
                                 <div className="careers-layer-4-group-box">
                                     <img src="/images/icons/career-values-satisfaction.svg"/>
                                     <label className="careers-layer-4-group-box-title">Customer Satisfaction</label>
-                                    <label className="careers-layer-4-group-box-text">Lorem ipsum dolor sit amet, conur sadipscing elitr, sed diam nonumy eirmod tempor invnt ut labore et</label>
+                                    <label className="careers-layer-4-group-box-text">We develop products and provide services that add value to our customers.<br/>&nbsp;</label>
                                 </div>
 
                                 <div className="careers-layer-4-group-box">
-                                    <img src="/images/icons/career-values-trust.svg"/>
-                                    <label className="careers-layer-4-group-box-title">Trustworthiness</label>
-                                    <label className="careers-layer-4-group-box-text">Lorem ipsum dolor sit amet, conur sadipscing elitr, sed diam nonumy eirmod tempor invnt ut labore et</label>
+                                    <img src="/images/icons/career-values-respect.svg"/>
+                                    <label className="careers-layer-4-group-box-title">Respect</label>
+                                    <label className="careers-layer-4-group-box-text">We value each other, encourage development and reward excellence.</label>
                                 </div>
 
                                 <div className="careers-layer-4-group-box">
                                     <img src="/images/icons/career-values-accountability.svg"/>
                                     <label className="careers-layer-4-group-box-title">Accountability</label>
-                                    <label className="careers-layer-4-group-box-text">Lorem ipsum dolor sit amet, conur sadipscing elitr, sed diam nonumy eirmod tempor invnt ut labore et</label>
+                                    <label className="careers-layer-4-group-box-text">We take personal responsibility for delivering on our commitments.</label>
                                 </div>
 
 

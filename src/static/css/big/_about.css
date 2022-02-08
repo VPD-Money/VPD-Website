@@ -73,47 +73,72 @@
     background: #F3F5F6;
     display: inline-flex;
     width: 100vw;
-    height: 100vh;
+    padding-bottom: 15vh;
 }
 
 .about-layer-2-section:first-child
 {
     width: 50vw;
     z-index: 99999;
-    margin-top: 20vh;
-    margin-left: -2vw;
+    margin-top: 16vh;
 }
 
 .about-layer-2-section:last-child
 {
     width: 50vw;
     margin-top: 10vh;
-    margin-left: 10vw;
+    margin-left: 0vw;
     padding-top: 4vw;
     padding-right: 15vw;
 }
 
-.about-layer-2-section img
+.about-layer-2-section:first-child img
 {
     width: auto;
-    max-width: 40vw;
+    max-width: 35vw;
     border: none;
     padding-top: 10vh;
+    margin-left: -2vw;
 }
 
 .about-layer-2-section label:first-child
 {
-    font: normal normal bold 3em Poppins;
+    font: normal normal bold 2.5em Poppins;
     letter-spacing: 0px;
     color: #002E45;
+    margin-left: 3.5vw;
 }
-.about-layer-2-section label
+.about-layer-2-section-group img
 {
-    font: normal normal normal 1.3em Poppins;
-    line-height: 3.2vh;
-    margin-top: 2.5vh;
-    color: #505050;
+    margin-top: -8vh;
+    margin-right: 1.2vw;
+    width: 4.5vw;
 }
+
+.about-layer-2-section-group
+{
+    display: flex;
+    margin-left: -5vw;
+}
+
+.about-layer-2-section-group-content span
+{
+    display: block;
+    font: normal normal bold 1.2em Poppins;
+    letter-spacing: 0px;
+    color: #176A97;
+    margin-top: 5vh;
+}
+
+.about-layer-2-section-group-content label
+{
+    font: normal normal normal 1em Poppins;
+    letter-spacing: 0px;
+    color: #505050;
+    line-height: 1.8em;
+    margin-top: 1vh;
+}
+
 
 .about-layer-3
 {
@@ -121,7 +146,7 @@
     display: inline-flex;
     width: 100vw;
     height: 40vh;
-    padding-left: 14.5vw;
+    padding-left: 12.5vw;
     padding-right: 10vw;
     padding-top: 1.5vw;
 }
@@ -137,18 +162,22 @@
 .about-layer-3-section img
 {
     display: block;
-    width: 5vw;
-    margin-top: -1vh;
-    margin-left: 4vw;
+    width: 4vw;
+    margin-top: 1vh;
+    margin-left: 2.5vw;
 
 }
 
+.about-layer-3-section:first-child > img
+{
+    margin-left: 3.5vw;
+}
 .about-layer-3-section:first-child > label
 {
     display: inline-block;
     color: #176A97;
     font: normal normal bold 1.6em Poppins;
-    margin: 1vh 8.5vw 0vh 4.5vw;
+    margin: 1vh 8.5vw 0vh 4vw;
 
 }
 
@@ -156,8 +185,8 @@
 {
     display: inline-block;
     color: #176A97;
-    font: normal normal normal 1.3em Poppins;
-    margin: -0.5vh 0vw 0vh 5.25vw;
+    font: normal normal normal 1em Poppins;
+    margin: -0.5vh 0vw 0vh 4vw;
 }
 
 .about-layer-3-section:nth-child(2) > label
@@ -165,7 +194,7 @@
     display: block;
     color: #176A97;
     font: normal normal bold 1.6em Poppins;
-    margin: 1vh 0vw 0vh 3vw;
+    margin: 1vh 0vw 0vh 2.5vw;
     width: 15vw;
 
 }
@@ -174,22 +203,48 @@
 {
     display: block;
     color: #176A97;
-    font: normal normal normal 1.3em Poppins;
-    margin: -0.5vh 0vw 0vh 1vw;
-    width: 20vw;
+    font: normal normal normal 1em Poppins;
+    margin: 0.5vh 0vw 0vh 2.5vw;
+    width: 10vw;
+    line-height: 1em;
 }
+
+/*.about-layer-3-section:nth-child(3) > img*/
+/*{*/
+/*    width: 4vw;*/
+/*}*/
+/*.about-layer-3-section:nth-child(3) > label*/
+/*{*/
+/*    display: block;*/
+/*    color: #176A97;*/
+/*    font: normal normal bold 1.6em Poppins;*/
+/*    margin: 1vh 0vw 0vh 3.5vw;*/
+/*    width: 15vw;*/
+
+/*}*/
+
+/*.about-layer-3-section:nth-child(3) > label:last-child*/
+/*{*/
+/*    display: block;*/
+/*    color: #176A97;*/
+/*    font: normal normal normal 1.3em Poppins;*/
+/*    margin: -0.5vh 0vw 0vh 3.5vw;*/
+/*    width: 20vw;*/
+/*}*/
 
 .about-layer-3-section:nth-child(3) > img
 {
-    width: 4vw;
+    width: 5vw;
+    margin-top: 3vh;
 }
 .about-layer-3-section:nth-child(3) > label
 {
     display: block;
     color: #176A97;
-    font: normal normal bold 1.6em Poppins;
-    margin: 1vh 0vw 0vh 3.5vw;
-    width: 15vw;
+    font: normal normal bold 1.5em Poppins;
+    margin: 3.5vh 0vw 0vh 3vw;
+    width: 10vw;
+    line-height: 1em;
 
 }
 
@@ -197,24 +252,25 @@
 {
     display: block;
     color: #176A97;
-    font: normal normal normal 1.3em Poppins;
-    margin: -0.5vh 0vw 0vh 3.5vw;
+    font: normal normal normal 1em Poppins;
+    margin: 0vh 0vw 0vh 3vw;
     width: 20vw;
 }
 
 .about-layer-3-section:nth-child(4) > img
 {
-    width: 5vw;
-    margin-top: 3vh;
+    margin-left: 3.5vw;
+    margin-top: -2vh;
+    width: 6vw;
 }
+
 .about-layer-3-section:nth-child(4) > label
 {
     display: block;
     color: #176A97;
-    font: normal normal bold 1.5em Poppins;
-    margin: 3.5vh 0vw 0vh 4vw;
-    width: 10vw;
-    line-height: 1em;
+    font: normal normal bold 1.6em Poppins;
+    margin: 0vh 0vw 0vh 4vw;
+    width: 15vw;
 
 }
 
@@ -222,9 +278,17 @@
 {
     display: block;
     color: #176A97;
-    font: normal normal normal 1.3em Poppins;
-    margin: 0vh 0vw 0vh 5vw;
-    width: 20vw;
+    font: normal normal normal 1em Poppins;
+    margin: 0vh 0vw 0vh 4vw;
+    width: 12vw;
+    line-height: 1.2em;
+}
+
+.about-layer-3-section:nth-child(5) > img
+{
+    margin-left: 4vw;
+    margin-top: 3vh;
+    width: 6vw;
 }
 
 .about-layer-3-section:nth-child(5) > label
@@ -232,7 +296,7 @@
     display: block;
     color: #176A97;
     font: normal normal bold 1.6em Poppins;
-    margin: 0.5vh 0vw 0vh 4.5vw;
+    margin: 1.5vh 0vw 0vh 4vw;
     width: 15vw;
 
 }
@@ -241,8 +305,8 @@
 {
     display: block;
     color: #176A97;
-    font: normal normal normal 1.2em Poppins;
-    margin: 0vh 0vw 0vh 3vw;
+    font: normal normal normal 1em Poppins;
+    margin: 0vh 0vw 0vh 4vw;
     width: 12vw;
     line-height: 1.2em;
 }
@@ -267,9 +331,9 @@
 .about-layer-4 .about-layer-4-subtext
 {
     margin-top: 2vh;
-    margin-left: 27vw;
+    margin-left: 26vw;
     text-align: center;
-    font: normal normal normal 1.5em Poppins;
+    font: normal normal normal 1.2em Poppins;
     letter-spacing: 0px;
     color: #505050;
     width: 50vw;

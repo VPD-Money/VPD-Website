@@ -42,7 +42,9 @@ class Index extends Component {
        else if (isDesktopOrLaptop) this.screenImageLetter = '_d';
        else this.screenImageLetter = '_b';
 
-       return <Main description={"A bank of you"}>
+       return <Main title={"Discover the bank of you"} description={"VPD Money delivers high-quality personal \n" +
+       "banking services and business bank apps for the unbanked in \n" +
+       "Africa and beyond. Discover the bank of you today."}>
            {!slideCompleted && <MainSplashScreen  onSlideCompleted={ () => { this.setState({slideCompleted: true }); localStorage.setItem("slider-completed", "true"); } } /> }
            {
                slideCompleted &&
@@ -55,7 +57,7 @@ class Index extends Component {
                                    <div className="bannerFrame">
                                        <div class="layer-1-overlay"></div>
                                        <div className="layer-1-sub-text">
-                                           Create the banking experience that suits your needs. Break through
+                                           VPD Money delivers high-quality personal banking services and business bank apps for the unbanked in Africa and beyond. Discover the bank of you today
                                        </div>
 
                                        <div className="main_banner_text_group">
@@ -91,58 +93,58 @@ class Index extends Component {
 
                                    <div className="row layer-2-main-iphone-group">
                                            <div className="col-4">
-                                              <div className="iphone-feature-pod">
+                                              <div preview={"/images/iphone_screens/iphone_dashboard"}  className="iphone-feature-pod">
                                                  <img src={"/images/icons/cashback.svg"}/>
                                                  <label>Cashback</label>
                                                </div>
 
-                                               <div className="iphone-feature-pod">
+                                               <div preview={"/images/iphone_screens/iphone_dashboard"}  className="iphone-feature-pod">
                                                    <img src={"/images/icons/transfer.svg"}/>
                                                    <label>Borderless Transfer</label>
                                                </div>
 
-                                               <div className="iphone-feature-pod">
+                                               <div preview={"/images/iphone_screens/iphone_dashboard_ai_savings"}  className="iphone-feature-pod">
                                                    <img src={"/images/icons/ai_savings.svg"}/>
                                                    <label>AI Savings</label>
                                                </div>
 
-                                               <div className="iphone-feature-pod">
-                                                   <img src={"/images/icons/pension.svg"}/>
-                                                   <label>Pension Balance</label>
+                                               <div preview={"/images/iphone_screens/iphone_dashboard"}  className="iphone-feature-pod">
+                                                   <img src={"/images/icons/recurring.svg"}/>
+                                                   <label>Recurring Transactions</label>
                                                </div>
 
-                                               <div className="iphone-feature-pod">
-                                                   <img src={"/images/icons/ai_savings.svg"}/>
-                                                   <label>Open Banking</label>
+                                               <div preview={"/images/iphone_screens/iphone_dashboard"}  className="iphone-feature-pod">
+                                                   <img src={"/images/icons/payment-request.svg"}/>
+                                                   <label>Payment Request</label>
                                                </div>
 
                                            </div>
                                            <div className="col-4">
-                                               <div className="iphone-feature-pod" id="iphone-feature-pod-1">
-                                                   <img src={"/images/icons/ai_savings.svg"}/>
+                                               <div preview={"/images/iphone_screens/iphone_dashboard_utility"}  className="iphone-feature-pod" id="iphone-feature-pod-1">
+                                                   <img src={"/images/icons/utility-payment.svg"}/>
                                                    <label>Utility Payment</label>
                                                </div>
-                                               <img className="iphone_frame" src={"/images/iphone_screens/iphone_dashboard"+ (this.screenImageLetter) + ".png"} />
+                                               <img preview={this.screenImageLetter} className="iphone_frame" src={"/images/iphone_screens/iphone_dashboard"+ (this.screenImageLetter) + ".png"} />
                                                <button>Start Creating your Banking Experience&nbsp; &nbsp;&nbsp;<span><img src="/images/icons/arrow-right-white.svg"/><img src="/images/icons/arrow-right-white.svg"/></span></button>
                                            </div>
                                            <div className="col-4">
-                                              <div className="iphone-feature-pod">
-                                                   <img src={"/images/icons/transfer.svg"}/>
-                                                   <label>Overdraft</label>
+                                              <div preview={"/images/iphone_screens/iphone_dashboard_analytics"} className="iphone-feature-pod">
+                                                   <img  src={"/images/icons/analytics.svg"}/>
+                                                   <label>Analytics</label>
                                                </div>
 
-                                               <div className="iphone-feature-pod">
-                                                   <img src={"/images/icons/ai_savings.svg"}/>
+                                               <div preview={"/images/iphone_screens/iphone_dashboard_multicurrency"}  className="iphone-feature-pod">
+                                                   <img src={"/images/icons/utility-payment.svg"}/>
                                                    <label>Multi Currency</label>
                                                </div>
 
-                                               <div className="iphone-feature-pod">
-                                                   <img src={"/images/icons/pension.svg"}/>
-                                                   <label>Card Transaction</label>
+                                               <div preview={"/images/iphone_screens/iphone_dashboard_card_transaction"} className="iphone-feature-pod">
+                                                   <img src={"/images/icons/credit-card-transactions.svg"}/>
+                                                   <label>Card Transactions</label>
                                                </div>
 
-                                               <div className="iphone-feature-pod">
-                                                   <img src={"/images/icons/ai_savings.svg"}/>
+                                               <div preview={"/images/iphone_screens/iphone_dashboard_investment"}  className="iphone-feature-pod">
+                                                   <img src={"/images/icons/transfer.svg"}/>
                                                    <label>Investment</label>
                                                </div>
                                            </div>
@@ -209,11 +211,10 @@ class Index extends Component {
                                    <div className="layer-4-group">
                                        <div className="layer-4-section">
                                             <label className="layer-4-section-title">ABOUT VPD MONEY</label>
-                                            <label className="layer-4-section-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</label>
-                                            <label className="layer-4-section-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</label>
-                                            <label className="layer-4-section-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</label>
+                                            <label className="layer-4-section-body">VPD Money delivers financial freedom, access and opportunity to the unbanked, offering the borderless flexibility you need to make the most of your money. Welcome to VPD, the bank of you.</label>
+                                            <label className="layer-4-section-body">1.7 billion people worldwide are unbanked. We help individuals from all over the world harness the power of banking and build their own bank with high security, world-class features, and frictionless design that is as flexible as you are. One application is all it takes.</label>
                                             <label className="layer-4-section-button">
-                                                <button>Learn More &nbsp;&nbsp; >></button>
+                                                <Link to="/aboutus"><button>Learn More &nbsp;&nbsp; >></button></Link>
                                             </label>
                                        </div>
                                        <div className="layer-4-section">
@@ -233,7 +234,7 @@ class Index extends Component {
                                          <img src={"/images/iphone_screens/index_personal_phone"+ (this.screenImageLetter) + ".png"}/>
                                          <div>
                                              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                                             <button>Learn More&nbsp;&nbsp;>></button>
+                                             <Link to="/personal"><button>Learn More&nbsp;&nbsp;>></button></Link>
                                          </div>
                                        </div>
                                        <div className="layer-5-section-2">
@@ -242,7 +243,7 @@ class Index extends Component {
                                            <img src={"/images/iphone_screens/index_business_phone"+ (this.screenImageLetter) + ".png"}/>
                                            <div>
                                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                                               <button>Learn More&nbsp;&nbsp;>></button>
+                                               <Link to="/business"><button>Learn More&nbsp;&nbsp;>></button></Link>
                                            </div>
                                        </div>
                                    </div>
@@ -262,42 +263,55 @@ class Index extends Component {
 
     componentDidMount() {
 
-        $("#screen-size").text($(window).width());
+            $(document).on("mouseenter", ".layer-5-section-1 img", function () {
+                $(".layer-5-section-1 img").animate({'margin-left': '6vw'});
+                $(".layer-5-section-1 .headingLabelAlt").show();
+                $(".layer-5-section-1 .headingLabelAlt").animate({'margin-left': '25vw', 'margin-top': ''+((this.screenImageLetter === "_b")? '22vh': '15vh')+''});
+                $(".layer-5-section-1 .headingLabel").css('color', '#012E45');
+                $(".layer-5-section-1 div").fadeIn(800);
+                $(".layer-5-section-1 .headingLabelAlt").fadeIn(10);
 
-        $(document).on("mouseenter",".layer-5-section-1 img",function(){
-            $(".layer-5-section-1 img").animate({'margin-left' : '6vw'});
-            $(".layer-5-section-1 .headingLabelAlt").show();
-            $(".layer-5-section-1 .headingLabelAlt").animate({'margin-left' : '25vw','margin-top' : '22vh'});
-            $(".layer-5-section-1 .headingLabel").css('color' , '#012E45');
-            $(".layer-5-section-1 div").fadeIn(800);
+            });
 
-        });
+            $(document).on("mouseleave", ".layer-5-section-1", function () {
+                $(".layer-5-section-1 img").animate({'margin-left': '15vw'});
+                $(".layer-5-section-1 .headingLabelAlt").animate({'margin-left': '20vw', 'margin-top': '-3.7vh'});
+                $(".layer-5-section-1 .headingLabelAlt").fadeOut(500);
+                setTimeout(function () {
+                    $(".layer-5-section-1 .headingLabel").css('color', '#33B8FF');
+                }, 500);
+                $(".layer-5-section-1 div").fadeOut(100);
+            });
 
-        $(document).on("mouseleave",".layer-5-section-1",function(){
-            $(".layer-5-section-1 img").animate({'margin-left' : '15vw'});
-            $(".layer-5-section-1 .headingLabelAlt").animate({'margin-left' : '20vw','margin-top' : '-3.7vh'});
-            $(".layer-5-section-1 .headingLabelAlt").fadeOut(500);
-            setTimeout(function ()
-                          { $(".layer-5-section-1 .headingLabel").css('color' , '#33B8FF'); } ,500);
-            $(".layer-5-section-1 div").fadeOut(100);
-        });
+            $(document).on("mouseenter", ".layer-5-section-2 img", function () {
+                $(".layer-5-section-2 img").animate({'margin-left': '6vw'});
+                $(".layer-5-section-2 .headingLabelAlt").show();
+                $(".layer-5-section-2 .headingLabelAlt").animate({'margin-left': '25vw', 'margin-top': ''+((this.screenImageLetter === "_b")? '22vh': '15vh')+''});
+                $(".layer-5-section-2 .headingLabel").css('color', '#011B29');
+                $(".layer-5-section-2 div").fadeIn(800);
+                $(".layer-5-section-2 .headingLabelAlt").fadeIn(10);
+            });
 
-        $(document).on("mouseenter",".layer-5-section-2 img",function(){
-            $(".layer-5-section-2 img").animate({'margin-left' : '6vw'});
-            $(".layer-5-section-2 .headingLabelAlt").show();
-            $(".layer-5-section-2 .headingLabelAlt").animate({'margin-left' : '25vw','margin-top' : '22vh'});
-            $(".layer-5-section-2 .headingLabel").css('color' , '#011B29');
-            $(".layer-5-section-2 div").fadeIn(800);
-        });
+            $(document).on("mouseleave", ".layer-5-section-2", function () {
+                $(".layer-5-section-2 img").animate({'margin-left': '15vw'});
+                $(".layer-5-section-2 .headingLabelAlt").animate({'margin-left': '20vw', 'margin-top': '-3.7vh'});
+                $(".layer-5-section-2 .headingLabelAlt").fadeOut(500);
+                setTimeout(function () {
+                    $(".layer-5-section-2 .headingLabel").css('color', '#33B8FF');
+                }, 500);
+                $(".layer-5-section-2 div").fadeOut(100);
+            });
 
-        $(document).on("mouseleave",".layer-5-section-2",function(){
-            $(".layer-5-section-2 img").animate({'margin-left' : '15vw'});
-            $(".layer-5-section-2 .headingLabelAlt").animate({'margin-left' : '20vw','margin-top' : '-3.7vh'});
-            $(".layer-5-section-2 .headingLabelAlt").fadeOut(500);
-            setTimeout(function ()
-            { $(".layer-5-section-2 .headingLabel").css('color' , '#33B8FF'); } ,500);
-            $(".layer-5-section-2 div").fadeOut(100);
-        });
+            $(document).on("mouseenter",".iphone-feature-pod",function () {
+
+                console.log("in");
+                let screenImageLetter = $(".iphone_frame").attr("preview");
+                var path= $(this).attr("preview")+(screenImageLetter)+".png";
+                console.log(path);
+                $(".iphone_frame").attr("src",path);
+
+            });
+
     }
 
 };

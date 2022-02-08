@@ -35,8 +35,8 @@ class MainSplashScreen extends Component {
         autoFocus: boolean('autoFocus', true, this.tooglesGroupId),
         thumbWidth: number('thumbWidth', 100, {}, this.valuesGroupId),
         selectedItem: number('selectedItem', 0, {}, this.valuesGroupId),
-        interval: number('interval', 3000, {}, this.valuesGroupId),
-        transitionTime: number('transitionTime', 1000, {}, this.valuesGroupId),
+        interval: number('interval', 500, {}, this.valuesGroupId),
+        transitionTime: number('transitionTime', 500, {}, this.valuesGroupId),
         swipeScrollTolerance: number('swipeScrollTolerance', 5, {}, this.valuesGroupId),
         ariaLabel: text('ariaLabel', undefined),
     });
@@ -61,9 +61,9 @@ class MainSplashScreen extends Component {
                 this.slideCompleted = true;
 
                 let timeout = setTimeout(function () {
-                   onSlideCompleted();
+                  // onSlideCompleted();
                     clearTimeout(timeout);
-                }, 4000);
+                }, 3000);
 
             }
         }
