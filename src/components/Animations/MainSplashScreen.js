@@ -35,7 +35,7 @@ class MainSplashScreen extends Component {
         autoFocus: boolean('autoFocus', true, this.tooglesGroupId),
         thumbWidth: number('thumbWidth', 100, {}, this.valuesGroupId),
         selectedItem: number('selectedItem', 0, {}, this.valuesGroupId),
-        interval: number('interval', 500, {}, this.valuesGroupId),
+        interval: number('interval', 100, {}, this.valuesGroupId),
         transitionTime: number('transitionTime', 500, {}, this.valuesGroupId),
         swipeScrollTolerance: number('swipeScrollTolerance', 5, {}, this.valuesGroupId),
         ariaLabel: text('ariaLabel', undefined),
@@ -61,7 +61,7 @@ class MainSplashScreen extends Component {
                 this.slideCompleted = true;
 
                 let timeout = setTimeout(function () {
-                  // onSlideCompleted();
+                  onSlideCompleted();
                     clearTimeout(timeout);
                 }, 3000);
 
@@ -108,13 +108,16 @@ class MainSplashScreen extends Component {
                         <div className=" col-6 carouselLastItemGroup">
                             <div className="margin-left">
                                 <div className="align-left">
-                                  <span className="carouselEndingPreText">We are building</span>
+                                  <span className="carouselEndingPreText">We are building the</span>
                                   <span className="carouselFrameCaptionItem1">Bank of</span>
+                                  <span className="carouselFrameCaptionItem1-mobile">Bank</span>
                                 </div>
                             </div>
                         </div>
                         <div className="col-5 carouselLastItemGroup2">
                            <span className="carouselFrameCaptionItem2">You</span>
+                            <span className="carouselFrameCaptionItem2-pre">of</span>
+                           <span className="carouselFrameCaptionItem2-mobile">You</span>
                         </div>
                     </div>
                 </div>

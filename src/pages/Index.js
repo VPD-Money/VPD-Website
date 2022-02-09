@@ -125,7 +125,26 @@ class Index extends Component {
                                                    <label>Utility Payment</label>
                                                </div>
                                                <img preview={this.screenImageLetter} className="iphone_frame" src={"/images/iphone_screens/iphone_dashboard"+ (this.screenImageLetter) + ".png"} />
-                                               <button>Start Creating your Banking Experience&nbsp; &nbsp;&nbsp;<span><img src="/images/icons/arrow-right-white.svg"/><img src="/images/icons/arrow-right-white.svg"/></span></button>
+                                               <button>{(this.screenImageLetter === "_m")? "Get Started" : "Start Creating your Banking Experience"}&nbsp; &nbsp;&nbsp;<span><img src="/images/icons/arrow-right-white.svg"/><img src="/images/icons/arrow-right-white.svg"/></span></button>
+
+                                               <div className="iphone_frame_mobile_cards">
+                                                   <div preview={"/images/iphone_screens/iphone_dashboard_multicurrency"}  className="iphone-feature-pod">
+                                                       <img src={"/images/icons/utility-payment.svg"}/>
+                                                       <label>Multi Currency</label>
+                                                   </div>
+
+                                                   <div preview={"/images/iphone_screens/iphone_dashboard_multicurrency"}  className="iphone-feature-pod">
+                                                       <img src={"/images/icons/utility-payment.svg"}/>
+                                                       <label>Multi Currency</label>
+                                                   </div>
+
+                                                   <div preview={"/images/iphone_screens/iphone_dashboard_multicurrency"}  className="iphone-feature-pod">
+                                                       <img src={"/images/icons/utility-payment.svg"}/>
+                                                       <label>Multi Currency</label>
+                                                   </div>
+
+                                               </div>
+
                                            </div>
                                            <div className="col-4">
                                               <div preview={"/images/iphone_screens/iphone_dashboard_analytics"} className="iphone-feature-pod">

@@ -15,8 +15,8 @@ class Footer extends Component {
              </div>
 
             <div className="footer-section-2">
+                <a href={store_info.appstore}><img src="/images/icons/appstore.svg"/></a>
                 <a href={store_info.playstore}><img src="/images/icons/playstore.svg"/></a>
-                <a href={store_info.appstore}><img src="/images/icons/playstore.svg"/></a>
             </div>
 
             <div className="footer-section-3">
