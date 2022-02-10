@@ -22,6 +22,11 @@
     width: 100vw;
 }
 
+.business-layer-1-component-heading-mobile
+{
+    display: none;
+}
+
 .business-layer-1-component-sub-1
 {
     display: inline-block;

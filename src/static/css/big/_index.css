@@ -329,6 +329,11 @@
   vertical-align: center;
 }
 
+.iphone_frame_mobile_cards
+{
+  display: none;
+}
+
 .iphone-feature-pod:hover{
   box-shadow: 0px 0px 20px #00A6FF;
 }

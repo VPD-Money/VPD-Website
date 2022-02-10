@@ -283,7 +283,7 @@
    font: normal normal 200 1em Poppins;
    letter-spacing: 0px;
    color: #FFFFFF;
-   width: 50vw;
+   width: 60vw;
    margin: 1.5em auto;
    margin-bottom: 2vh;
 }
@@ -296,6 +296,8 @@
    display: flex;
 }
 
+
+
 .iphone-feature-pod
 {
    display: none;
@@ -305,7 +307,7 @@
 .iphone_frame
 {
    width: 80vw;
-   margin-top: -15vh;
+   margin-top: -20vh;
    margin-left: -20vw;
 }
 
@@ -345,37 +347,38 @@
    width: 100vw;
    margin-left: -40vw;
    padding-left: 5vw;
+   z-index: 999;
 }
 
-.iphone_frame_mobile_cards .iphone-feature-pod
+.iphone_frame_mobile_cards .iphone-feature-pod-mobile
 {
    display: block;
 }
 
-.iphone-feature-pod
+.iphone-feature-pod-mobile
 {
    border: 2px solid #00A6FF33;
    border-radius: 10px;
    opacity: 1;
-   padding: 2em 2em 1em 1.5em;
+   padding: 2em 2em 1em 2em;
    height: 16vh;
    width: 30vw;
    max-height: 10em;
    text-align: center;
    vertical-align: center;
-   margin-right: 10vw;
+   margin-right: 6vw;
 }
 
-.iphone-feature-pod:hover{
+.iphone-feature-pod-mobile:hover{
    box-shadow: 0px 0px 20px #00A6FF;
 }
 
-.iphone-feature-pod img
+.iphone-feature-pod-mobile img
 {
    width: 8vw;
 }
 
-.iphone-feature-pod label
+.iphone-feature-pod-mobile label
 {
    text-align: center;
    font: normal normal 500 0.7em Poppins;
@@ -383,4 +386,206 @@
    color: #00A6FF;
    padding-top: 15px;
    width: 10vw;
+}
+
+
+/*##################### Layer 3 Section ##################*/
+
+.layer-3
+{
+   position: relative;
+   background: white;
+   text-align: center;
+   height: 140vh;
+}
+
+.layer-3-ribbon
+{
+   display:block;
+   position: relative;
+}
+
+.layer-3-ribbon-title
+{
+   margin-top: 8vh;
+   font: normal normal 600 1em Poppins;
+   color: #24A361;
+   margin-bottom: 5vh;
+}
+
+.layer-3-ribbon-groups-title-image img
+{
+   width: 100%;
+   max-width: 14vw;
+   margin-top: 2vh;
+}
+
+.layer-3-ribbon-groups-title label
+{
+   margin-top: 2vh;
+   width: 60vw;
+   font: normal normal 600 1.3em Poppins;
+   letter-spacing: -0.9px;
+   color: #195E80;
+   margin-bottom: 1.5vh;
+}
+
+.layer-3-ribbon-groups-content
+{
+   display: block;
+   font: normal normal normal 1em Poppins;
+   letter-spacing: 0px;
+   color: #505050;
+   margin-bottom: 6vh;
+}
+
+
+/*##################### Layer 4 Section ##################*/
+
+.layer-4
+{
+   padding-top: 15vh;
+   background: #EDF2F5;
+   opacity: 1;
+   height: 125vh;
+   text-align: center;
+}
+
+.layer-4-section img
+{
+   width: 90vw;
+   position: absolute;
+   margin-top: -8vh;
+   margin-left: -45vw;
+}
+
+.layer-4-section:first-child
+{
+   position: absolute;
+   margin-top: 30vh;
+}
+
+.layer-4-section-button button
+{
+   background: #24A361;
+   font: normal normal 400 0.8em Poppins;
+   border: none;
+   border-radius: 10px;
+   color: white;
+   padding: 1em 2em 1em 2em;
+   margin-top: 6vh;
+   cursor: pointer;
+}
+
+.layer-4-section-title
+{
+   color: #24A361;
+   font: normal normal 600 1em Poppins;
+   letter-spacing: 2px;
+}
+.layer-4-section-body
+{
+   font: normal normal 500 1em Poppins;
+   letter-spacing: 0px;
+   color: #505050;
+   width: 80%;
+   padding-top: 4vh;
+   line-height: 1.6em;
+
+}
+
+/*##################### Layer 5 Section ##################*/
+
+.layer-5
+{
+   opacity: 1;
+   z-index:99;
+   position:relative;
+   /*height:100vh;*/
+}
+
+
+.layer-5-section-1
+{
+   background: #012E45;
+   height:100vh;
+   margin-top: -1vh;
+   text-align: center;
+}
+
+.layer-5-section-1 img
+{
+   width: 45vw;
+   object-fit: contain;
+   margin-top: 2vh;
+   margin-left: 15vw;
+   margin-right: 15vw;
+
+}
+.layer-5-group .headingLabelAlt
+{
+   display: none;
+}
+
+.layer-5-group .headingLabel
+{
+   color: #33B8FF;
+   font: normal normal 600 1.3em Poppins;
+   position: relative;
+   display: block;
+   padding-top: 10vh;
+   margin-bottom: 3vh;
+}
+
+.layer-5-group .layer-5-section-1 div, .layer-5-group .layer-5-section-2 div
+{
+   font: normal normal 300 1em Poppins;
+   letter-spacing: 0px;
+   color: #FFFFFF;
+   position: absolute;
+   margin-top: 5vh;
+   margin-left: 18vw;
+   text-wrap: normal;
+   width: 68vw;
+   line-height: 1.6em;
+}
+
+.layer-5-group .layer-5-section-1 div button, .layer-5-group .layer-5-section-2 div button
+{
+   text-align: center;
+   font: normal normal 400 0.8em Poppins;
+   letter-spacing: 0px;
+   color: #FFFFFF;
+   background: #24A361;
+   border: none;
+   padding-top: 1em;
+   padding-bottom: 1em;
+   padding-left: 1.5em;
+   padding-right: 2em;
+   border-radius: 10px;
+   margin-left: 15vw;
+   margin-top: 3.5vh;
+   display: block;
+   cursor: pointer;
+}
+
+.layer-5-group .layer-5-section-1 div a, .layer-5-group .layer-5-section-2 div a
+{
+   text-decoration: none;
+}
+
+.layer-5-section-2
+{
+   background: #011B29;
+   height:100vh;
+   text-align: center;
+}
+
+.layer-5-section-2 img
+{
+   width: 45vw;
+   object-fit: contain;
+   margin-top: 2vh;
+   margin-left: 15vw;
+   margin-right: 15vw;
 }

@@ -48,6 +48,7 @@ class Business extends Component {
                                 <div className="business-layer-1-component-sub-1">
                                     <label className="business-layer-1-component-category">BUSINESS</label>
                                     <label className="business-layer-1-component-heading">All your business tools in one place</label>
+                                    <label className="business-layer-1-component-heading-mobile">Let's get down to business</label>
                                     <label className="business-layer-1-component-heading-alt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</label>
 
                                     <div className="business-layer-1-component-sub-1-mini-1">

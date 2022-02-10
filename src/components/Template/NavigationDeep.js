@@ -48,6 +48,27 @@ class NavigationDeep extends Component {
         $(document).on("click", ".MainLogo-deep a", function () {
             localStorage.setItem("slider-completed","true");
         });
+
+        $(document).on("click","#menu-checkbox",function () {
+            if( $( "#menu-checkbox" ).prop( "checked"))
+            {
+                $("body").css("position","fixed");
+                $("#menuToggle span").hide();
+            }
+        });
+
+        $(document).on("click",".close-burger-menu",function () {
+            $( "#menu-checkbox" ).prop( "checked", false );
+            $("body").css("position","relative");
+            $("#menuToggle span").fadeIn(50);
+        });
+
+        $(document).on("click","#menu a",function () {
+            $( "#menu-checkbox" ).prop( "checked", false );
+            $("body").css("position","relative");
+            $("#menuToggle span").fadeIn(50);
+        });
+
     }
 
 };

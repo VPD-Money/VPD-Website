@@ -1,0 +1,189 @@
+
+.contact-layer-1
+{
+    background: #F3F5F6;
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+}
+
+.contact-layer-1-group
+{
+    display: block;
+}
+
+.contact-layer-1-section-1
+{
+    width: 100vw;
+    padding-left: 12vw;
+    display: block;
+}
+
+.contact-layer-1-section-2
+{
+    width: 100vw;
+    padding-left: 10vw;
+    display: block;
+}
+.contact-layer-1-section-1 label
+{
+    position: absolute;
+    font: normal normal 600 2em Poppins;
+    letter-spacing: 0px;
+    color: #002E45;
+    width: 50vw;
+    margin-top: -30vh;
+    line-height: 4.5vh;
+}
+
+.contact-layer-1-section-1 > label:nth-child(2)
+{
+    text-align: left;
+    font: normal normal normal 1em Poppins;
+    letter-spacing: 0px;
+    color: #505050;
+    margin-top: -18vh;
+    width: 80vw;
+    margin-bottom: 5vh;
+}
+
+.contact-ng-address
+{
+    display: block;
+    margin-top: 30vh;
+    width: 50vw;
+}
+.contact-uk-address
+{
+    display: block;
+    margin-top: 12vh;
+    width: 50vw;
+}
+
+.contact-ng-address-img
+{
+  width: 100%;
+  margin-top: 0.3vh;
+  max-width: 28px;
+  max-height: 28px;
+}
+
+.contact-uk-address-img
+{
+    width: 100%;
+    margin-top: 0.8vh;
+    max-width: 28px;
+    max-height: 20px;
+}
+
+.contact-ng-address label
+{
+    text-align: left;
+    font: normal normal normal 1em Poppins;
+    letter-spacing: 0px;
+    color: #505050;
+    margin-top: 0.2vh;
+    margin-left: 5vw;
+    width: 65vw;
+}
+
+.contact-uk-address label
+{
+    text-align: left;
+    font: normal normal normal 1em Poppins;
+    letter-spacing: 0px;
+    color: #505050;
+    margin-top: 0.2vh;
+    margin-left: 5vw;
+    width: 68vw;
+}
+
+.contact-email-box
+{
+    background: #D2E7F2 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+    padding-top: 1.3em;
+    padding-bottom: 1.3em;
+    padding-left: 1em;
+    padding-right: 3em;
+    width: 80vw;
+    display: block;
+    margin-top: 10vh;
+    margin-bottom: 4.5vh;
+}
+
+.contact-email-box img
+{
+  max-width: 5vw;
+  margin-left: 1vw;
+}
+
+.contact-email-box a
+{
+    font: normal normal 600 1em Poppins;
+    letter-spacing: 0px;
+    color: #002E45;
+    text-decoration: none;
+    margin-left: 4vw;
+    margin-top: 1vh;
+}
+
+.contact-callcenter-box
+{
+    background: #D2E7F2 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 3em;
+    width: 80vw;
+    display: block;
+    margin-top: 1vh;
+    margin-bottom: 4.5vh;
+}
+
+.contact-callcenter-box img
+{
+    max-width: 6vw;
+    margin-left: 1vw;
+}
+
+.contact-callcenter-box label
+{
+    font: normal normal 600 1em Poppins;
+    letter-spacing: 0px;
+    color: #002E45;
+    text-decoration: none;
+    margin-left: 4vw;
+    margin-top: 1vh;
+}
+
+.contact-social-box
+{
+    background: #D2E7F2 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    padding-left: 2em;
+    padding-right: 3em;
+    width: 80vw;
+    display: block;
+    margin-top: 1vh;
+    margin-bottom: 4.5vh;
+}
+
+.contact-social-box img
+{
+    max-width: 1.5em;
+    max-height: 1.5em;
+    margin-right: 3vw;
+}
+
+
+.contact-social-box label
+{
+    font: normal normal 600 0.9em Poppins;
+    letter-spacing: 0px;
+    color: #002E45;
+    text-decoration: none;
+    margin-left: 2vw;
+}

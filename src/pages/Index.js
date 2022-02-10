@@ -128,17 +128,17 @@ class Index extends Component {
                                                <button>{(this.screenImageLetter === "_m")? "Get Started" : "Start Creating your Banking Experience"}&nbsp; &nbsp;&nbsp;<span><img src="/images/icons/arrow-right-white.svg"/><img src="/images/icons/arrow-right-white.svg"/></span></button>
 
                                                <div className="iphone_frame_mobile_cards">
-                                                   <div preview={"/images/iphone_screens/iphone_dashboard_multicurrency"}  className="iphone-feature-pod">
+                                                   <div preview={"/images/iphone_screens/iphone_dashboard_multicurrency"}  className="iphone-feature-pod-mobile">
                                                        <img src={"/images/icons/utility-payment.svg"}/>
                                                        <label>Multi Currency</label>
                                                    </div>
 
-                                                   <div preview={"/images/iphone_screens/iphone_dashboard_multicurrency"}  className="iphone-feature-pod">
+                                                   <div preview={"/images/iphone_screens/iphone_dashboard_multicurrency"}  className="iphone-feature-pod-mobile">
                                                        <img src={"/images/icons/utility-payment.svg"}/>
                                                        <label>Multi Currency</label>
                                                    </div>
 
-                                                   <div preview={"/images/iphone_screens/iphone_dashboard_multicurrency"}  className="iphone-feature-pod">
+                                                   <div preview={"/images/iphone_screens/iphone_dashboard_multicurrency"}  className="iphone-feature-pod-mobile">
                                                        <img src={"/images/icons/utility-payment.svg"}/>
                                                        <label>Multi Currency</label>
                                                    </div>
@@ -252,8 +252,8 @@ class Index extends Component {
                                          <label className="headingLabelAlt">Personal</label>
                                          <img src={"/images/iphone_screens/index_personal_phone"+ (this.screenImageLetter) + ".png"}/>
                                          <div>
-                                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                                             <Link to="/personal"><button>Learn More&nbsp;&nbsp;>></button></Link>
+                                             Personal is purpose-built for individuals, delivering flexibility with better user experience.
+                                             <Link to="/personal"><button>Learn More&nbsp;&nbsp;&nbsp;&nbsp;>></button></Link>
                                          </div>
                                        </div>
                                        <div className="layer-5-section-2">
@@ -261,8 +261,8 @@ class Index extends Component {
                                            <label className="headingLabelAlt">Business</label>
                                            <img src={"/images/iphone_screens/index_business_phone"+ (this.screenImageLetter) + ".png"}/>
                                            <div>
-                                               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                                               <Link to="/business"><button>Learn More&nbsp;&nbsp;>></button></Link>
+                                               Business provides the borderless solution you need to make and take payments in one place.
+                                               <Link to="/business"><button>Learn More&nbsp;&nbsp;&nbsp;&nbsp;>></button></Link>
                                            </div>
                                        </div>
                                    </div>
@@ -282,10 +282,15 @@ class Index extends Component {
 
     componentDidMount() {
 
+        if(this.screenImageLetter !== "_m")
+        {
             $(document).on("mouseenter", ".layer-5-section-1 img", function () {
                 $(".layer-5-section-1 img").animate({'margin-left': '6vw'});
                 $(".layer-5-section-1 .headingLabelAlt").show();
-                $(".layer-5-section-1 .headingLabelAlt").animate({'margin-left': '25vw', 'margin-top': ''+((this.screenImageLetter === "_b")? '22vh': '15vh')+''});
+                $(".layer-5-section-1 .headingLabelAlt").animate({
+                    'margin-left': '25vw',
+                    'margin-top': '' + ((this.screenImageLetter === "_b") ? '22vh' : '15vh') + ''
+                });
                 $(".layer-5-section-1 .headingLabel").css('color', '#012E45');
                 $(".layer-5-section-1 div").fadeIn(800);
                 $(".layer-5-section-1 .headingLabelAlt").fadeIn(10);
@@ -305,7 +310,10 @@ class Index extends Component {
             $(document).on("mouseenter", ".layer-5-section-2 img", function () {
                 $(".layer-5-section-2 img").animate({'margin-left': '6vw'});
                 $(".layer-5-section-2 .headingLabelAlt").show();
-                $(".layer-5-section-2 .headingLabelAlt").animate({'margin-left': '25vw', 'margin-top': ''+((this.screenImageLetter === "_b")? '22vh': '15vh')+''});
+                $(".layer-5-section-2 .headingLabelAlt").animate({
+                    'margin-left': '25vw',
+                    'margin-top': '' + ((this.screenImageLetter === "_b") ? '22vh' : '15vh') + ''
+                });
                 $(".layer-5-section-2 .headingLabel").css('color', '#011B29');
                 $(".layer-5-section-2 div").fadeIn(800);
                 $(".layer-5-section-2 .headingLabelAlt").fadeIn(10);
@@ -320,14 +328,13 @@ class Index extends Component {
                 }, 500);
                 $(".layer-5-section-2 div").fadeOut(100);
             });
+        }
 
-            $(document).on("mouseenter",".iphone-feature-pod",function () {
-
-                console.log("in");
-                let screenImageLetter = $(".iphone_frame").attr("preview");
-                var path= $(this).attr("preview")+(screenImageLetter)+".png";
-                console.log(path);
-                $(".iphone_frame").attr("src",path);
+            $(document).on("mouseenter",".iphone-feature-pod",function ()
+            {
+                    let screenImageLetter = $(".iphone_frame").attr("preview");
+                    var path = $(this).attr("preview") + (screenImageLetter) + ".png";
+                    $(".iphone_frame").attr("src", path);
 
             });
 

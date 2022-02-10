@@ -48,6 +48,7 @@ class Personal extends Component {
                                 <div className="personal-layer-1-component-sub-1">
                                     <label className="personal-layer-1-component-category">PERSONAL</label>
                                     <label className="personal-layer-1-component-heading">Create your own Banking Experience</label>
+                                    <label className="personal-layer-1-component-heading-mobile">Let's get down to business</label>
                                     <label className="personal-layer-1-component-heading-alt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</label>
 
                                     <div className="personal-layer-1-component-sub-1-mini-1">
