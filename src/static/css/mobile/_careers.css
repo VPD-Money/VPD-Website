@@ -1,0 +1,237 @@
+.careers-layer-1
+{
+    background: #F3F5F6;
+    padding-top: 25vh;
+    height: 190vw;
+    text-align: center;
+}
+
+.careers-layer-1-group
+{
+    display: block;
+}
+
+.careers-layer-1-group-section-1
+{
+    width: 100vw;
+}
+
+.careers-layer-1-group-section-2
+{
+    width: 100vw;
+}
+
+.careers-layer-1-group-section-1 img
+{
+    width: 85vw;
+    margin-top: -35vw;
+    margin-left: -30vw;
+}
+
+.careers-layer-1-group-section-2-label
+{
+    font: normal normal 600 3.5vw Poppins;
+    letter-spacing: 3px;
+    color: #0076B5;
+    text-transform: uppercase;
+    display: block;
+}
+
+.careers-layer-1-group-section-2-label-2
+{
+    display: block;
+    font: normal normal 600 6.5vw Poppins;
+    letter-spacing: 0px;
+    color: #002E45;
+    width: 65vw;
+    margin-left: 18vw;
+    line-height: 8vw;
+    margin-top: 2vh;
+}
+
+.careers-layer-1-group-section-2-desc
+{
+    display: block;
+    font: normal normal normal 1em Poppins;
+    letter-spacing: 0px;
+    color: #505050;
+    line-height: 1.5rem;
+    margin-top: 3vh;
+    width: 80vw;
+    margin-left: 8.5vw;
+}
+
+.careers-layer-1-group button
+{
+    background: #0BA830 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    border: none;
+    padding: 1.5vh 2vw 1.5vh 2vw;
+    font: normal normal 600 0.8em Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin-top: 3vh;
+    width: 35vw;
+}
+
+.careers-layer-1-group button img
+{
+    width: 3vw;
+    margin-left: 2vw;
+}
+
+.careers-layer-2 img
+{
+    display: none;
+}
+
+
+.careers-layer-3
+{
+    background: #F3F5F6;
+    height: 150vw;
+}
+
+.careers-layer-3-group
+{
+    display: block;
+}
+.careers-layer-3-group-section-1
+{
+    position: absolute;
+    margin-top: 60vw;
+    width: 100vw;
+    text-align: center;
+}
+
+.careers-layer-3-group-section-1 label:first-child
+{
+    display: block;
+    font: normal normal bold 5vw Poppins;
+    letter-spacing: 0px;
+    color: #002E45;
+    width: 80vw;
+    margin-top: 10vw;
+    margin-left: 10vw;
+}
+
+.careers-layer-3-group-section-1 label:last-child
+{
+    display: block;
+    font: normal normal normal 4vw Poppins;
+    letter-spacing: 0px;
+    color: #505050;
+    width: 80vw;
+    margin-top: 6vw;
+    margin-left: 10vw;
+    line-height: 6vw;
+
+}
+
+.careers-layer-3-group-section-2
+{
+    margin-top: 5vh;
+    width: 100vw;
+    position: absolute;
+}
+
+.careers-layer-3-group-section-2 img
+{
+    width: 80vw;
+    margin-left: 10vw;
+}
+
+.careers-layer-4
+{
+    background: #EDF2F5;
+    padding-bottom: 15vh;
+}
+
+.careers-layer-4-group
+{
+    display: block;
+    padding-top: 3vh;
+}
+
+.careers-layer-4-group-section
+{
+  width: 100vw;
+}
+
+.careers-layer-4-group-heading
+{
+    text-align: center;
+    font: normal normal bold 1.6rem Poppins;
+    letter-spacing: 0px;
+    color: #002E45;
+    display: block;
+}
+
+.careers-layer-4-group-text
+{
+    display: block;
+    text-align: center;
+    font: normal normal normal 1rem Poppins;
+    letter-spacing: 0px;
+    color: #505050;
+    margin-left: 10vw;
+    padding-top: 3vh;
+    width: 80vw;
+    line-height: 1.7em;
+}
+
+.careers-layer-4-group:nth-child(2)
+{
+    margin-top: 5vh;
+    display: block;
+    margin-left: 16vw;
+}
+
+.careers-layer-4-group:nth-child(3)
+{
+    margin-top: 1vh;
+    margin-bottom: -3vh;
+    display: block;
+    margin-left: 16vw;
+}
+
+.careers-layer-4-group-box
+{
+    background: rgba(255, 255, 255, 0.3) 0% 0% no-repeat padding-box;
+    box-shadow: 10px 10px 40px #00000029;
+    border-radius: 20px;
+    padding: 6vh 2vw 4vh 2vw;
+    width: 70vw;
+    margin-left: -1vw;
+    margin-bottom: 5vh;
+    text-align: center;
+}
+
+
+
+.careers-layer-4-group-box img
+{
+    /*width: 5vw;*/
+    display: block;
+    margin: 0 auto;
+}
+
+.careers-layer-4-group-box-title
+{
+    font: normal normal 500 1.1em Poppins;
+    letter-spacing: 0px;
+    color: #0993DC;
+    padding-top: 3vh;
+}
+
+.careers-layer-4-group-box-text
+{
+    text-align: center;
+    font: normal normal normal 0.9em Poppins;
+    letter-spacing: 0px;
+    color: #575757;
+    padding-top: 2vh;
+    padding-left: 5vw;
+    padding-right: 2vw;
+    line-height: 1.8em;
+}

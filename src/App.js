@@ -34,9 +34,11 @@ const App = () => {
     // const isRetina = useMediaQuery(media_query_values.retina)
 
     if(isMobile) import ('./static/css/main-mobile.css');
-    else if(isTablet) import ('./static/css/main-tablet.css');
-    else if(isDesktopOrLaptop) import ('./static/css/main-desktop.css');
-    else import ('./static/css/main-big.css');
+    // else if(isTablet) import ('./static/css/main-tablet.css');
+    // else if(isDesktopOrLaptop) import ('./static/css/main-desktop.css');
+    // else import ('./static/css/main-big.css');
+    else import ('./static/css/main-desktop.css');
+
 
     return <BrowserRouter basename={PUBLIC_URL}>
         <Suspense fallback={<Main/>}>

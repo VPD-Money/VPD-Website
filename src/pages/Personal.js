@@ -17,14 +17,7 @@ class Personal extends Component {
 
 
     render() {
-        const {
-            isBigScreen,
-            isDesktopOrLaptop,
-            isTablet,
-            isMobile,
-            isPortrait,
-            isRetina
-        } = JSON.parse(this.props.deviceType);
+        const {isBigScreen,isDesktopOrLaptop,isTablet,isMobile,isPortrait,isRetina} = JSON.parse(this.props.deviceType);
 
         if (isMobile && isPortrait) this.screenImageLetter = '_m';
         else if (isMobile && !isPortrait) this.screenImageLetter = '_d';
@@ -42,14 +35,14 @@ class Personal extends Component {
                         <NavigationDeep/>
 
                         <div className="personal-layer-1">
-                            <img className="bg_image" src={"/images/business_personal_main_bg" + (this.screenImageLetter) + ".png"} />
+                            <img className="bg_image" src={"/images/business_personal_main_bg" + (this.screenImageLetter) + ".webp"} />
 
                             <div className="personal-layer-1-component">
                                 <div className="personal-layer-1-component-sub-1">
                                     <label className="personal-layer-1-component-category">PERSONAL</label>
                                     <label className="personal-layer-1-component-heading">Create your own Banking Experience</label>
                                     <label className="personal-layer-1-component-heading-mobile">Let's get down to business</label>
-                                    <label className="personal-layer-1-component-heading-alt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</label>
+                                    <label className="personal-layer-1-component-heading-alt">Access all your financial information in one handy screen that keeps you on track.</label>
 
                                     <div className="personal-layer-1-component-sub-1-mini-1">
                                         <label id="component-label-1">Recurring Transactions</label>
@@ -61,75 +54,77 @@ class Personal extends Component {
                                         <label id="component-label-7">Borderless Transfers</label>
                                     </div>
                                     <div className="personal-layer-1-component-sub-1-mini-2">
-                                        <button>
+                                        <button className={"open-download-overlay"}>
                                             Get the App &nbsp;&nbsp;&nbsp;<img src="/images/icons/arrow-right-white.svg"/>
                                         </button>
                                         <div className="component-icon-group">
-                                            <img label="1" className="component-icon" src="/images/icons/recurring-transaction.png"/>
+                                            <img label="1" className="component-icon" src="/images/icons/recurring-transaction.webp"/>
                                         </div>
                                         <div className="component-icon-group">
-                                            <img label="2" className="component-icon" src="/images/icons/utility-payment.png"/>
+                                            <img label="2" className="component-icon" src="/images/icons/utility-payment.webp"/>
                                         </div>
                                         <div className="component-icon-group">
-                                            <img label="3" className="component-icon" src="/images/icons/cashback.png"/>
+                                            <img label="3" className="component-icon" src="/images/icons/cashback.webp"/>
                                         </div>
                                         <div className="component-icon-group">
-                                            <img label="4" className="component-icon" src="/images/icons/card-transactions.png"/>
+                                            <img label="4" className="component-icon" src="/images/icons/card-transactions.webp"/>
                                         </div>
                                         <div className="component-icon-group">
-                                            <img label="5" className="component-icon" src="/images/icons/subaccount.png"/>
+                                            <img label="5" className="component-icon" src="/images/icons/subaccount.webp"/>
                                         </div>
                                         <div className="component-icon-group">
-                                            <img label="6" className="component-icon" src="/images/icons/analytics.png"/>
+                                            <img label="6" className="component-icon" src="/images/icons/analytics.webp"/>
                                         </div>
                                         <div className="component-icon-group">
-                                            <img label="7" className="component-icon" src="/images/icons/borderless-transfer.png"/>
+                                            <img label="7" className="component-icon" src="/images/icons/borderless-transfer.webp"/>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="personal-layer-1-component-sub-2">
-                                    <img src={"/images/personal_main_phone"+ (this.screenImageLetter) + ".png"}/>
+                                    <img src={"/images/personal_main_phone"+ (this.screenImageLetter) + ".webp"}/>
                                 </div>
                             </div>
 
                         </div>
 
-                        <div className="personal-layer-2">
+                        <div id="features" className="personal-layer-2">
                             <div className="personal-layer-2-group">
                                 <div className="personal-layer-2-group-1">
-                                    <img src="/images/personal_frame_details.png"/>
+                                    <img src="/images/personal_frame_recurring.webp"/>
                                 </div>
                                 <div className="personal-layer-2-group-2">
                                     <div className="personal-layer-2-group-2-slider">
                                         <img id="personal-layer-2-slide-left" src="/images/icons/arrow-left-black-faded.svg"/>
                                         <div className="personal-layer-2-slide-icon-group">
-                                            <img src="/images/icons/recurring-transaction.png"/>
+                                            <img src="/images/icons/recurring-transaction.webp"/>
                                             <label>Recurring Transactions</label>
                                         </div>
                                         <div className="personal-layer-2-slide-icon-group-preview icon-preview-1">
-                                            <img src="/images/icons/utility-payment.png"/>
+                                            <img src="/images/icons/utility-payment.webp"/>
                                             <label>Utility Payment</label>
                                         </div>
                                         <div className="personal-layer-2-slide-icon-group-preview icon-preview-2">
-                                            <img src="/images/icons/cashback.png"/>
+                                            <img src="/images/icons/cashback.webp"/>
                                             <label>Cashback</label>
                                         </div>
                                         <div className="personal-layer-2-slide-icon-group-preview icon-preview-3">
-                                            <img src="/images/icons/card-transactions.png"/>
+                                            <img src="/images/icons/card-transactions.webp"/>
                                             <label>Card Transactions</label>
                                         </div>
                                         <div className="personal-layer-2-slide-icon-group-preview icon-preview-4">
-                                            <img src="/images/icons/subaccount.png"/>
+                                            <img src="/images/icons/subaccount.webp"/>
                                             <label>Sub Accounts</label>
                                         </div>
 
                                         <img id="personal-layer-2-slide-right" src="/images/icons/arrow-right-black.svg"/>
 
                                     </div>
-                                    <div className="personal-layer-2-group-2-header">Sign up in minutes</div>
-                                    <div className="personal-layer-2-group-2-text-1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</div>
-                                    <div className="personal-layer-2-group-2-text-2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</div>
+                                    <div className="personal-layer-2-group-2-header">Recurring Transactions</div>
+                                    <div className="personal-layer-2-group-2-text-1">Never miss a payment again with our recurring payment feature,
+                                        with specified intervals to ensure everything is paid on time, every
+                                        time. </div>
+                                    <div className="personal-layer-2-group-2-text-2"> </div>
                                 </div>
                             </div>
                         </div>
@@ -144,13 +139,13 @@ class Personal extends Component {
     componentDidMount()
     {
         $(document).on("mouseenter",".component-icon-group img",function(){
-            $(this).animate({'margin-top':'-1vh','zoom' : '120%'},10);
+            $(this).animate({'margin-top':'-0.2vw','zoom' : '120%'},10);
             $("#component-label-"+$(this).attr("label")).css("color","white");
             $("#component-label-"+$(this).attr("label")).animate({'margin-top':'-2.5vh'},10);
         });
 
         $(document).on("mouseleave",".component-icon-group img",function(){
-            $(this).animate({'margin-top':'1vh','zoom' : '100%'},10);
+            $(this).animate({'margin-top':'0.8vw','zoom' : '100%'},10);
             $("#component-label-"+$(this).attr("label")).css("color","transparent");
             $("#component-label-"+$(this).attr("label")).animate({'margin-top':'-2vh'},10);
         });
@@ -160,63 +155,81 @@ class Personal extends Component {
         let slider_values=[
             {
                 title:"Recurring Transactions",
-                url:"/images/icons/recurring-transaction.png",
-                image:"/images/personal_frame_details.png",
-                heading:"Sign up in minutes",
-                content1:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
-                content2:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna"
+                url:"/images/icons/recurring-transaction.webp",
+                image:"/images/personal_frame_recurring.webp",
+                heading:"Recurring Transactions",
+                content1:"Never miss a payment again with our recurring payment feature,\n" +
+                    "with specified intervals to ensure everything is paid on time, every\n" +
+                    "time.",
+                content2:""
             },
             {
                 title:"Utility Payment",
-                url:"/images/icons/utility-payment.png",
-                image:"/images/business_frame_details.png",
-                heading:"Create and send Invoices",
-                content1:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
-                content2:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna"
+                url:"/images/icons/utility-payment.webp",
+                image:"/images/personal_frame_utility_payment.webp",
+                heading:"Utility Payment",
+                content1:"Never miss a payment again with our recurring payment feature,\n" +
+                    "with specified intervals to ensure everything is paid on time, every\n" +
+                    "time.",
+                content2:""
             },
             {
                 title:"Cashback",
-                url:"/images/icons/cashback.png",
-                image:"/images/personal_frame_details.png",
-                heading:"Create multiple Sub accounts",
-                content1:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
-                content2:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna"
+                url:"/images/icons/cashback.webp",
+                image:"/images/personal_frame_cashback.webp",
+                heading:"Cashback",
+                content1:"Want more for your money? Our instant cashback fills your cashbox\n" +
+                    "when you pay bills, subscribe to services and purchase tickets for\n" +
+                    "that upcoming event",
+                content2:""
             },
             {
                 title:"Card Transactions",
-                url:"/images/icons/card-transactions.png",
-                image:"/images/business_frame_details.png",
-                heading:"Sign up in minutes 2",
-                content1:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
-                content2:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna"
+                url:"/images/icons/card-transactions.webp",
+                image:"/images/personal_frame_card_transactions.webp",
+                heading:"Card Transactions",
+                content1:"",
+                content2:""
             },
             {
                 title:"Sub Accounts",
-                url:"/images/icons/subaccount.png",
-                image:"/images/personal_frame_details.png",
-                heading:"Sign up in minutes 3",
-                content1:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
-                content2:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna"
+                url:"/images/icons/subaccount.webp",
+                image:"/images/personal_frame_subaccounts.webp",
+                heading:"Sub Accounts",
+                content1:"Why limit yourself when you can have borderless finance at your\n" +
+                    "fingertips? Convert and store your money in individual sub-accounts\n" +
+                    "for added financial flexibility, with easy sending to other users.",
+                content2:""
             },
             {
                 title:"Analytics",
-                url:"/images/icons/analytics.png",
-                image:"/images/business_frame_details.png",
-                heading:"Sign up in minutes 4",
-                content1:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
-                content2:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna"
+                url:"/images/icons/analytics.webp",
+                image:"/images/personal_frame_analytics.webp",
+                heading:"Analytics",
+                content1:"",
+                content2:""
             },
             {
                 title:"Borderless Transfer",
-                url:"/images/icons/borderless-transfer.png",
-                image:"/images/personal_frame_details.png",
-                heading:"Sign up in minutes 5",
-                content1:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
-                content2:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna"
+                url:"/images/icons/borderless-transfer.webp",
+                image:"/images/personal_frame_details.webp",
+                heading:"Borderless Transfer",
+                content1:"",
+                content2:""
             }
         ];
 
         let totalSlideIndex = slider_values.length>0? slider_values.length-1 : 0;
+
+        //Jump to
+        $(document).on("click",".personal-layer-2-slide-icon-group-preview",function () {
+            var jumpIndex = 0;
+            if( $(this).hasClass("icon-preview-2") ) jumpIndex=1;
+            if( $(this).hasClass("icon-preview-3") ) jumpIndex=2;
+            if( $(this).hasClass("icon-preview-4") ) jumpIndex=3;
+            currentSlideNumber+=jumpIndex;
+            $("#personal-layer-2-slide-right").click();
+        });
 
         $(document).on("click","#personal-layer-2-slide-left",function () {
 
@@ -337,7 +350,7 @@ function attachDeviceTypeHook(Component) {
         const isMobile = useMediaQuery(media_query_values.mobile)
         const isPortrait = useMediaQuery(media_query_values.portrait)
         const isRetina = useMediaQuery(media_query_values.retina)
-        let objVals = JSON.stringify({isBigScreen,isDesktopOrLaptop,isTablet,isMobile,isPortrait,isRetina});
+        let objVals = JSON.stringify({isBigScreen, isDesktopOrLaptop, isTablet, isMobile, isPortrait, isRetina});
 
         return <Component {...props} deviceType={objVals} />;
     }

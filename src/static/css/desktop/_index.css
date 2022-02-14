@@ -1,35 +1,36 @@
 .carouselFrame
 {
   position: relative;
-  background-image: url('../../cssimages/blue_soft_bg_2x.png');
+  background-image: url('../../cssimages/blue_soft_bg_2x.webp');
   background-size: cover;
   height: 100vh;
-  background-repeat:no-repeat;
+  background-repeat:round;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
   -o-background-size: cover;
   z-index: 9999;
+
+  overflow: hidden;
 }
 
-.carouselFrame img{
+.carouselFrame img {
   height: 100vh;
-  width: 100%;
+  width: auto!important;
 }
 
 .carouselFrame .carouselFrameCaption{
   /*float: left;*/
   position: absolute;
-  left: 0px;
-  top: 50vh;
+  top: 52vh;
   z-index: 1000;
-  padding: 5px;
+  padding: 2vw;
   width: 100%;
 
 }
 
 .carouselLastItem{
-  top: 42vh!important;
+  top: 40vh!important;
   float: right;
 }
 
@@ -41,23 +42,25 @@
 
 .carouselFrameCaption .carouselFrameCaptionItem1
 {
-  font: normal normal 800 6em Poppins;
+  font: normal normal 800 5vw Poppins;
   color: #FFFFFF;
   text-shadow: 5px 5px 5px #00000057;
+  /*margin-left: -3vw;*/
 }
 
 
 .carouselFrameCaption .carouselFrameCaptionItem2
 {
-  font: italic normal bold 6em Lora;
+  font: italic normal bold 5vw Lora;
   letter-spacing: 0px;
   color: #0088D1;
   background: #FFFFFF 0% 0% no-repeat padding-box;
-  margin-left: 2vw;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 35px;
+  margin-left: 1.5vw;
+  padding-top: 0.8vh;
+  padding-bottom: 0.8vh;
+  padding-left: 1vw;
+  padding-right:1vw;
+  border-radius: 5px;
 }
 
 .margin-left
@@ -74,11 +77,10 @@
 
 .carouselFrameCaption .carouselEndingPreText
 {
-  font: normal normal 800 2.1em Poppins;
+  font: normal normal 800 1.6vw Poppins;
   letter-spacing: 0px;
   color: #FFFFFF;
-  margin-bottom: -30px;
-  /*text-align: left;*/
+  margin-bottom: -1vw;
 }
 
 .carouselLastItemGroup
@@ -91,13 +93,13 @@
 {
   text-align: left;
   padding-top: 2vh;
-  margin-left: -1.2vw;
+  margin-left: -1.7vw;
 }
 
 .bannerFrame
 {
   position: relative;
-  background-image: url('../../cssimages/blue_soft_bg_2x.png');
+  background-image: url('../../cssimages/blue_soft_bg_2x.webp');
   background-size: cover;
   height: 100vh;
   background-repeat:no-repeat;
@@ -122,7 +124,7 @@
 .bannerFrame .mainBanner img
 {
   height:100vh;
-  width: 50vw;
+  width: auto;
 }
 
 .main_banner_text_group
@@ -136,14 +138,15 @@
 
 .main_banner_text
 {
-  font: normal normal 800 3.5em Poppins;
+  font: normal normal 800 3.3vw Poppins;
   letter-spacing: 0px;
   color: #FFFFFF;
   background: #002E45 0% 0% no-repeat padding-box;
   border-radius: 10px 10px 0px 10px;
-  padding: 0.025em 0.5em 0.025em 0.5em;
-  word-spacing: 0.1em;
-  width: 38vw;
+  padding: 0.025vh 0.5vw 0.025rem 0.5rem;
+  word-spacing: 0.1vw;
+  max-width: 35vw;
+  margin-left: 7vw;
   text-align: center;
 }
 
@@ -160,10 +163,10 @@
 {
   width: 1.5vw;
   height: 7px;
-  padding-left: 9vw;
+  padding-left: 10vw;
   background: white;
   float: right;
-  margin-right: -15px;
+  margin-right: -6vw;
 }
 
 .main_banner_text_action_section button
@@ -171,19 +174,19 @@
   float: left;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border-radius: 0px 0px 10px 10px;
-  padding: 20px;
+  padding: 1.2vw;
   text-align: center;
-  font: normal normal 600 1em Poppins;
+  font: normal normal 600 1vw Poppins;
   letter-spacing: 0px;
   color: #00A6FF;
   border: none;
-  width: 10vw;
-  margin-left: -1vw;
+  width: 10.5vw;
+  margin-left: 2.5vw;
 }
 
 .main_banner_text span
 {
-  font: italic normal bold 1em Lora;
+  font: italic normal bold 3.3vw Lora;
   letter-spacing: 0px;
   color: #00A6FF;
 }
@@ -199,14 +202,14 @@
 
 .layer-1-sub-text
 {
-  font: normal normal normal 1em Poppins;
+  font: normal normal normal 1vw Poppins;
   letter-spacing: 0px;
   position: absolute;
   color: #FFFFFF;
   z-index: 999;
-  top: 30vh;
+  top: 10vw;
   left: 10vw;
-  width: 100%;
+  width: 20vw;
   max-width: 25vw;
   text-wrap: normal;
 }
@@ -218,7 +221,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../../cssimages/index_bg_pattern.png");
+  background-image: url("../../cssimages/index_bg_pattern.webp");
   opacity: 0.1;
   z-index: 9;
 }
@@ -233,8 +236,8 @@
   opacity: 1;
   z-index:99;
   position:relative;
-  padding-top: 15vh;
-  padding-bottom: 30vh;
+  padding-top: 5vw;
+  padding-bottom: 15vw;
 }
 
 .layer-2-main-text-group
@@ -245,10 +248,10 @@
 {
   margin: 0 auto;
   color: #33B8FF;
-  font: normal normal bold 2.5em Poppins;
+  font: normal normal bold 2.5vw Poppins;
   letter-spacing: 0px;
   width: 40vw;
-  line-height: 60px;
+  line-height: 3vw;
 }
 
 .layer-2-main-text span
@@ -259,17 +262,17 @@
 .layer-2-main-text-2
 {
   text-align: center;
-  font: normal normal 200 1em Poppins;
+  font: normal normal 200 1vw Poppins;
   letter-spacing: 0px;
   color: #FFFFFF;
   width: 25vw;
-  margin: 1.5em auto;
-  margin-bottom: 2vh;
+  margin: 1.5vw auto;
+  margin-bottom: 2vw;
 }
 
 .layer-2-main-iphone-group
 {
-  margin-top: 10em;
+  margin-top: 10vw;
   width: 100%;
   display: flex;
 }
@@ -288,29 +291,57 @@
 .iphone_frame
 {
   width: 100%;
-  margin-top: 5vh;
+  margin-top: 10vw;
 }
+
+.iphone_frame_pretext
+{
+  color: #55C4FF;
+  text-align: center;
+  font: normal normal normal 0.9vw Poppins;
+  opacity: 0.6;
+  position: absolute;
+  margin-top: 10vw;
+  margin-left: 7.5vw;
+  width: 12vw;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: none;
+    opacity: 0.6;
+  }
+  to {
+    text-shadow: 0px 0px 20px #00A6FF;
+    opacity: 1;
+  }
+}
+
+
 
 .layer-2-main-iphone-group .col-4:nth-child(2) button
 {
   color: white;
   background: #24A361;
   text-align: center;
-  font: normal normal normal 0.8em Poppins;
+  font: normal normal normal 0.8vw Poppins;
   letter-spacing: 0px;
   border-radius: 10px;
   border: none;
-  padding: 20px 35px 20px 35px;
+  padding: 2vh 2vw 2vh 2vw;
   position: relative;
-  bottom: 12vh;
-  left: 5vw;
+  bottom: 8vw;
+  left: -1vw;
 
 }
 
 .layer-2-main-iphone-group .col-4:nth-child(2) button img
 {
-  width: 1em;
-  margin-right: -6px;
+  width: 0.8vw;
+  margin-right: -0.5vw;
 }
 
 .layer-2-main-iphone-group .col-4:last-child
@@ -323,12 +354,60 @@
   border: 2px solid #00A6FF33;
   border-radius: 10px;
   opacity: 1;
-  padding: 2em 2em 1em 1.5em;
-  height: 16vh;
-  width: 8.5vw;
-  max-height: 10em;
+  padding: 4vh 2vw 2vh 1.5vw;
+  height: auto;
+  width: 10vw;
   text-align: center;
   vertical-align: center;
+  display: block;
+}
+
+.layer-2-main-iphone-group .col-4:nth-child(1) .iphone-feature-pod:nth-child(1) img
+{
+  margin-top: -0.5vw;
+  width: 3vw;
+}
+
+.layer-2-main-iphone-group .col-4:nth-child(1) .iphone-feature-pod:nth-child(3) img
+{
+  margin-top: -0.5vw;
+  width: 3vw;
+}
+
+.layer-2-main-iphone-group .col-4:nth-child(1) .iphone-feature-pod:nth-child(4) img
+{
+  margin-top: -0.5vw;
+  width: 2.5vw;
+}
+
+.layer-2-main-iphone-group .col-4:nth-child(1) .iphone-feature-pod:nth-child(5) img
+{
+  margin-top: -0.5vw;
+  width: 2.5vw;
+}
+
+.layer-2-main-iphone-group .col-4:nth-child(1) .iphone-feature-pod:nth-child(2) img
+{
+  margin-top: -0.5vw;
+  width: 2.2vw;
+}
+
+.layer-2-main-iphone-group .col-4:nth-child(2) .iphone-feature-pod:nth-child(1) img
+{
+  margin-top: -0.5vw;
+  width: 2.2vw;
+}
+
+.layer-2-main-iphone-group .col-4:nth-child(3) .iphone-feature-pod:nth-child(2) img
+{
+  margin-top: -0.5vw;
+  width: 2.2vw;
+}
+
+.layer-2-main-iphone-group .col-4:nth-child(3) .iphone-feature-pod:nth-child(3) img
+{
+  margin-top: -0.5vw;
+  width: 2.2vw;
 }
 
 .iphone_frame_mobile_cards
@@ -342,83 +421,83 @@
 
 .iphone-feature-pod img
 {
-  width: 2vw;
+  width: 3vw;
 }
 
 .layer-2-main-iphone-group .col-4:nth-child(2) .iphone-feature-pod:first-child
 {
-  margin-top: -10vh;
+  margin-top: -3vw;
   margin-left: 15vw;
-  margin-bottom: 8vh;
+  margin-bottom: 0vw;
 }
 
 .layer-2-main-iphone-group .col-4:nth-child(1) .iphone-feature-pod:first-child
 {
-  margin-top: 0vh;
+  margin-top: 2vw;
   margin-left: 25vw;
-  margin-bottom: 8vh;
+  margin-bottom: 6vw;
 }
 
 .layer-2-main-iphone-group .col-4:nth-child(1) .iphone-feature-pod:nth-child(2)
 {
-  margin-top: -5vh;
-  margin-left: 10vw;
-  margin-bottom: 8vh;
+  margin-top: -3vw;
+  margin-left: 8vw;
+  margin-bottom: 4vw;
 }
 
 .layer-2-main-iphone-group .col-4:nth-child(1) .iphone-feature-pod:nth-child(3)
 {
-  margin-top: 5vh;
-  margin-left: 20vw;
-  margin-bottom: 8vh;
+  margin-top: 2vw;
+  margin-left: 18vw;
+  margin-bottom: 4vw;
 }
 
 .layer-2-main-iphone-group .col-4:nth-child(1) .iphone-feature-pod:nth-child(4)
 {
-  margin-top: 5vh;
-  margin-left: 10vw;
-  margin-bottom: 8vh;
+  margin-top: 4vw;
+  margin-left: 8vw;
+  margin-bottom: 4vw;
 }
 
 .layer-2-main-iphone-group .col-4:nth-child(1) .iphone-feature-pod:nth-child(5)
 {
-  margin-top: 6vh;
-  margin-left: 20vw;
-  margin-bottom: 8vh;
+  margin-top: 4vw;
+  margin-left: 18vw;
+  margin-bottom: 8vw;
 }
 
 .layer-2-main-iphone-group .col-4:nth-child(3) .iphone-feature-pod:nth-child(1)
 {
-  margin-top: 20vh;
-  margin-left: -5vw;
-  margin-bottom: 8vh;
+  margin-top: 5vw;
+  margin-left: -1vw;
+  margin-bottom: 8vw;
 }
 
 .layer-2-main-iphone-group .col-4:nth-child(3) .iphone-feature-pod:nth-child(2)
 {
-  margin-top: -15vh;
-  margin-left: 15vw;
-  margin-bottom: 8vh;
+  margin-top: -4vw;
+  margin-left: 12vw;
+  margin-bottom: 8vw;
 }
 
 .layer-2-main-iphone-group .col-4:nth-child(3) .iphone-feature-pod:nth-child(3)
 {
-  margin-top: 15vh;
+  margin-top: 6vw;
   margin-left: 7vw;
-  margin-bottom: 8vh;
+  margin-bottom: 8vw;
 }
 
 .layer-2-main-iphone-group .col-4:nth-child(3) .iphone-feature-pod:nth-child(4)
 {
-  margin-top: 12vh;
-  margin-left: 14vw;
-  margin-bottom: 8vh;
+  margin-top: -2vw;
+  margin-left: 8vw;
+  margin-bottom: 8vw;
 }
 
 .iphone-feature-pod label
 {
   text-align: center;
-  font: normal normal 500 0.7em Poppins;
+  font: normal normal 500 0.8vw Poppins;
   letter-spacing: 0px;
   color: #00A6FF;
   padding-top: 15px;
@@ -440,17 +519,17 @@
 {
   background: white;
   float: right;
-  border-radius: 30px 198px 0px 198px;
-  height: 55vh;
+  border-radius: 0vh 10vw 0vh 10vw;
+  height: 26vw;
   width: 90vw;
-  margin-top: -37vh;
+  margin-top: -20vw;
 }
 
 .layer-3-ribbon-title
 {
-  padding-top: 8vh;
+  padding-top: 4vw;
   padding-left: 6vw;
-  font: normal normal normal 0.9em Poppins;
+  font: normal normal normal 0.9vw Poppins;
   color: #24A361;
 }
 
@@ -458,7 +537,7 @@
 {
   padding-left: 6vw;
   display: flex;
-  margin-top: 3vh;
+  margin-top: 1vw;
 }
 
 .layer-3-ribbon-groups-title-image
@@ -471,7 +550,7 @@
 {
   width: 100%;
   max-width: 2.5vw;
-  margin-top: 2vh;
+  margin-top: 1vw;
 }
 
 .layer-3-ribbon-groups-title
@@ -486,11 +565,11 @@
 
 .layer-3-ribbon-groups-title label
 {
-  margin-top: 2vh;
-  margin-left: 10px;
-  line-height: 30px;
+  margin-top: 1vw;
+  margin-left: -0.2vw;
+  line-height: 3vw;
   text-align: left;
-  font: normal normal 600 1.2em Poppins;
+  font: normal normal 600 1.2vw Poppins;
   letter-spacing: -0.9px;
   color: #195E80;
 }
@@ -500,9 +579,10 @@
   position: relative;
   display: block;
   text-align: left;
-  font: normal normal normal 1em Poppins;
-  padding-top: 2vh;
+  font: normal normal normal 1vw Poppins;
+  padding-top: 1.2vw;
   letter-spacing: 0px;
+  line-height: 1.6vw;
   color: #505050;
   width: 20vw;
 }
@@ -511,19 +591,19 @@
 
 .layer-4
 {
-  padding-top: 15vh;
+  padding-top: 10vw;
   background: #EDF2F5;
   opacity: 1;
   z-index:99;
   position:relative;
-  margin-top: -90px;
+  margin-top: -5vw;
 }
 
 .layer-4-group
 {
-  margin-top: 15vh;
+  margin-top: 10vw;
   display: inline-flex;
-  margin-bottom: 10vh;
+  margin-bottom: 1vw;
 }
 
 .layer-4-section
@@ -534,40 +614,41 @@
 .layer-4-section img
 {
   width: auto;
-  max-width: 100%;
+  max-width: 70vw;
+  margin-top: -10vw;
 }
 
 .layer-4-section-title
 {
   color: #24A361;
   text-align: left;
-  font: normal normal normal 1em Poppins;
+  font: normal normal normal 1vw Poppins;
   letter-spacing: 2px;
 }
 .layer-4-section-body
 {
-  font: normal normal 500 1em Poppins;
+  font: normal normal 500 1.05vw Poppins;
   letter-spacing: 0px;
   color: #505050;
-  width: 80%;
-  padding-top: 4vh;
-  line-height: 1.6em;
+  width: 100%;
+  padding-top: 1.5vw;
+  line-height: 2vw;
 }
 
 .layer-4-group .layer-4-section:first-child
 {
-  padding-left: 14em;
+  padding-left: 10vw;
 }
 
 .layer-4-section-button button
 {
   background: #24A361;
-  font: normal normal 400 0.8em Poppins;
+  font: normal normal 400 0.8vw Poppins;
   border: none;
   border-radius: 10px;
   color: white;
-  padding: 1em 2em 1em 2em;
-  margin-top: 3.5vh;
+  padding: 1.5vh 2vw 1.5vh 2vw;
+  margin-top: 3.5vw;
   cursor: pointer;
 }
 
@@ -578,7 +659,6 @@
   opacity: 1;
   z-index:99;
   position:relative;
-  height:100vh;
 }
 
 .layer-5-group
@@ -591,7 +671,8 @@
 {
   width:50%;
   background: #012E45;
-  height:100vh;
+  height:auto;
+  padding-bottom: 10vw;
 }
 
 .layer-5-section-1 img
@@ -601,7 +682,7 @@
   /*height:100%;*/
   object-fit: contain;
   /*padding: 15vh 15vw 15vh 20vw;*/
-  margin-top: 2vh;
+  margin-top: 2vw;
   margin-left: 15vw;
   margin-right: 15vw;
 
@@ -610,10 +691,10 @@
 .layer-5-group .headingLabel
 {
   color: #33B8FF;
-  font: normal normal 600 1.2em Poppins;
+  font: normal normal 600 1.2vw Poppins;
   position: relative;
   display: block;
-  margin-top: 16vh;
+  margin-top: 8vw;
   margin-left: 20vw;
 }
 
@@ -621,7 +702,7 @@
  {
    display: none;
    color: #33B8FF;
-   font: normal normal 600 1em Poppins;
+   font: normal normal 600 1vw Poppins;
    position: absolute;
    margin-left: 20vw;
  }
@@ -629,41 +710,39 @@
 .layer-5-group .layer-5-section-1 div label, .layer-5-group .layer-5-section-2 div label
 {
   color: #33B8FF;
-  font: normal normal 600 1.2em Poppins;
+  font: normal normal 600 1.2vw Poppins;
   position: relative;
   display: block;
-  margin-top: 0vh;
-  margin-left: 0vw;
 }
 
 .layer-5-group .layer-5-section-1 div, .layer-5-group .layer-5-section-2 div
 {
   display: none;
-  font: normal normal 300 0.85em Poppins;
+  font: normal normal 300 1vw Poppins;
   letter-spacing: 0px;
   color: #FFFFFF;
-  position: absolute;
-  margin-top: -38vh;
+  position: relative;
+  margin-top: -23vw;
   margin-left: 25vw;
   text-wrap: normal;
   width: 20vw;
-  line-height: 1.8em;
+  line-height: 1.8vw;
 }
 
 .layer-5-group .layer-5-section-1 div button, .layer-5-group .layer-5-section-2 div button
 {
   text-align: center;
-  font: normal normal 400 0.8em Poppins;
+  font: normal normal 400 0.8vw Poppins;
   letter-spacing: 0px;
   color: #FFFFFF;
   background: #24A361;
   border: none;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 1.5em;
-  padding-right: 2.8em;
-  border-radius: 10px;
-  margin-top: 3vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-left: 1vw;
+  padding-right: 1.5vw;
+  border-radius: 6px;
+  margin-top: 2vw;
   display: block;
   cursor: pointer;
 }
@@ -677,7 +756,8 @@
 {
   width: 50%;
   background: #011B29;
-  height:100vh;
+  height:auto;
+  padding-bottom: 10vw;
 }
 
 .layer-5-section-2 img
@@ -687,7 +767,7 @@
   /*height:100%;*/
   object-fit: contain;
   /*padding: 15vh 15vw 15vh 20vw;*/
-  margin-top: 2vh;
+  margin-top: 2vw;
   margin-left: 15vw;
   margin-right: 15vw;
 }

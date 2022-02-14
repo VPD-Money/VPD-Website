@@ -17,7 +17,7 @@
 {
     position: absolute;
     margin-top: 20vh;
-    z-index: 99999;
+    z-index: 9999;
     display: inline-flex;
     width: 100vw;
 }
@@ -64,7 +64,7 @@
     font: normal normal 300 1.3em Poppins;
     letter-spacing: 0px;
     color: #00A6FF;
-    width: 40vw;
+    width: 30vw;
     margin-top: 1.5vh;
 }
 
@@ -240,7 +240,7 @@
     margin-top: 5vh;
     margin-bottom: -1vh;
     text-align: left;
-    font: normal normal bold 3.2em Poppins;
+    font: normal normal bold 2.5rem Poppins;
     letter-spacing: 0px;
     color: #002E45;
     line-height: 1.2em;
@@ -308,6 +308,7 @@
 {
     margin-right: 1vw;
     opacity: 0.5;
+    cursor: pointer;
 }
 
 .business-layer-2-slide-icon-group-preview img

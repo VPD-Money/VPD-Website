@@ -15,9 +15,10 @@
     background: transparent;
     overflow: hidden;
     display: flex;
-    max-height: 10vh;
+    max-height: 11vh;
     position: fixed;
     z-index: 99999;
+    max-width: 100vw;
 }
 
 .NavHeader-nosticky
@@ -26,9 +27,10 @@
     background: transparent;
     overflow: hidden;
     display: flex;
-    max-height: 10vh;
+    max-height: 11vh;
     position: absolute;
     z-index: 99999;
+    max-width: 100vw;
 }
 
 .Navlinks
@@ -44,7 +46,7 @@
 {
     background: #002E45;
     border-radius: 0px 0px 10px 10px;
-    padding: 25px;
+    padding: 1.2vw;
     width: 100%;
     max-width: 13vw;
     margin-left: 5vw;
@@ -65,11 +67,11 @@
 .Navlinks a
 {
     list-style: none;
-    font: normal normal normal 0.85em Poppins;
+    font: normal normal normal 1vw Poppins;
     letter-spacing: 0px;
     color: #FFFFFF;
     text-align: center;
-    padding: 20px 30px 15px 16px;
+    padding: 2vh 3vw 1vh 1vw;
     text-decoration: none;
 }
 
@@ -77,29 +79,29 @@
 .Navlinks button
 {
     text-align: left;
-    font: normal normal 400 0.85em Poppins;
+    font: normal normal 400 1vw Poppins;
     letter-spacing: 0px;
     background: #0BA830;
     color: white;
     border-radius: 12px;
     padding: 7px 0px 7px 20px;
-    width: 11em;
-    height: 2.8em;
+    width: 11vw;
+    height: 2.8vw;
     box-shadow: none;
     margin-left: 1vw;
-    margin-right: 50px;
+    margin-right: 5vw;
     border: none;
 }
 
 .Navlinks button img{
     color: white;
-    width: 0.8em;
-    margin-left: 15px;
+    width: 0.8vw;
+    margin-left: 1vw;
 }
 
 .MainLogo-light
 {
-    padding: 25px;
+    padding: 1.2vw;
     width: 100%;
     max-width: 13vw;
     margin-left: 7.5vw;
@@ -107,47 +109,105 @@
     text-align: center;
 }
 
+.download-overlay
+{
+    display: none;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    position: fixed;
+    width: 100vw;
+    height: 100vw;
+    z-index: 99999999;
+}
+
+.download-overlay-section
+{
+    margin-top: 45vh;
+    margin-left: 28vw;
+
+}
+
+.download-overlay-section a:first-child img
+{
+    width: 20vw;
+    display: inline-flex;
+    margin-right: 2vw;
+
+    animation: download-overlay-frames-up .2s linear;
+    transition: .2s ease-in-out;
+}
+
+.download-overlay-section a:nth-child(2) img
+{
+    width: 20vw;
+    display: inline-flex;
+    margin-right: 2vw;
+
+    animation: download-overlay-frames-down .2s linear;
+    transition: .2s ease-in-out;
+}
+
+@keyframes download-overlay-frames-up {
+    0% {
+        transform: translateY(20vw);
+    }
+    100% {
+        transform: translateY(0vw);
+    }
+}
+
+@keyframes download-overlay-frames-down {
+    0% {
+        transform: translateY(-20vw);
+    }
+    100% {
+        transform: translateY(0vw);
+    }
+}
+
 .Navlinks-light
 {
     flex: 1;
     text-align: right;
-    margin-left: 60px;
-    padding-top: 30px;
+    margin-right: 1vw;
+    padding-top: 3vh;
     position: relative;
 }
 
 .Navlinks-light a
 {
     list-style: none;
-    font: normal normal normal 0.85em Poppins;
+    font: normal normal normal 1vw Poppins;
     letter-spacing: 0px;
     color: #505050;
     text-align: center;
-    padding: 20px 40px 15px 16px;
+    padding: 2vh 3vw 1vh 1vw;
     text-decoration: none;
 }
 
 .Navlinks-light button
 {
     text-align: left;
-    font: normal normal 400 0.85em Poppins;
+    font: normal normal 400 1vw Poppins;
     letter-spacing: 0px;
     background: #0BA830;
     color: white;
     border-radius: 12px;
-    padding: 7px 20px 7px 20px;
-    width: 11.5em;
-    height: 2.8em;
+    padding: 7px 0px 7px 20px;
+    width: 11vw;
+    height: 2.8vw;
     box-shadow: none;
     margin-left: 1vw;
-    margin-right: 8vw;
+    margin-right: 5vw;
     border: none;
 }
 
 .Navlinks-light button img{
     color: white;
-    width: 0.8em;
-    margin-left: 15px;
+    width: 0.8vw;
+    margin-left: 1vw;
 }
 
 .Navlinks-light-active
@@ -178,36 +238,36 @@
 .Navlinks-deep a
 {
     list-style: none;
-    font: normal normal normal 0.85em Poppins;
+    font: normal normal normal 1vw Poppins;
     letter-spacing: 0px;
-    color: #0993DC;
+    color: #0993dc;
     text-align: center;
-    padding: 20px 40px 15px 16px;
+    padding: 2vh 3vw 1vh 1vw;
     text-decoration: none;
 }
 
 .Navlinks-deep button
 {
     text-align: left;
-    font: normal normal 400 0.85em Poppins;
+    font: normal normal 400 1vw Poppins;
     letter-spacing: 0px;
     background: #0BA830;
     color: white;
     border-radius: 12px;
-    padding: 7px 20px 7px 20px;
-    width: 11em;
-    height: 2.8em;
+    padding: 7px 0px 7px 20px;
+    width: 11vw;
+    height: 2.8vw;
     box-shadow: none;
     margin-left: 1vw;
-    margin-right: 8vw;
+    margin-right: 5vw;
     border: none;
 }
 
 
 .Navlinks-deep button img{
     color: white;
-    width: 0.8em;
-    margin-left: 15px;
+    width: 0.8vw;
+    margin-left: 1vw;
 }
 
 .Navlinks-deep-active
@@ -234,16 +294,16 @@
 
 .footer-header label
 {
-    font: normal normal bold 3em Lora;
+    font: normal normal bold 2.5vw Lora;
     letter-spacing: 0px;
     color: #FFFFFF;
     width: 85vw;
-    margin-top: 5vh;
+    margin-top: 2vh;
 }
 
 .footer-section-2
 {
-    margin-top: 5vh;
+    margin-top: 2vw;
     text-align: center;
 }
 
@@ -259,7 +319,7 @@
 
 .footer-section-3
 {
-    margin-top: 18vh;
+    margin-top: 8vw;
     display: flex;
 }
 
@@ -277,7 +337,7 @@
 
 .footer-section-3-group-sub
 {
-    margin-top: 5vh;
+    margin-top: 3vw;
 }
 
 
@@ -295,7 +355,7 @@
 
 .footer-section-3-group label
 {
-    font: normal normal normal 0.8em Poppins;
+    font: normal normal normal 1vw Poppins;
     letter-spacing: 0px;
     color: rgba(255, 255, 255, 0.7);
     display: block;
@@ -310,11 +370,11 @@
 
 .footer-section-3-group .footer-section-3-group-category
 {
-    font: normal normal normal 1em Poppins;
+    font: normal normal normal 1vw Poppins;
     letter-spacing: 0px;
     color: #5A5A5A;
     display: block;
-    margin-bottom: 3vh;
+    margin-bottom: 1.2vw;
 }
 
 .footer-section-3-group-socials
@@ -330,7 +390,7 @@
 
 .footer-section-4
 {
-    margin-top: 12vh;
+    margin-top: 5vw;
     display: flex;
 }
 
@@ -348,13 +408,13 @@
 {
     width: 80vw;
     border-bottom: 1px solid #5A5A5A;
-    margin-top: 5vh;
+    margin-top: 2vw;
 }
 
 .footer-section-3-group-last label
 {
-    font: normal normal normal 0.8em Poppins;
+    font: normal normal normal 0.8vw Poppins;
     letter-spacing: 0px;
-    margin-top: 2vh;
+    margin-top: 0.8vw;
     color: #5A5A5A;
 }

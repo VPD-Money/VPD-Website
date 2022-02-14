@@ -1,8 +1,8 @@
 .terms-layer-1
 {
     background: #F3F5F6;
-    padding-top: 18vh;
-    padding-bottom: 15vh;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
 
 }
 .terms-group
@@ -30,43 +30,46 @@
 .terms-section-2-tabs label:first-child a
 {
     text-decoration: none;
-    font: normal normal 600 1em Poppins;
+    font: normal normal 600 1vw Poppins;
     letter-spacing: 0px;
     color: #393939;
     opacity: 0.5;
+
 }
 
 .terms-section-2-tabs label:last-child
 {
     text-align: left;
-    font: normal normal 600 1em Poppins;
+    font: normal normal 600 1vw Poppins;
     letter-spacing: 0px;
     color: #0076B5;
     opacity: 1;
     border-bottom: 3px solid #0076B5;
     padding-bottom: 8px;
     margin-left: 2vw;
+
 }
 
 .terms-section-2-header
 {
     display: block;
-    font: normal normal 500 2em Poppins;
+    font: normal normal 500 1.5vw Poppins;
     letter-spacing: 0px;
     color: #0076B5;
-    margin-top: 5vh;
+    margin-top: 2vw;
+    margin-bottom: -1vw;
 }
 
 .terms-section-2-content-pod
 {
- margin-top: 5vh;
+    margin-top: 5vh;
 }
 
 .terms-section-2-content-pod label:first-child
 {
     display: block;
     text-align: left;
-    font: normal normal 600 1.4em Poppins;
+    font: normal normal 600 1.3vw Poppins;
     letter-spacing: 0px;
     color: #0076B5;
 }
@@ -74,38 +77,38 @@
 {
     display: block;
     text-align: left;
-    font: normal normal normal 1em Poppins;
+    font: normal normal normal 0.9vw Poppins;
     letter-spacing: 0px;
     color: #393939;
-    line-height: 2em;
+    line-height: 2vw;
 }
 
 .terms-section-2-content-pod span
 {
     display: block;
     text-align: left;
-    font: normal normal 600 1em Poppins;
+    font: normal normal 600 0.9vw Poppins;
     letter-spacing: 0px;
     color: rgba(0, 0, 0, 0.67);
     margin-top: 2vh;
-    margin-bottom: 0.5vh;
+    margin-bottom: 0.5vw;
 }
 
 .terms-section-2-content-pod tr
 {
     width: 100%;
- }
+}
 
 .terms-section-2-content-pod table
 {
-    margin-top: 2vh;
+    margin-top: 2vw;
     width: 100%;
-    font: normal normal normal 0.6em Poppins;
+    font: normal normal normal 0.7vw Poppins;
     word-wrap: normal;
     table-layout: fixed;
 }
 
-.terms-section-2-content-pod table td,.privacy-section-2-content-pod table th{
+.terms-section-2-content-pod table td,.terms-section-2-content-pod table th{
     padding: 1em;
     word-wrap: break-word;
 }
@@ -113,18 +116,19 @@
 tr:nth-child(even) {
     background-color: rgba(211, 211, 211, 0.47);
 }
+
 .terms-section-2-content-pod th, .terms-section-2-content-pod td
 {
     width: 50%;
-    padding-top: 1.8vh;
+    padding-top: 1.8vw;
 }
 
 
 .terms-nav-box
 {
     background: white;
-    padding-top: 6vh;
-    padding-bottom: 6vh;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
     padding-left: 3vw;
     margin-left: 10vw;
     margin-right: 5vw;
@@ -137,7 +141,7 @@ tr:nth-child(even) {
 }
 .terms-nav-box label
 {
-    font: normal normal 600 1.2em Poppins;
+    font: normal normal 600 1.3vw Poppins;
     letter-spacing: 0px;
     color: #00314B;
     text-transform: uppercase;
@@ -146,7 +150,7 @@ tr:nth-child(even) {
 
 .terms-nav-box div
 {
-    font: normal normal 600 1em Poppins;
+    font: normal normal 600 0.9vw Poppins;
     letter-spacing: 0px;
     color: #909090;
     opacity: 1;

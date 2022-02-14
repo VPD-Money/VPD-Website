@@ -3,9 +3,9 @@
 @import 'mobile/_about.css';
 @import 'mobile/_personal.css';
 @import 'mobile/_business.css';
-/*@import 'mobile/_careers.css';*/
-/*@import 'mobile/_terms.css';*/
-/*@import 'mobile/_privacy.css';*/
+@import 'mobile/_careers.css';
+@import 'mobile/_terms.css';
+@import 'mobile/_privacy.css';
 
 
 .NavHeader
@@ -14,7 +14,7 @@
     background: transparent;
     /*overflow: hidden;*/
     display: flex;
-    max-height: 10vh;
+    max-height: 10vw;
     /*position: fixed;*/
     position: absolute;
     z-index: 999999;
@@ -25,12 +25,12 @@
 {
     width: 100%;
     background: transparent;
-    overflow: hidden;
+    /*overflow: hidden;*/
     display: flex;
     max-height: 10vh;
     padding-top: 0.2vh;
     position: absolute;
-    z-index: 99999;
+    z-index: 999999;
 }
 
 .MainLogo
@@ -82,11 +82,70 @@
     text-align: center;
 }
 
+.download-overlay
+{
+    display: none;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99999999;
+}
+
+.download-overlay-section
+{
+    margin-top: 60vw;
+    margin-left: 23vw;
+
+}
+
+.download-overlay-section a:first-child  img
+{
+    width: 55vw;
+    display: block;
+    margin-bottom: 10vw;
+
+    animation: download-overlay-frames-down .3s linear;
+    transition: .2s ease-in-out;
+}
+
+.download-overlay-section a:nth-child(2) img
+{
+    width: 55vw;
+    display: block;
+    margin-bottom: 10vw;
+
+    animation: download-overlay-frames-up .3s linear;
+    transition: .2s ease-in-out;
+}
+
+@keyframes download-overlay-frames-up {
+    0% {
+        transform: translateY(20vw);
+    }
+    100% {
+        transform: translateY(0vw);
+    }
+}
+
+@keyframes download-overlay-frames-down {
+    0% {
+        transform: translateY(-20vw);
+    }
+    100% {
+        transform: translateY(0vw);
+    }
+}
+
+
 #menuToggle
 {
     display: block;
     /*position: absolute;*/
-    margin-top: 3.2vh;
+    margin-top: 7vw;
     margin-left: 45vw;
     z-index: 1;
     -webkit-user-select: none;
@@ -95,9 +154,10 @@
 
 #menuToggle input
 {
+
     display: block;
-    width: 5vh;
-    height: 8vw;
+    width: 10vw;
+    height: 10vw;
     position: absolute;
     cursor: pointer;
     opacity: 0; /* hide this */
@@ -137,6 +197,12 @@
     opacity 0.55s ease;
 }
 
+.NavHeader-nosticky #menuToggle span
+{
+    background: rgba(90, 90, 90, 0.7);
+}
+
+
 #menuToggle span:first-child
 {
     transform-origin: 0% 0%;
@@ -174,13 +240,13 @@
 #menu .close-burger-menu
 {
     color: white;
-    margin-top: -6.5vh;
+    margin-top: -10vw;
     margin-left: 70vw;
     position: absolute;
-    font-size: 40px;
-    -webkit-animation:spin 1s ease-in-out;
-    -moz-animation:spin 1s ease-in-out;
-    animation:spin 1s ease-in-out;
+    font-size: 8vw;
+    -webkit-animation:spin 2s ease-in-out;
+    -moz-animation:spin 2s ease-in-out;
+    animation:spin 2s ease-in-out;
 }
 
 @-moz-keyframes spin {
@@ -205,9 +271,9 @@
     position: fixed;
     width: 100vw;
     height: 110vh;
-    margin: -10vh 0 0 0;
+    margin: -10vw 0 0 0;
     padding-left: 15vw;
-    padding-top: 125px;
+    padding-top: 20vw;
     right: 0px;
 
 
@@ -229,27 +295,28 @@
 
 #menu li
 {
-    padding: 10px 0;
+    padding: 2.5vw 0;
     color: #0993DC;
-    font: normal normal normal 1.3em Poppins;
+    font: normal normal normal 5.5vw Poppins;
 }
 
 #menu .menu-logo
 {
-  margin-bottom: 8vh;
+  margin-bottom: 12vw;
   width: 35vw;
+  cursor: pointer;
 }
 
 #menu .menu-privacy-label
 {
-    margin-top: 18vh;
-    margin-bottom: 2vh;
+    margin-top: 30vw;
+    margin-bottom: 5vw;
 }
 
 #menu label
 {
     color: #FFFFFF;
-    font: normal normal normal 0.8em Poppins;
+    font: normal normal normal 3.5vw Poppins;
     opacity: 0.6;
     display: block;
 }
@@ -257,7 +324,7 @@
 #menu .menu-stores
 {
     display: flex;
-    padding-top: 5vh;
+    padding-top: 8vw;
  }
 
 #menu .menu-stores img
@@ -267,7 +334,7 @@
 
 #menu .menu-stores img:first-child
 {
-    margin-right: 2vh;
+    margin-right: 5vw;
 }
 
 
@@ -296,8 +363,8 @@
 {
     background: #000A0F 0% 0% no-repeat padding-box;
     opacity: 1;
-    padding-top: 8vh;
-    padding-bottom: 5vh;
+    padding-top: 12vw;
+    padding-bottom: 5vw;
     z-index:99;
     position:relative;
 }
@@ -309,24 +376,24 @@
 
 .footer-header label
 {
-    font: normal normal bold 2.2em Lora;
+    font: normal normal bold 8vw Lora;
     letter-spacing: 0px;
     color: #FFFFFF;
-    width: 75vw;
-    margin-top: 5vh;
+    width: 72vw;
+    margin-top: 3vw;
 }
 
 .footer-section-2
 {
-    margin-top: 5vh;
+    margin-top: 10vw;
     text-align: center;
 }
 
 .footer-section-2 img
 {
     width: 50vw;
-    margin-left: 13vh;
-    margin-bottom: 3.5vh;
+    margin-left: 25vw;
+    margin-bottom: 5vw;
     display: block;
     -webkit-touch-callout: none;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -335,20 +402,20 @@
 
 .footer-section-3
 {
-    margin-top: 15vh;
+    margin-top: 15vw;
     display: block;
     text-align: center;
 }
 
 .footer-section-3-group
 {
-    margin-bottom: 8vh;
+    margin-bottom: 15vw;
 }
 
 
 .footer-section-3-group-sub
 {
-    margin-top: 10vh;
+    margin-top: 15vw;
 }
 
 
@@ -366,7 +433,7 @@
 
 .footer-section-3-group label
 {
-    font: normal normal normal 1em Poppins;
+    font: normal normal normal 4vw Poppins;
     letter-spacing: 0px;
     color: rgba(255, 255, 255, 0.7);
     display: block;
@@ -381,7 +448,7 @@
 
 .footer-section-3-group .footer-section-3-group-category
 {
-    font: normal normal normal 1em Poppins;
+    font: normal normal normal 4vw Poppins;
     letter-spacing: 0px;
     color: #5A5A5A;
     display: block;
@@ -426,7 +493,7 @@
 
 .footer-section-3-group-last label
 {
-    font: normal normal normal 0.8em Poppins;
+    font: normal normal normal 3vw Poppins;
     letter-spacing: 0px;
     margin-top: 2vh;
     color: #5A5A5A;

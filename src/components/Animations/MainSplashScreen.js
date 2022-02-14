@@ -35,7 +35,7 @@ class MainSplashScreen extends Component {
         autoFocus: boolean('autoFocus', true, this.tooglesGroupId),
         thumbWidth: number('thumbWidth', 100, {}, this.valuesGroupId),
         selectedItem: number('selectedItem', 0, {}, this.valuesGroupId),
-        interval: number('interval', 100, {}, this.valuesGroupId),
+        interval: number('interval', 1000, {}, this.valuesGroupId),
         transitionTime: number('transitionTime', 500, {}, this.valuesGroupId),
         swipeScrollTolerance: number('swipeScrollTolerance', 5, {}, this.valuesGroupId),
         ariaLabel: text('ariaLabel', undefined),
@@ -63,7 +63,7 @@ class MainSplashScreen extends Component {
                 let timeout = setTimeout(function () {
                   onSlideCompleted();
                     clearTimeout(timeout);
-                }, 3000);
+                }, 2000);
 
             }
         }
@@ -74,28 +74,28 @@ class MainSplashScreen extends Component {
             <Carousel {...this.getConfigurableProps()} animationHandler="fade" onChange={onChangeEvent} swipeable={false}
                       className="presentation-mode">
                 <div key="splash_person_box_1" alt="Bank of Sarah">
-                    <img src={"/images/splash_person_1" + (this.screenImageLetter) + ".png"}/>
+                    <img src={"/images/splash_person_1" + (this.screenImageLetter) + ".webp"}/>
                     <div className="carouselFrameCaption">
                         <span className="carouselFrameCaptionItem1">Bank of</span>
                         <span className="carouselFrameCaptionItem2">Sarah</span>
                     </div>
                 </div>
                 <div key="splash_person_box_2" alt="Bank of Biodun">
-                    <img src={"/images/splash_person_2" + (this.screenImageLetter) + ".png"}/>
+                    <img src={"/images/splash_person_2" + (this.screenImageLetter) + ".webp"}/>
                     <div className="carouselFrameCaption">
                         <span className="carouselFrameCaptionItem1">Bank of</span>
                         <span className="carouselFrameCaptionItem2">Biodun</span>
                     </div>
                 </div>
                 <div key="splash_person_box_3" alt="Bank of Ashia">
-                    <img src={"/images/splash_person_3" + (this.screenImageLetter) + ".png"}/>
+                    <img src={"/images/splash_person_3" + (this.screenImageLetter) + ".webp"}/>
                     <div className="carouselFrameCaption">
                         <span className="carouselFrameCaptionItem1">Bank of</span>
                         <span className="carouselFrameCaptionItem2">Ashia</span>
                     </div>
                 </div>
                 <div key="splash_person_box_4" alt="Bank of Chidi">
-                    <img src={"/images/splash_person_4" + (this.screenImageLetter) + ".png"}/>
+                    <img src={"/images/splash_person_4" + (this.screenImageLetter) + ".webp"}/>
                     <div className="carouselFrameCaption">
                         <span className="carouselFrameCaptionItem1">Bank of</span>
                         <span className="carouselFrameCaptionItem2">Chidi</span>

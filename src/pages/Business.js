@@ -17,16 +17,12 @@ class Business extends Component {
 
 
     render() {
-        const {
-            isBigScreen,
-            isDesktopOrLaptop,
-            isTablet,
-            isMobile,
-            isPortrait,
-            isRetina
-        } = JSON.parse(this.props.deviceType);
+        const {isBigScreen,isDesktopOrLaptop,isTablet,isMobile,isSmallMobile,isPortrait,isRetina} = JSON.parse(this.props.deviceType);
 
-        if (isMobile && isPortrait) this.screenImageLetter = '_m';
+        if (isSmallMobile) this.screenImageLetter = '_m';
+        else if (isSmallMobile && !isPortrait) this.screenImageLetter = '_d';
+
+        else if (isMobile && isPortrait) this.screenImageLetter = '_m';
         else if (isMobile && !isPortrait) this.screenImageLetter = '_d';
 
         else if (isTablet && isPortrait) this.screenImageLetter = '_t';
@@ -42,14 +38,14 @@ class Business extends Component {
                         <NavigationDeep/>
 
                         <div className="business-layer-1">
-                            <img className="bg_image" src={"/images/business_personal_main_bg" + (this.screenImageLetter) + ".png"} />
+                            <img className="bg_image" src={"/images/business_personal_main_bg" + (this.screenImageLetter) + ".webp"} />
 
                             <div className="business-layer-1-component">
                                 <div className="business-layer-1-component-sub-1">
                                     <label className="business-layer-1-component-category">BUSINESS</label>
                                     <label className="business-layer-1-component-heading">All your business tools in one place</label>
                                     <label className="business-layer-1-component-heading-mobile">Let's get down to business</label>
-                                    <label className="business-layer-1-component-heading-alt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</label>
+                                    <label className="business-layer-1-component-heading-alt">Business provides the borderless solution you need to make and take payments in one place.</label>
 
                                     <div className="business-layer-1-component-sub-1-mini-1">
                                         <label id="component-label-1">Payroll</label>
@@ -61,74 +57,76 @@ class Business extends Component {
                                         <label id="component-label-7">Product & Services </label>
                                     </div>
                                    <div className="business-layer-1-component-sub-1-mini-2">
-                                       <button>
+                                       <button className={"open-download-overlay"}>
                                            Get the App &nbsp;&nbsp;&nbsp;<img src="/images/icons/arrow-right-white.svg"/>
                                        </button>
                                        <div className="component-icon-group">
-                                           <img label="1" className="component-icon" src="/images/icons/payroll.png"/>
+                                           <img label="1" className="component-icon" src="/images/icons/payroll.webp"/>
                                        </div>
                                        <div className="component-icon-group">
-                                           <img label="2" className="component-icon" src="/images/icons/account-report.png"/>
+                                           <img label="2" className="component-icon" src="/images/icons/account-report.webp"/>
                                        </div>
                                        <div className="component-icon-group">
-                                           <img label="3" className="component-icon" src="/images/icons/invoice.png"/>
+                                           <img label="3" className="component-icon" src="/images/icons/invoice.webp"/>
                                        </div>
                                        <div className="component-icon-group">
-                                           <img label="4" className="component-icon" src="/images/icons/customers.png"/>
+                                           <img label="4" className="component-icon" src="/images/icons/customers.webp"/>
                                        </div>
                                        <div className="component-icon-group">
-                                           <img label="5" className="component-icon" src="/images/icons/sub-accounts.png"/>
+                                           <img label="5" className="component-icon" src="/images/icons/sub-accounts.webp"/>
                                        </div>
                                        <div className="component-icon-group">
-                                           <img label="6" className="component-icon" src="/images/icons/payslip.png"/>
+                                           <img label="6" className="component-icon" src="/images/icons/payslip.webp"/>
                                        </div>
                                        <div className="component-icon-group">
-                                           <img label="7" className="component-icon" src="/images/icons/product-services.png"/>
+                                           <img label="7" className="component-icon" src="/images/icons/product-services.webp"/>
                                        </div>
                                 </div>
                                    </div>
 
                                 <div className="business-layer-1-component-sub-2">
-                                    <img src={"/images/business_main_phone"+ (this.screenImageLetter) + ".png"}/>
+                                    <img src={"/images/business_main_phone"+ (this.screenImageLetter) + ".webp"}/>
                                 </div>
                             </div>
 
                         </div>
 
-                        <div className="business-layer-2">
+                        <div id="features" className="business-layer-2">
                             <div className="business-layer-2-group">
                                 <div className="business-layer-2-group-1">
-                                    <img src="/images/business_frame_details.png"/>
+                                    <img src="/images/business_frame_payroll.webp"/>
                                 </div>
                                 <div className="business-layer-2-group-2">
                                     <div className="business-layer-2-group-2-slider">
                                         <img id="business-layer-2-slide-left" src="/images/icons/arrow-left-black-faded.svg"/>
                                             <div className="business-layer-2-slide-icon-group">
-                                                <img src="/images/icons/customers.png"/>
-                                                <label>Onboarding</label>
-                                            </div>
-                                            <div className="business-layer-2-slide-icon-group-preview icon-preview-1">
-                                                <img src="/images/icons/invoice.png"/>
-                                                <label>Invoices</label>
-                                            </div>
-                                            <div className="business-layer-2-slide-icon-group-preview icon-preview-2">
-                                                <img src="/images/icons/sub-accounts.png"/>
-                                                <label>Sub Accounts</label>
-                                            </div>
-                                            <div className="business-layer-2-slide-icon-group-preview icon-preview-3">
-                                                <img src="/images/icons/payroll.png"/>
+                                                <img src="/images/icons/payroll.webp"/>
                                                 <label>Payroll</label>
                                             </div>
+                                            <div className="business-layer-2-slide-icon-group-preview icon-preview-1">
+                                                <img src="/images/icons/account-report.webp"/>
+                                                <label>Account Statement</label>
+                                            </div>
+                                            <div className="business-layer-2-slide-icon-group-preview icon-preview-2">
+                                                <img src="/images/icons/invoice.webp"/>
+                                                <label>Invoice</label>
+                                            </div>
+                                            <div className="business-layer-2-slide-icon-group-preview icon-preview-3">
+                                                <img src="/images/icons/customers.webp"/>
+                                                <label>Customers</label>
+                                            </div>
                                             <div className="business-layer-2-slide-icon-group-preview icon-preview-4">
-                                                <img src="/images/icons/account-report.png"/>
-                                                <label>Account Report</label>
+                                                <img src="/images/icons/sub-accounts.webp"/>
+                                                <label>Sub Accounts</label>
                                             </div>
                                         <img id="business-layer-2-slide-right" src="/images/icons/arrow-right-black.svg"/>
 
                                     </div>
-                                    <div className="business-layer-2-group-2-header">Sign up in minutes</div>
-                                    <div className="business-layer-2-group-2-text-1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</div>
-                                    <div className="business-layer-2-group-2-text-2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</div>
+                                    <div className="business-layer-2-group-2-header">Payroll</div>
+                                    <div className="business-layer-2-group-2-text-1">Ensure your employees and contractors are paid on time with our
+                                        simple, practical payroll payment service, ensuring fast payment
+                                        month on month. </div>
+                                    <div className="business-layer-2-group-2-text-2"> </div>
                                 </div>
                             </div>
                         </div>
@@ -143,13 +141,13 @@ class Business extends Component {
     componentDidMount()
     {
         $(document).on("mouseenter",".component-icon-group img",function(){
-            $(this).animate({'margin-top':'-1vh','zoom' : '120%'},10);
+            $(this).animate({'margin-top':'-0.2vw','zoom' : '120%'},10);
             $("#component-label-"+$(this).attr("label")).css("color","white");
             $("#component-label-"+$(this).attr("label")).animate({'margin-top':'-2.5vh'},10);
         });
 
         $(document).on("mouseleave",".component-icon-group img",function(){
-            $(this).animate({'margin-top':'1vh','zoom' : '100%'},10);
+            $(this).animate({'margin-top':'0.8vw','zoom' : '100%'},10);
             $("#component-label-"+$(this).attr("label")).css("color","transparent");
             $("#component-label-"+$(this).attr("label")).animate({'margin-top':'-2vh'},10);
         });
@@ -158,64 +156,79 @@ class Business extends Component {
 
         let slider_values=[
             {
-                title:"Onboarding",
-                url:"/images/icons/customers.png",
-                image:"/images/business_frame_details.png",
-                heading:"Sign up in minutes",
-                content1:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
-                content2:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna"
+                title:"Payroll",
+                url:"/images/icons/sub-accounts.webp",
+                image:"/images/business_frame_payroll.webp",
+                heading:"Payroll",
+                content1:"Ensure your employees and contractors are paid on time with our\n" +
+                    "simple, practical payroll payment service, ensuring fast payment\n" +
+                    "month on month. ",
+                content2:""
+            },
+            {
+                title:"Account Statement",
+                url:"/images/icons/account-report.webp",
+                image:"/images/business_frame_account_report.webp",
+                heading:"Account Statement",
+                content1:"Keep an eye on account activity, check out your latest transactions\n" +
+                    "and more. Everything is right here for you to view.",
+                content2:""
             },
             {
                 title:"Invoices",
-                url:"/images/icons/invoice.png",
-                image:"/images/personal_frame_details.png",
-                heading:"Create and send Invoices",
-                content1:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
-                content2:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna"
+                url:"/images/icons/invoice.webp",
+                image:"/images/business_frame_details.webp",
+                heading:"Invoices",
+                content1:"",
+                content2:""
             },
+            {
+                title:"Customers",
+                url:"/images/icons/customers.webp",
+                image:"/images/business_frame_customers.webp",
+                heading:"Customers",
+                content1:"",
+                content2:""
+            },
+
             {
                 title:"Sub Accounts",
-                url:"/images/icons/sub-accounts.png",
-                image:"/images/business_frame_details.png",
-                heading:"Create multiple Sub accounts",
-                content1:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
-                content2:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna"
+                url:"/images/icons/sub-accounts.webp",
+                image:"/images/business_frame_subaccount.webp",
+                heading:"Sub Accounts",
+                content1:"",
+                content2:""
             },
-            {
-                title:"Payroll",
-                url:"/images/icons/sub-accounts.png",
-                image:"/images/personal_frame_details.png",
-                heading:"Sign up in minutes 2",
-                content1:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
-                content2:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna"
-            },
-            {
-                title:"Account Report",
-                url:"/images/icons/account-report.png",
-                image:"/images/business_frame_details.png",
-                heading:"Sign up in minutes 3",
-                content1:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
-                content2:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna"
-            },
+
             {
                 title:"Pay Slip",
-                url:"/images/icons/payslip.png",
-                image:"/images/personal_frame_details.png",
-                heading:"Sign up in minutes 4",
-                content1:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
-                content2:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna"
+                url:"/images/icons/payslip.webp",
+                image:"/images/business_frame_details.webp",
+                heading:"Pay Slip",
+                content1:"",
+                content2:""
             },
             {
                 title:"Product & Services",
-                url:"/images/icons/product-services.png",
-                image:"/images/business_frame_details.png",
-                heading:"Sign up in minutes 5",
-                content1:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
-                content2:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna"
+                url:"/images/icons/product-services.webp",
+                image:"/images/business_frame_product_services.webp",
+                heading:"Product & Services",
+                content1:"",
+                content2:""
             }
         ];
 
         let totalSlideIndex = slider_values.length>0? slider_values.length-1 : 0;
+
+        //Jump to
+        $(document).on("click",".business-layer-2-slide-icon-group-preview",function () {
+            var jumpIndex = 0;
+            if( $(this).hasClass("icon-preview-2") ) jumpIndex=1;
+            if( $(this).hasClass("icon-preview-3") ) jumpIndex=2;
+            if( $(this).hasClass("icon-preview-4") ) jumpIndex=3;
+            currentSlideNumber+=jumpIndex;
+            $("#business-layer-2-slide-right").click();
+        });
 
         $(document).on("click","#business-layer-2-slide-left",function () {
 
@@ -336,7 +349,7 @@ function attachDeviceTypeHook(Component) {
         const isMobile = useMediaQuery(media_query_values.mobile)
         const isPortrait = useMediaQuery(media_query_values.portrait)
         const isRetina = useMediaQuery(media_query_values.retina)
-        let objVals = JSON.stringify({isBigScreen,isDesktopOrLaptop,isTablet,isMobile,isPortrait,isRetina});
+        let objVals = JSON.stringify({isBigScreen, isDesktopOrLaptop, isTablet, isMobile, isPortrait, isRetina});
 
         return <Component {...props} deviceType={objVals} />;
     }

@@ -39,30 +39,35 @@ class Contact extends Component {
                             <div className="careers-layer-1">
                                 <div className="careers-layer-1-group">
                                     <div className="careers-layer-1-group-section-1">
-                                        <img src={"/images/careers_main_image"+ (this.screenImageLetter) + ".png"}/>
+                                        <img src={"/images/careers_main_image"+ (this.screenImageLetter) + ".webp"}/>
                                     </div>
 
                                     <div className="careers-layer-1-group-section-2">
                                         <label className="careers-layer-1-group-section-2-label">CAREERS</label>
                                         <label className="careers-layer-1-group-section-2-label-2">Interested in working with us</label>
                                         <label className="careers-layer-1-group-section-2-desc">VPD.Money is a financial services App brought to you by part of the team that delivered VoguePay (A leading payment solutions provider that was founded in 2012 and now operating across 5 continents).</label>
-                                        <button>View Openings</button>
+                                        <button className={"open-download-overlay"}>Get the App <img src="/images/icons/arrow-right-white.svg"/></button>
                                     </div>
                                 </div>
                             </div>
 
                         <div className="careers-layer-2">
-                            <img src="/images/icons/multiple-arrows-down.png"/>
+                            <img src="/images/icons/multiple-arrows-down.webp"/>
                         </div>
 
                         <div className="careers-layer-3">
                             <div className="careers-layer-3-group">
                                 <div className="careers-layer-3-group-section-1">
-                                    <label>Our Openings</label>
-                                    <label>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur</label>
+                                    <label>Want to join team VPD?</label>
+                                    <label>Are you passionate about fintech or interested in supporting
+                                        unbanked individuals and businesses? Then VPD might be the
+                                        ideal team for you. Whether you're a skilled developer or an
+                                        experienced customer service professional, get in touch with our
+                                        team today to learn about the latest vacancies and positions
+                                        available on our growing team.</label>
                                 </div>
                                 <div className="careers-layer-3-group-section-2">
-                                    <img src={"/images/career_group" + (this.screenImageLetter) + ".png"}/>
+                                    <img src={"/images/career_group" + (this.screenImageLetter) + ".webp"}/>
                                 </div>
                             </div>
                         </div>
@@ -137,7 +142,7 @@ function attachDeviceTypeHook(Component) {
         const isMobile = useMediaQuery(media_query_values.mobile)
         const isPortrait = useMediaQuery(media_query_values.portrait)
         const isRetina = useMediaQuery(media_query_values.retina)
-        let objVals = JSON.stringify({isBigScreen,isDesktopOrLaptop,isTablet,isMobile,isPortrait,isRetina});
+        let objVals = JSON.stringify({isBigScreen, isDesktopOrLaptop, isTablet, isMobile, isPortrait, isRetina});
 
         return <Component {...props} deviceType={objVals} />;
     }

@@ -261,7 +261,7 @@ function attachDeviceTypeHook(Component) {
         const isMobile = useMediaQuery(media_query_values.mobile)
         const isPortrait = useMediaQuery(media_query_values.portrait)
         const isRetina = useMediaQuery(media_query_values.retina)
-        let objVals = JSON.stringify({isBigScreen,isDesktopOrLaptop,isTablet,isMobile,isPortrait,isRetina});
+        let objVals = JSON.stringify({isBigScreen, isDesktopOrLaptop, isTablet, isMobile, isPortrait, isRetina});
 
         return <Component {...props} deviceType={objVals} />;
     }

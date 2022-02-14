@@ -43,12 +43,12 @@ class Contact extends Component {
                                           <label>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</label>
 
                                           <div className="contact-ng-address">
-                                              <img className="contact-ng-address-img" src="/images/icons/ng.png"/>
+                                              <img className="contact-ng-address-img" src="/images/icons/ng.webp"/>
                                               <label>33A, Abba Johnson Crescent, Akora Estate, Off Adeniyi Jones, Ikeja, Lagos State - Nigeria. 100005</label>
                                           </div>
 
                                           <div className="contact-uk-address">
-                                              <img className="contact-uk-address-img"  src="/images/icons/uk.png"/>
+                                              <img className="contact-uk-address-img"  src="/images/icons/uk.webp"/>
                                               <label>Level 39, One Canada Square, Canary Wharf. London, E14 5Ab, UK</label>
                                           </div>
 
@@ -56,24 +56,25 @@ class Contact extends Component {
                                       <div className="contact-layer-1-section-2">
 
                                           <div className="contact-email-box">
-                                            <img src="/images/icons/email.png"/>
+                                            <img src="/images/icons/email.webp"/>
                                             <a href={"mailto:"+contact_info.email}>{contact_info.email}</a>
                                           </div>
 
                                           <div className="contact-callcenter-box">
-                                              <img src="/images/icons/customer-care.png"/>
+                                              <img src="/images/icons/customer-care.webp"/>
                                               <label>{contact_info.phone}</label>
                                           </div>
 
                                           <div className="contact-social-box">
-                                              <a href={contact_info.instagram}><img src="/images/icons/instagram.png"/></a>
-                                              <a href={contact_info.linkedin}><img src="/images/icons/linkedin.png"/></a>
-                                              <a href={contact_info.twitter}><img src="/images/icons/twitter.png"/></a>
-                                              <a href={contact_info.facebook}><img src="/images/icons/facebook.png"/></a>
+                                              <a href={contact_info.instagram}><img src="/images/icons/instagram.webp"/></a>
+                                              <a href={contact_info.linkedin}><img src="/images/icons/linkedin.webp"/></a>
+                                              <a href={contact_info.twitter}><img src="/images/icons/twitter.webp"/></a>
+                                              <a href={contact_info.facebook}><img src="/images/icons/facebook.webp"/></a>
                                               <label>@vpdmoney</label>
                                           </div>
 
                                       </div>
+
                                   </div>
                             </div>
 
@@ -93,7 +94,7 @@ function attachDeviceTypeHook(Component) {
         const isMobile = useMediaQuery(media_query_values.mobile)
         const isPortrait = useMediaQuery(media_query_values.portrait)
         const isRetina = useMediaQuery(media_query_values.retina)
-        let objVals = JSON.stringify({isBigScreen,isDesktopOrLaptop,isTablet,isMobile,isPortrait,isRetina});
+        let objVals = JSON.stringify({isBigScreen, isDesktopOrLaptop, isTablet, isMobile, isPortrait, isRetina});
 
         return <Component {...props} deviceType={objVals} />;
     }

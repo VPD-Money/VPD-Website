@@ -30,7 +30,7 @@
 
 .careers-layer-1-group-section-2-label
 {
-    font: normal normal 600 1.3em Poppins;
+    font: normal normal 600 1.2em Poppins;
     letter-spacing: 3px;
     color: #0076B5;
     text-transform: uppercase;
@@ -41,11 +41,11 @@
 {
     display: block;
     text-align: left;
-    font: normal normal 600 4em Poppins;
+    font: normal normal 600 3.5em Poppins;
     letter-spacing: 0px;
     color: #002E45;
     width: 30vw;
-    line-height: 8vh;
+    line-height: 7vh;
     margin-top: 3vh;
 }
 
@@ -53,12 +53,12 @@
 {
     display: block;
     text-align: left;
-    font: normal normal normal 1.5em Poppins;
+    font: normal normal normal 1.2em Poppins;
     letter-spacing: 0px;
     color: #505050;
     line-height: 1.8em;
     margin-top: 3vh;
-    width: 45vw;
+    width: 32vw;
 }
 
 .careers-layer-1-group button
@@ -66,12 +66,19 @@
     background: #0BA830 0% 0% no-repeat padding-box;
     border-radius: 10px;
     border: none;
-    padding: 1.5vh 3vw 1.5vh 3vw;
+    padding: 1.5vh 1.5vw 1.5vh 1.5vw;
     font: normal normal 600 1em Poppins;
     letter-spacing: 0px;
     color: #FFFFFF;
     margin-top: 5vh;
 }
+
+.careers-layer-1-group button img
+{
+    width: 1vw;
+    margin-left: 1.5vw;
+}
+
 
 .careers-layer-2 img
 {
@@ -110,7 +117,7 @@
 .careers-layer-3-group-section-1 label:first-child
 {
     display: block;
-    font: normal normal 600 2.8em Poppins;
+    font: normal normal 600 2.5em Poppins;
     letter-spacing: 0px;
     color: #0076B5;
     width: 30vw;
@@ -172,13 +179,13 @@
 {
     display: block;
     text-align: center;
-    font: normal normal normal 1.5em Poppins;
+    font: normal normal normal 1.35em Poppins;
     letter-spacing: 0px;
     color: #505050;
     padding-top: 3vh;
-    margin-left: 20vw;
-    width: 60vw;
-    line-height: 1.7em;
+    margin-left: 22vw;
+    width: 55vw;
+    line-height: 2.2rem;
 }
 
 .careers-layer-4-group:nth-child(2)
@@ -231,5 +238,5 @@
     letter-spacing: 0px;
     color: #575757;
     padding-top: 2vh;
-    line-height: 1.6em;
+    line-height: 2rem;
 }

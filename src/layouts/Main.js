@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-
 import Analytics from '../components/Template/Analytics';
 
 const Main = (props) => (
     <HelmetProvider>
         <Analytics />
-        <Helmet titleTemplate="VPD Money | %s " defaultTitle="VPD Money" defer={false}>
+        <Helmet titleTemplate="VPD Money | %s" defaultTitle="VPD Money" defer={false}>
             {props.title && <title>{props.title}</title>}
             <meta name="description" content={props.description} />
         </Helmet>

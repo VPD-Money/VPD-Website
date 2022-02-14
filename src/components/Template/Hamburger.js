@@ -18,7 +18,7 @@ const Hamburger = () => {
 
               <div className="close-burger-menu">&#10005;</div>
 
-              <img className={"menu-logo"} src={"/images/main_logo.svg"}/>
+              <Link to={"/"}> <img className={"menu-logo"} src={"/images/main_logo.svg"}/> </Link>
               {routes.filter((l) => !l.index).map((l) => (
                   <Link to={l.path}><li>{l.label}</li></Link>
               ))}

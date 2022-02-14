@@ -5,6 +5,7 @@ body, html {
   margin: 0;
   max-width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
   /*position: fixed;*/
 }
 
@@ -25,7 +26,7 @@ img
 }
 
 label{display:inline-block;max-width:100%;margin-bottom:5px;font-weight:500}
-
+#screenImageLetter{ display:none }
 .row
 {
   /*margin-right: -15px;*/
@@ -39,6 +40,10 @@ label{display:inline-block;max-width:100%;margin-bottom:5px;font-weight:500}
   width:100%;
 }
 
+.open-download-overlay
+{
+  cursor: pointer;
+}
 
 .col-1
 {

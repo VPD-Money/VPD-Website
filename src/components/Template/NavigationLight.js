@@ -6,6 +6,7 @@ import routes from '../../data/Routes';
 import {useMediaQuery} from "react-responsive";
 import media_query_values from "../../data/MediaQuery";
 import $ from "jquery";
+import DownloadOverlay from "../Animations/DownloadOverlay";
 
 class NavigationLight extends Component {
 
@@ -29,13 +30,14 @@ class NavigationLight extends Component {
         if (isMobile && isPortrait || isTablet && isPortrait) this.showBurger = true;
 
         return <header className="NavHeader-nosticky">
+            <DownloadOverlay/>
             <div className="MainLogo-light"><Link to='/'> <img src="/images/main_logo_plain.svg"/></Link></div>
             {!this.showBurger &&
             <div className="Navlinks-light">
                 {routes.filter((l) => !l.index).map((l) => (
                     <Link class={(currentPath==l.path? "Navlinks-light-active":"" )} to={l.path}>{l.label}</Link>
                 ))}
-                <button>
+                <button className={"open-download-overlay"}>
                     Get the App <img src="/images/icons/arrow-right-white.svg"/>
                 </button>
             </div>
@@ -49,24 +51,41 @@ class NavigationLight extends Component {
             localStorage.setItem("slider-completed","true");
         });
 
+        $(document).on("click", ".menu-logo", function () {
+            localStorage.setItem("slider-completed","true");
+        });
+
         $(document).on("click","#menu-checkbox",function () {
             if( $( "#menu-checkbox" ).prop( "checked"))
             {
-                $("body").css("position","fixed");
                 $("#menuToggle span").hide();
+                $( "#menu-checkbox" ).hide();
+                $( ".intercom-lightweight-app" ).hide();
             }
         });
 
         $(document).on("click",".close-burger-menu",function () {
+            $( "#menu-checkbox" ).show();
             $( "#menu-checkbox" ).prop( "checked", false );
-            $("body").css("position","relative");
+            $( ".intercom-lightweight-app" ).show();
             $("#menuToggle span").fadeIn(50);
         });
 
         $(document).on("click","#menu a",function () {
             $( "#menu-checkbox" ).prop( "checked", false );
-            $("body").css("position","relative");
+            $( "#menu-checkbox" ).show();
+            $( ".intercom-lightweight-app" ).show();
             $("#menuToggle span").fadeIn(50);
+        });
+
+        $(document).on("click",".open-download-overlay",function () {
+            $( ".download-overlay" ).show();
+            $( ".intercom-lightweight-app" ).hide();
+        });
+
+        $(document).on("click",".download-overlay",function () {
+            $( ".download-overlay" ).hide();
+            $( ".intercom-lightweight-app" ).fadeIn(100);
         });
 
     }
@@ -82,7 +101,7 @@ function attachDeviceTypeHook(Component) {
         const isMobile = useMediaQuery(media_query_values.mobile)
         const isPortrait = useMediaQuery(media_query_values.portrait)
         const isRetina = useMediaQuery(media_query_values.retina)
-        let objVals = JSON.stringify({isBigScreen,isDesktopOrLaptop,isTablet,isMobile,isPortrait,isRetina});
+        let objVals = JSON.stringify({isBigScreen, isDesktopOrLaptop, isTablet, isMobile, isPortrait, isRetina});
 
         return <Component {...props} deviceType={objVals} location={location} />;
     }

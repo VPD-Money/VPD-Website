@@ -2,18 +2,22 @@
 .contact-layer-1
 {
     background: #F3F5F6;
-    padding-top: 15vh;
-    padding-bottom: 5vh;
+    padding-bottom: 10vw;
+    width: 100vw;
+    height: auto;
+    margin-top: -20vw;
 }
 
 .contact-layer-1-group
 {
-    display: block;
+    background: #F3F5F6;
 }
 
 .contact-layer-1-section-1
 {
+    padding-top: 30vw;
     width: 100vw;
+    height: auto;
     padding-left: 12vw;
     display: block;
 }
@@ -22,17 +26,19 @@
 {
     width: 100vw;
     padding-left: 10vw;
+    margin-top: -5vw;
     display: block;
+    height: auto;
 }
 .contact-layer-1-section-1 label
 {
-    position: absolute;
-    font: normal normal 600 2em Poppins;
+    font: normal normal 600 8vw Poppins;
     letter-spacing: 0px;
     color: #002E45;
     width: 50vw;
-    margin-top: -30vh;
-    line-height: 4.5vh;
+    margin-top: 20vw;
+    line-height: 10vw;
+    display: block;
 }
 
 .contact-layer-1-section-1 > label:nth-child(2)
@@ -41,22 +47,23 @@
     font: normal normal normal 1em Poppins;
     letter-spacing: 0px;
     color: #505050;
-    margin-top: -18vh;
+    margin-top: 8vw;
     width: 80vw;
-    margin-bottom: 5vh;
+    margin-bottom: 5vw;
+    display: block;
 }
 
 .contact-ng-address
 {
-    display: block;
-    margin-top: 30vh;
-    width: 50vw;
+    display: inline-flex;
+    margin-top: 2vw;
+    width: 80vw;
 }
 .contact-uk-address
 {
-    display: block;
-    margin-top: 12vh;
-    width: 50vw;
+    display: inline-flex;
+    margin-top: 5vw;
+    width: 80vw;
 }
 
 .contact-ng-address-img
@@ -78,10 +85,10 @@
 .contact-ng-address label
 {
     text-align: left;
-    font: normal normal normal 1em Poppins;
+    font: normal normal normal 0.9em Poppins;
     letter-spacing: 0px;
     color: #505050;
-    margin-top: 0.2vh;
+    margin-top: 1vw;
     margin-left: 5vw;
     width: 65vw;
 }
@@ -89,7 +96,7 @@
 .contact-uk-address label
 {
     text-align: left;
-    font: normal normal normal 1em Poppins;
+    font: normal normal normal 0.9em Poppins;
     letter-spacing: 0px;
     color: #505050;
     margin-top: 0.2vh;
@@ -107,19 +114,19 @@
     padding-right: 3em;
     width: 80vw;
     display: block;
-    margin-top: 10vh;
-    margin-bottom: 4.5vh;
+    margin-top: 15vw;
+    margin-bottom: 6vw;
 }
 
 .contact-email-box img
 {
   max-width: 5vw;
-  margin-left: 1vw;
+  margin-left: 5vw;
 }
 
 .contact-email-box a
 {
-    font: normal normal 600 1em Poppins;
+    font: normal normal 600 3.5vw Poppins;
     letter-spacing: 0px;
     color: #002E45;
     text-decoration: none;
@@ -137,8 +144,8 @@
     padding-right: 3em;
     width: 80vw;
     display: block;
-    margin-top: 1vh;
-    margin-bottom: 4.5vh;
+    margin-top: 1vw;
+    margin-bottom: 6vw;
 }
 
 .contact-callcenter-box img
@@ -149,7 +156,7 @@
 
 .contact-callcenter-box label
 {
-    font: normal normal 600 1em Poppins;
+    font: normal normal 600 3.5vw Poppins;
     letter-spacing: 0px;
     color: #002E45;
     text-decoration: none;
@@ -167,21 +174,20 @@
     padding-right: 3em;
     width: 80vw;
     display: block;
-    margin-top: 1vh;
-    margin-bottom: 4.5vh;
+    margin-bottom: 4.5vw;
 }
 
 .contact-social-box img
 {
-    max-width: 1.5em;
-    max-height: 1.5em;
+    max-width: 5vw;
+    max-height: 5vw;
     margin-right: 3vw;
 }
 
 
 .contact-social-box label
 {
-    font: normal normal 600 0.9em Poppins;
+    font: normal normal 600 3.5vw Poppins;
     letter-spacing: 0px;
     color: #002E45;
     text-decoration: none;
