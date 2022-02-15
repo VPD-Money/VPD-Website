@@ -46,7 +46,7 @@
     color: white;
     width: 18vw;
     margin-top: 1.2vw;
-    margin-left: 1.5vw;
+    margin-left: 1.1vw;
     margin-right: 1vw;
     opacity: 0.5;
 }
@@ -83,7 +83,7 @@
 .about-layer-2-section:first-child
 {
     width: 50vw;
-    z-index: 99999;
+    z-index: 99;
     margin-top: 5vw;
 }
 
@@ -101,7 +101,7 @@
     width: auto;
     max-width: 45vw;
     border: none;
-    padding-top: 15vw;
+    padding-top: 13vw;
     margin-left: -8.5vw;
 }
 
@@ -125,6 +125,11 @@
     margin-left: -5vw;
 }
 
+.about-layer-2-section-group:first-child
+{
+    margin-left: -3.6vw;
+}
+
 .about-layer-2-section-group-content span
 {
     display: block;
@@ -141,6 +146,7 @@
     color: #505050;
     line-height: 1.6vw;
     margin-top: 1vw;
+
 }
 
 
@@ -357,10 +363,10 @@
 }
 .about-layer-4-section-element img
 {
-    border: 10px solid #FFFFFF;
+    border: 0.4vw solid #FFFFFF;
     box-shadow: 10px 10px 30px #00000012;
     display: block;
-    border-radius: 58px;
+    border-radius: 3vw;
     margin: 2vw;
     margin-bottom: 2.2vw;
     width: 12vw;

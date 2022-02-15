@@ -35,7 +35,7 @@ class MainSplashScreen extends Component {
         autoFocus: boolean('autoFocus', true, this.tooglesGroupId),
         thumbWidth: number('thumbWidth', 100, {}, this.valuesGroupId),
         selectedItem: number('selectedItem', 0, {}, this.valuesGroupId),
-        interval: number('interval', 1000, {}, this.valuesGroupId),
+        interval: number('interval', 1500, {}, this.valuesGroupId),
         transitionTime: number('transitionTime', 500, {}, this.valuesGroupId),
         swipeScrollTolerance: number('swipeScrollTolerance', 5, {}, this.valuesGroupId),
         ariaLabel: text('ariaLabel', undefined),
@@ -43,16 +43,15 @@ class MainSplashScreen extends Component {
 
     render(){
 
-        const {isBigScreen,isDesktopOrLaptop,isTablet,isMobile,isPortrait,isRetina} = JSON.parse(this.props.deviceType);
+        const {isBigScreen, isDesktopOrLaptop, isTablet, isMobile, isPortrait, isRetina} = JSON.parse(this.props.deviceType);
 
         if (isMobile && isPortrait) this.screenImageLetter = '_m';
         else if (isMobile && !isPortrait) this.screenImageLetter = '_d';
 
-        else if (isTablet && isPortrait) this.screenImageLetter = '_t';
+        else if (isTablet && isPortrait) this.screenImageLetter = '_m';
         else if (isTablet && !isPortrait) this.screenImageLetter = '_d';
 
-        else if (isDesktopOrLaptop) this.screenImageLetter = '_d';
-        else this.screenImageLetter = '_b';
+        else this.screenImageLetter = '_d';
 
         const onChangeEvent = (e) => {
             const { onSlideCompleted } = this.props
@@ -63,7 +62,7 @@ class MainSplashScreen extends Component {
                 let timeout = setTimeout(function () {
                   onSlideCompleted();
                     clearTimeout(timeout);
-                }, 2000);
+                }, 3000);
 
             }
         }
@@ -115,7 +114,7 @@ class MainSplashScreen extends Component {
                             </div>
                         </div>
                         <div className="col-5 carouselLastItemGroup2">
-                           <span className="carouselFrameCaptionItem2">You</span>
+                           <span className="carouselFrameCaptionItem2"><span className="shimmer">You</span></span>
                             <span className="carouselFrameCaptionItem2-pre">of</span>
                            <span className="carouselFrameCaptionItem2-mobile">You</span>
                         </div>
@@ -141,6 +140,7 @@ function attachDeviceTypeHook(Component) {
         const isRetina = useMediaQuery(media_query_values.retina)
         let objVals = JSON.stringify({isBigScreen, isDesktopOrLaptop, isTablet, isMobile, isPortrait, isRetina});
 
+        console.log(objVals);
         return <Component {...props} deviceType={objVals}/>;
     }
 }

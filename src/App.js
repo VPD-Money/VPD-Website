@@ -30,10 +30,10 @@ const App = () => {
     const isDesktopOrLaptop = useMediaQuery(media_query_values.desktop)
     const isTablet = useMediaQuery(media_query_values.tablet)
     const isMobile = useMediaQuery(media_query_values.mobile)
-    // const isPortrait = useMediaQuery(media_query_values.portrait)
+    const isPortrait = useMediaQuery(media_query_values.portrait)
     // const isRetina = useMediaQuery(media_query_values.retina)
 
-    if(isMobile) import ('./static/css/main-mobile.css');
+    if(isMobile && isPortrait ) import ('./static/css/main-mobile.css');
     // else if(isTablet) import ('./static/css/main-tablet.css');
     // else if(isDesktopOrLaptop) import ('./static/css/main-desktop.css');
     // else import ('./static/css/main-big.css');

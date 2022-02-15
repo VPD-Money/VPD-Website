@@ -24,7 +24,7 @@ class Contact extends Component {
         if (isMobile && isPortrait) this.screenImageLetter = '_m';
         else if (isMobile && !isPortrait) this.screenImageLetter = '_d';
 
-        else if (isTablet && isPortrait) this.screenImageLetter = '_t';
+        else if (isTablet && isPortrait) this.screenImageLetter = '_m';
         else if (isTablet && !isPortrait) this.screenImageLetter = '_d';
 
         else if (isDesktopOrLaptop) this.screenImageLetter = '_d';
@@ -40,7 +40,7 @@ class Contact extends Component {
                                   <div className="contact-layer-1-group">
                                       <div className="contact-layer-1-section-1">
                                           <label>Feel Free to reach out</label>
-                                          <label>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</label>
+                                          {/*<label>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</label>*/}
 
                                           <div className="contact-ng-address">
                                               <img className="contact-ng-address-img" src="/images/icons/ng.webp"/>

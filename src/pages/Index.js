@@ -29,6 +29,8 @@ class Index extends Component {
        if(sliderCompletedState === "true") this.state.slideCompleted = true;
        localStorage.setItem("slider-completed","false");
 
+       if(localStorage.getItem("switch-layout") === "true") this.state.slideCompleted = true;
+
        const {slideCompleted} = this.state;
 
        const {isBigScreen,isDesktopOrLaptop,isTablet,isMobile,isPortrait,isRetina} = JSON.parse(this.props.deviceType);
@@ -36,7 +38,7 @@ class Index extends Component {
        if (isMobile && isPortrait) this.screenImageLetter = '_m';
        else if (isMobile && !isPortrait) this.screenImageLetter = '_d';
 
-       else if (isTablet && isPortrait) this.screenImageLetter = '_t';
+       else if (isTablet && isPortrait) this.screenImageLetter = '_m';
        else if (isTablet && !isPortrait) this.screenImageLetter = '_d';
 
        else if (isDesktopOrLaptop) this.screenImageLetter = '_d';
@@ -56,9 +58,8 @@ class Index extends Component {
                                {/*layer 1 begin*/}
                                <div className="layer-1">
                                    <div className="bannerFrame">
-                                       <div class="layer-1-overlay"></div>
                                        <div className="layer-1-sub-text">
-                                           VPD Money delivers high-quality personal banking services and business bank apps for the unbanked in Africa and beyond. Discover the bank of you today
+                                           VPD Money delivers high-quality personal banking services and business bank apps for the unbanked in Africa and beyond. Discover the bank of you today.
                                        </div>
 
                                        <div className="main_banner_text_group">
@@ -75,10 +76,7 @@ class Index extends Component {
                                            </div>`
                                        </div>
 
-                                       <div className="mainBanner">
-                                           <img  src={"/images/main_banner" + (this.screenImageLetter) + ".webp"}/>
 
-                                       </div>
                                    </div>
                                </div>
                                {/*layer 1 end*/}
@@ -99,12 +97,12 @@ class Index extends Component {
                                                  <label>Cashback</label>
                                                </div>
 
-                                               <div preview={"/images/iphone_screens/iphone_dashboard"}  className="iphone-feature-pod">
+                                               <div preview={"/images/iphone_screens/iphone_dashboard_borderless"}  className="iphone-feature-pod">
                                                    <img src={"/images/icons/transfer.svg"}/>
                                                    <label>Borderless Transfer</label>
                                                </div>
 
-                                               <div preview={"/images/iphone_screens/iphone_dashboard"}  className="iphone-feature-pod">
+                                               <div preview={"/images/iphone_screens/iphone_dashboard_ai_savings"}  className="iphone-feature-pod">
                                                    <img src={"/images/icons/ai_savings.svg"}/>
                                                    <label>AI Savings</label>
                                                </div>
@@ -125,14 +123,38 @@ class Index extends Component {
                                                    <img src={"/images/icons/utility-payment.svg"}/>
                                                    <label>Utility Payment</label>
                                                </div>
-                                               <label className="iphone_frame_pretext">Hover on any box to change phone screen</label>
+                                               <label className="iphone_frame_pretext">{(this.screenImageLetter === "_d" || this.screenImageLetter === "_b")? "Hover" : "Scroll & tap"} on any box to change phone screen</label>
                                                <img preview={this.screenImageLetter} className="iphone_frame" src={"/images/iphone_screens/iphone_dashboard.webp"} />
                                                <button className={"open-download-overlay"}>{(this.screenImageLetter === "_m")? "Get Started" : "Start Creating your Banking Experience"}&nbsp; &nbsp;&nbsp;<span><img src="/images/icons/arrow-right-white.svg"/><img src="/images/icons/arrow-right-white.svg"/></span></button>
 
                                                <div className="iphone_frame_mobile_cards">
-                                                   <div preview={"/images/iphone_screens/iphone_dashboard_multicurrency"}  className="iphone-feature-pod-mobile">
-                                                       <img src={"/images/icons/utility-payment.svg"}/>
-                                                       <label>Multi Currency</label>
+                                                   <div preview={"/images/iphone_screens/iphone_dashboard_cashback"}  className="iphone-feature-pod-mobile">
+                                                       <img src={"/images/icons/cashback.svg"}/>
+                                                       <label>Cashback</label>
+                                                   </div>
+
+                                                   <div preview={"/images/iphone_screens/iphone_dashboard_borderless"}  className="iphone-feature-pod-mobile">
+                                                       <img src={"/images/icons/transfer.svg"}/>
+                                                       <label>Borderless Transfer</label>
+                                                   </div>
+
+                                                   <div preview={"/images/iphone_screens/iphone_dashboard_ai_savings"}  className="iphone-feature-pod-mobile">
+                                                       <img src={"/images/icons/ai_savings.svg"}/>
+                                                       <label>AI Savings</label>
+                                                   </div>
+
+                                                   <div preview={"/images/iphone_screens/iphone_dashboard_recurring"}  className="iphone-feature-pod-mobile">
+                                                       <img src={"/images/icons/recurring.svg"}/>
+                                                       <label>Recurring Transactions</label>
+                                                   </div>
+
+                                                   <div preview={"/images/iphone_screens/iphone_dashboard_payment_request"}  className="iphone-feature-pod-mobile">
+                                                       <img src={"/images/icons/payment-request.svg"}/>
+                                                       <label>Payment Request</label>
+                                                   </div>
+                                                   <div preview={"/images/iphone_screens/iphone_dashboard_analytics"} className="iphone-feature-pod-mobile">
+                                                       <img  src={"/images/icons/analytics.svg"}/>
+                                                       <label>Analytics</label>
                                                    </div>
 
                                                    <div preview={"/images/iphone_screens/iphone_dashboard_multicurrency"}  className="iphone-feature-pod-mobile">
@@ -140,9 +162,14 @@ class Index extends Component {
                                                        <label>Multi Currency</label>
                                                    </div>
 
-                                                   <div preview={"/images/iphone_screens/iphone_dashboard_multicurrency"}  className="iphone-feature-pod-mobile">
-                                                       <img src={"/images/icons/utility-payment.svg"}/>
-                                                       <label>Multi Currency</label>
+                                                   <div preview={"/images/iphone_screens/iphone_dashboard_card_transaction"} className="iphone-feature-pod-mobile">
+                                                       <img src={"/images/icons/credit-card-transactions.svg"}/>
+                                                       <label>Card Transactions</label>
+                                                   </div>
+
+                                                   <div preview={"/images/iphone_screens/iphone_dashboard_investment"}  className="iphone-feature-pod-mobile">
+                                                       <img src={"/images/icons/transfer.svg"}/>
+                                                       <label>Investment</label>
                                                    </div>
 
                                                </div>
@@ -154,7 +181,7 @@ class Index extends Component {
                                                    <label>Analytics</label>
                                                </div>
 
-                                               <div preview={"/images/iphone_screens/iphone_dashboard"}  className="iphone-feature-pod">
+                                               <div preview={"/images/iphone_screens/iphone_dashboard_multicurrency"}  className="iphone-feature-pod">
                                                    <img src={"/images/icons/utility-payment.svg"}/>
                                                    <label>Multi Currency</label>
                                                </div>
@@ -164,7 +191,7 @@ class Index extends Component {
                                                    <label>Card Transactions</label>
                                                </div>
 
-                                               <div preview={"/images/iphone_screens/iphone_dashboard"}  className="iphone-feature-pod">
+                                               <div preview={"/images/iphone_screens/iphone_dashboard_investment"}  className="iphone-feature-pod">
                                                    <img src={"/images/icons/transfer.svg"}/>
                                                    <label>Investment</label>
                                                </div>
@@ -191,7 +218,7 @@ class Index extends Component {
                                                       <label>Free Borderless<br/>account opening</label>
                                                      </div>
                                                        <div className="layer-3-ribbon-groups-content">
-                                                           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                                           We give your money the flexibility to  move without barriers, cross border capabilities that make transactions  seamless.  Open an account for free to begin your path to freedom.
                                                        </div>
                                                    </div>
 
@@ -203,7 +230,7 @@ class Index extends Component {
                                                        <label>Borderless Funds<br/>Transfer</label>
                                                        </div>
                                                        <div className="layer-3-ribbon-groups-content">
-                                                           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                                           Convert your cash, send and receive money , using our borderless account and  with  no transfer fees,  extra charges or hidden costs.
                                                        </div>
                                                    </div>
 
@@ -215,7 +242,7 @@ class Index extends Component {
                                                         <label>Link multiple accounts<br/>to a single card</label>`
                                                         </div>
                                                         <div className="layer-3-ribbon-groups-content">
-                                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                                            We provide a single location to manage all your financial needs. You do not need to worry about the costs and hassle of managing multiple accounts or currencies.
                                                         </div>
                                                    </div>
 
@@ -284,6 +311,8 @@ class Index extends Component {
 
     componentDidMount() {
 
+        window.addEventListener("scroll", this.handleScroll);
+
         if(this.screenImageLetter !== "_m")
         {
             $(document).on("mouseenter", ".layer-5-section-1 img", function () {
@@ -304,8 +333,8 @@ class Index extends Component {
 
             $(document).on("mouseleave", ".layer-5-section-1", function () {
                 $(".layer-5-section-1 img").animate({'margin-left': '15vw'});
+                $(".layer-5-section-1 .headingLabelAlt").fadeOut(100);
                 $(".layer-5-section-1 .headingLabelAlt").animate({'margin-left': '20vw', 'margin-top': '-3.7vh'});
-                $(".layer-5-section-1 .headingLabelAlt").fadeOut(500);
                 setTimeout(function () {
                     $(".layer-5-section-1 .headingLabel").css('color', '#33B8FF');
                 }, 500);
@@ -329,8 +358,9 @@ class Index extends Component {
 
             $(document).on("mouseleave", ".layer-5-section-2", function () {
                 $(".layer-5-section-2 img").animate({'margin-left': '15vw'});
+                $(".layer-5-section-2 .headingLabelAlt").fadeOut(100);
                 $(".layer-5-section-2 .headingLabelAlt").animate({'margin-left': '20vw', 'margin-top': '-3.7vh'});
-                $(".layer-5-section-2 .headingLabelAlt").fadeOut(500);
+
                 setTimeout(function () {
                     $(".layer-5-section-2 .headingLabel").css('color', '#33B8FF');
                 }, 500);
@@ -349,13 +379,22 @@ class Index extends Component {
 
         }
 
-            $(document).on("mouseenter",".iphone-feature-pod",function ()
-            {
-                    // let screenImageLetter = $(".iphone_frame").attr("preview");
-                    var path = $(this).attr("preview") + ".webp";
-                    $(".iphone_frame").attr("src", path);
+        $(document).on("mouseenter",".iphone-feature-pod",function ()
+        {
+                // let screenImageLetter = $(".iphone_frame").attr("preview");
+                var path = $(this).attr("preview") + ".webp";
+                $(".iphone_frame").attr("src", path);
 
-            });
+        });
+
+        $(document).on("mouseenter",".iphone-feature-pod-mobile",function ()
+        {
+            // let screenImageLetter = $(".iphone_frame").attr("preview");
+            var path = $(this).attr("preview") + ".webp";
+            $(".iphone_frame").attr("src", path);
+
+        });
+
 
     }
 
@@ -378,10 +417,10 @@ class Index extends Component {
         if( layer5_bounding.top < 20 ) menuColor="white"
 
         // console.log(layer3_bounding);
-        console.log(menuColor);
-
-        let layer5x_bounding = document.getElementsByClassName("Navlinks")[0].getBoundingClientRect();
-        console.log(layer5x_bounding);
+        // console.log(menuColor);
+        //
+        // let layer5x_bounding = document.getElementsByClassName("Navlinks")[0].getBoundingClientRect();
+        // console.log(layer5x_bounding);
         //
         // Checking part. Here the code checks if it's *fully* visible
         // Checking part. Here the code checks if it's *fully* visible
@@ -401,10 +440,6 @@ class Index extends Component {
 
 
     }
-
-    componentDidMount() {
-        window.addEventListener("scroll", this.handleScroll);
-    };
 
     componentWillUnmount() {
         window.removeEventListener("scroll", this.handleScroll);

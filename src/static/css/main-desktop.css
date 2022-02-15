@@ -83,8 +83,8 @@
     letter-spacing: 0px;
     background: #0BA830;
     color: white;
-    border-radius: 12px;
-    padding: 7px 0px 7px 20px;
+    border-radius: 0.5vw;
+    padding: 0.7vh 0vw 0.7vh 1.2vw;
     width: 11vw;
     height: 2.8vw;
     box-shadow: none;
@@ -112,7 +112,7 @@
 .download-overlay
 {
     display: none;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(0, 10, 15, 0.4);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
 
@@ -194,8 +194,8 @@
     letter-spacing: 0px;
     background: #0BA830;
     color: white;
-    border-radius: 12px;
-    padding: 7px 0px 7px 20px;
+    border-radius: 0.5vw;
+    padding: 0.7vh 0vw 0.7vh 1.2vw;
     width: 11vw;
     height: 2.8vw;
     box-shadow: none;
@@ -253,8 +253,8 @@
     letter-spacing: 0px;
     background: #0BA830;
     color: white;
-    border-radius: 12px;
-    padding: 7px 0px 7px 20px;
+    border-radius: 0.5vw;
+    padding: 0.7vh 0vw 0.7vh 1.2vw;
     width: 11vw;
     height: 2.8vw;
     box-shadow: none;
@@ -330,7 +330,7 @@
 
 .footer-section-3-group
 {
-    margin-left: 8.5vw;
+    margin-left: 10vw;
 
 }
 
@@ -355,7 +355,7 @@
 
 .footer-section-3-group label
 {
-    font: normal normal normal 1vw Poppins;
+    font: normal normal normal 0.8vw Poppins;
     letter-spacing: 0px;
     color: rgba(255, 255, 255, 0.7);
     display: block;
@@ -370,7 +370,7 @@
 
 .footer-section-3-group .footer-section-3-group-category
 {
-    font: normal normal normal 1vw Poppins;
+    font: normal normal normal 0.85vw Poppins;
     letter-spacing: 0px;
     color: #5A5A5A;
     display: block;

@@ -21,7 +21,7 @@ class AboutUs extends Component {
         if (isMobile && isPortrait) this.screenImageLetter = '_m';
         else if (isMobile && !isPortrait) this.screenImageLetter = '_d';
 
-        else if (isTablet && isPortrait) this.screenImageLetter = '_t';
+        else if (isTablet && isPortrait) this.screenImageLetter = '_m';
         else if (isTablet && !isPortrait) this.screenImageLetter = '_d';
 
         else if (isDesktopOrLaptop) this.screenImageLetter = '_d';
@@ -168,11 +168,11 @@ class AboutUs extends Component {
                             </div>
 
                             <div className="about-layer-4-section">
-                                <div className="about-layer-4-section-element">
-                                    <img src="/images/team/Michael Simeon.webp"/>
-                                    <label className="about-layer-4-section-element-name">Bimpe Ayeni</label>
-                                    <label className="about-layer-4-section-element-title">Accounting Lead</label>
-                                </div>
+                                {/*<div className="about-layer-4-section-element">*/}
+                                {/*    <img src="/images/team/Michael Simeon.webp"/>*/}
+                                {/*    <label className="about-layer-4-section-element-name">Bimpe Ayeni</label>*/}
+                                {/*    <label className="about-layer-4-section-element-title">Accounting Lead</label>*/}
+                                {/*</div>*/}
 
                                 <div className="about-layer-4-section-element">
                                     <img src="/images/team/Damilola Ilesanmi.webp"/>
@@ -192,20 +192,22 @@ class AboutUs extends Component {
                                     <label className="about-layer-4-section-element-title">Customer Support Officer</label>
                                 </div>
 
-                            </div>
-
-                            <div className="about-layer-4-section">
                                 <div className="about-layer-4-section-element">
                                     <img src="/images/team/Osadome Ebie.webp"/>
                                     <label className="about-layer-4-section-element-name">Osadome Ebie</label>
                                     <label className="about-layer-4-section-element-title">Product Designer</label>
                                 </div>
 
-                                <div className="about-layer-4-section-element">
-                                    <img src="/images/team/Osadome Ebie.webp"/>
-                                    <label className="about-layer-4-section-element-name">Khalid Oshogwemoh</label>
-                                    <label className="about-layer-4-section-element-title">Human Resource Officer</label>
-                                </div>
+                            </div>
+
+                            <div className="about-layer-4-section">
+
+
+                                {/*<div className="about-layer-4-section-element">*/}
+                                {/*    <img src="/images/team/Osadome Ebie.webp"/>*/}
+                                {/*    <label className="about-layer-4-section-element-name">Khalid Oshogwemoh</label>*/}
+                                {/*    <label className="about-layer-4-section-element-title">Human Resource Officer</label>*/}
+                                {/*</div>*/}
 
                                 <div className="about-layer-4-section-element">
                                     <img src="/images/team/Saheed Oladele.webp"/>
@@ -213,11 +215,11 @@ class AboutUs extends Component {
                                     <label className="about-layer-4-section-element-title">Software Developer</label>
                                 </div>
 
-                                <div className="about-layer-4-section-element">
-                                    <img src="/images/team/Damilola Ilesanmi.webp"/>
-                                    <label className="about-layer-4-section-element-name">Samuel Oyelekan</label>
-                                    <label className="about-layer-4-section-element-title">Mobile App Developer</label>
-                                </div>
+                                {/*<div className="about-layer-4-section-element">*/}
+                                {/*    <img src="/images/team/Damilola Ilesanmi.webp"/>*/}
+                                {/*    <label className="about-layer-4-section-element-name">Samuel Oyelekan</label>*/}
+                                {/*    <label className="about-layer-4-section-element-title">Mobile App Developer</label>*/}
+                                {/*</div>*/}
 
                             </div>
 

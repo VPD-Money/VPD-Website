@@ -27,11 +27,11 @@ class NavigationLight extends Component {
 
         let currentPath=this.props.location.pathname;
 
-        if (isMobile && isPortrait || isTablet && isPortrait) this.showBurger = true;
+        if (isMobile && isPortrait) this.showBurger = true;
 
         return <header className="NavHeader-nosticky">
             <DownloadOverlay/>
-            <div className="MainLogo-light"><Link to='/'> <img src="/images/main_logo_plain.svg"/></Link></div>
+            <div className="MainLogo-light"><Link to='/'> <img src="/images/main_logo_plain.png"/></Link></div>
             {!this.showBurger &&
             <div className="Navlinks-light">
                 {routes.filter((l) => !l.index).map((l) => (
@@ -102,6 +102,33 @@ function attachDeviceTypeHook(Component) {
         const isPortrait = useMediaQuery(media_query_values.portrait)
         const isRetina = useMediaQuery(media_query_values.retina)
         let objVals = JSON.stringify({isBigScreen, isDesktopOrLaptop, isTablet, isMobile, isPortrait, isRetina});
+
+        let savedDeviceType = localStorage.getItem("device-type");
+
+        var DeviceType = (isDesktopOrLaptop)? "desktop-":"";
+        DeviceType = (isTablet)? "tablet-":"";
+        DeviceType = (isMobile)? "mobile-":"";
+        DeviceType+= (isPortrait)? "portrait":"landscape";
+        localStorage.setItem("device-type",DeviceType);
+
+        if(savedDeviceType!=null)
+        {
+            if(savedDeviceType!==DeviceType)
+            {
+                localStorage.setItem("switch-layout","true");
+                document.getElementsByTagName('body')[0].style.display = "none";
+                window.location.reload(false);
+            }
+            else
+            {
+                if(localStorage.getItem("switch-layout") === "true")
+                {
+                    setTimeout(function () {
+                        localStorage.setItem("switch-layout","false");
+                    },3000);
+                }
+            }
+        }
 
         return <Component {...props} deviceType={objVals} location={location} />;
     }

@@ -17,15 +17,12 @@ class Business extends Component {
 
 
     render() {
-        const {isBigScreen,isDesktopOrLaptop,isTablet,isMobile,isSmallMobile,isPortrait,isRetina} = JSON.parse(this.props.deviceType);
+        const {isBigScreen,isDesktopOrLaptop,isTablet,isMobile,isPortrait,isRetina} = JSON.parse(this.props.deviceType);
 
-        if (isSmallMobile) this.screenImageLetter = '_m';
-        else if (isSmallMobile && !isPortrait) this.screenImageLetter = '_d';
-
-        else if (isMobile && isPortrait) this.screenImageLetter = '_m';
+        if (isMobile && isPortrait) this.screenImageLetter = '_m';
         else if (isMobile && !isPortrait) this.screenImageLetter = '_d';
 
-        else if (isTablet && isPortrait) this.screenImageLetter = '_t';
+        else if (isTablet && isPortrait) this.screenImageLetter = '_m';
         else if (isTablet && !isPortrait) this.screenImageLetter = '_d';
 
         else if (isDesktopOrLaptop) this.screenImageLetter = '_d';
@@ -108,17 +105,17 @@ class Business extends Component {
                                                 <label>Account Statement</label>
                                             </div>
                                             <div className="business-layer-2-slide-icon-group-preview icon-preview-2">
-                                                <img src="/images/icons/invoice.webp"/>
-                                                <label>Invoice</label>
+                                                <img src="/images/icons/product-services.webp"/>
+                                                <label>Products & Services</label>
                                             </div>
-                                            <div className="business-layer-2-slide-icon-group-preview icon-preview-3">
-                                                <img src="/images/icons/customers.webp"/>
-                                                <label>Customers</label>
-                                            </div>
-                                            <div className="business-layer-2-slide-icon-group-preview icon-preview-4">
-                                                <img src="/images/icons/sub-accounts.webp"/>
-                                                <label>Sub Accounts</label>
-                                            </div>
+                                            {/*<div className="business-layer-2-slide-icon-group-preview icon-preview-3">*/}
+                                            {/*    <img src="/images/icons/customers.webp"/>*/}
+                                            {/*    <label>Customers</label>*/}
+                                            {/*</div>*/}
+                                            {/*<div className="business-layer-2-slide-icon-group-preview icon-preview-4">*/}
+                                            {/*    <img src="/images/icons/sub-accounts.webp"/>*/}
+                                            {/*    <label>Sub Accounts</label>*/}
+                                            {/*</div>*/}
                                         <img id="business-layer-2-slide-right" src="/images/icons/arrow-right-black.svg"/>
 
                                     </div>
@@ -175,47 +172,48 @@ class Business extends Component {
                 content2:""
             },
             {
-                title:"Invoices",
-                url:"/images/icons/invoice.webp",
-                image:"/images/business_frame_details.webp",
-                heading:"Invoices",
-                content1:"",
-                content2:""
-            },
-            {
-                title:"Customers",
-                url:"/images/icons/customers.webp",
-                image:"/images/business_frame_customers.webp",
-                heading:"Customers",
-                content1:"",
-                content2:""
-            },
-
-            {
-                title:"Sub Accounts",
-                url:"/images/icons/sub-accounts.webp",
-                image:"/images/business_frame_subaccount.webp",
-                heading:"Sub Accounts",
-                content1:"",
-                content2:""
-            },
-
-            {
-                title:"Pay Slip",
-                url:"/images/icons/payslip.webp",
-                image:"/images/business_frame_details.webp",
-                heading:"Pay Slip",
-                content1:"",
-                content2:""
-            },
-            {
                 title:"Product & Services",
                 url:"/images/icons/product-services.webp",
                 image:"/images/business_frame_product_services.webp",
                 heading:"Product & Services",
-                content1:"",
+                content1:"Enjoy the added benefits from VPD , get  movie tickets, vouchers, airtime and many more everyday offers to better your lifestyle.",
                 content2:""
             }
+            // {
+            //     title:"Invoices",
+            //     url:"/images/icons/invoice.webp",
+            //     image:"/images/business_frame_details.webp",
+            //     heading:"Invoices",
+            //     content1:"",
+            //     content2:""
+            // },
+            // {
+            //     title:"Customers",
+            //     url:"/images/icons/customers.webp",
+            //     image:"/images/business_frame_customers.webp",
+            //     heading:"Customers",
+            //     content1:"",
+            //     content2:""
+            // },
+            //
+            // {
+            //     title:"Sub Accounts",
+            //     url:"/images/icons/sub-accounts.webp",
+            //     image:"/images/business_frame_subaccount.webp",
+            //     heading:"Sub Accounts",
+            //     content1:"",
+            //     content2:""
+            // },
+            //
+            // {
+            //     title:"Pay Slip",
+            //     url:"/images/icons/payslip.webp",
+            //     image:"/images/business_frame_details.webp",
+            //     heading:"Pay Slip",
+            //     content1:"",
+            //     content2:""
+            // }
+
         ];
 
         let totalSlideIndex = slider_values.length>0? slider_values.length-1 : 0;
@@ -278,6 +276,10 @@ class Business extends Component {
 
                 if(currentSlideNumber === 0) {
                     $("#business-layer-2-slide-left").css("cursor","default");
+                }
+                else
+                {
+
                 }
             }
 

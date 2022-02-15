@@ -243,6 +243,7 @@
     color: #002E45;
     line-height: 1.8vw;
     width: 36vw;
+    margin-left: -0.5vw;
 }
 
 .personal-layer-2-group-2-text-1, .personal-layer-2-group-2-text-2
@@ -254,6 +255,7 @@
     line-height: 1.8vw;
     color: #505050;
     width: 35vw;
+    margin-left: -0.5vw;
 }
 
 

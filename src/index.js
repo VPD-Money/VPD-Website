@@ -11,8 +11,9 @@ const StrictApp = () => (
 );
 
 const rootElement = document.getElementById('root');
-//Clear local storage
-localStorage.clear();
+
+//Clear slider state storage
+localStorage.removeItem("slider-completed");
 
 // hydrate is required by react-snap.
 if (rootElement.hasChildNodes()) {

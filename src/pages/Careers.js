@@ -24,7 +24,7 @@ class Contact extends Component {
         if (isMobile && isPortrait) this.screenImageLetter = '_m';
         else if (isMobile && !isPortrait) this.screenImageLetter = '_d';
 
-        else if (isTablet && isPortrait) this.screenImageLetter = '_t';
+        else if (isTablet && isPortrait) this.screenImageLetter = '_m';
         else if (isTablet && !isPortrait) this.screenImageLetter = '_d';
 
         else if (isDesktopOrLaptop) this.screenImageLetter = '_d';
@@ -46,16 +46,16 @@ class Contact extends Component {
                                         <label className="careers-layer-1-group-section-2-label">CAREERS</label>
                                         <label className="careers-layer-1-group-section-2-label-2">Interested in working with us</label>
                                         <label className="careers-layer-1-group-section-2-desc">VPD.Money is a financial services App brought to you by part of the team that delivered VoguePay (A leading payment solutions provider that was founded in 2012 and now operating across 5 continents).</label>
-                                        <button className={"open-download-overlay"}>Get the App <img src="/images/icons/arrow-right-white.svg"/></button>
+                                        {/*<button className={"open-download-overlay"}>Get the App <img src="/images/icons/arrow-right-white.svg"/></button>*/}
                                     </div>
                                 </div>
                             </div>
 
                         <div className="careers-layer-2">
-                            <img src="/images/icons/multiple-arrows-down.webp"/>
+                           <a href="#openings"> <img src="/images/icons/multiple-arrows-down.webp"/></a>
                         </div>
 
-                        <div className="careers-layer-3">
+                        <div id="openings" className="careers-layer-3">
                             <div className="careers-layer-3-group">
                                 <div className="careers-layer-3-group-section-1">
                                     <label>Want to join team VPD?</label>
@@ -90,13 +90,18 @@ class Contact extends Component {
                                 <div className="careers-layer-4-group-box">
                                     <img src="/images/icons/career-values-security.svg"/>
                                     <label className="careers-layer-4-group-box-title">Security</label>
-                                    <label className="careers-layer-4-group-box-text">We are honest, open and uphold the highest standards of personal excellence in all of our actions.</label>
+                                    <label className="careers-layer-4-group-box-text">As a fintech company, we understand the need to keep our
+                                        customers as safe as possible. We utilise the best security and
+                                        necessary safety measures to make our service the ideal choice for
+                                        you.</label>
                                 </div>
 
                                 <div className="careers-layer-4-group-box">
                                     <img src="/images/icons/career-values-team.svg"/>
                                     <label className="careers-layer-4-group-box-title">Teamwork</label>
-                                    <label className="careers-layer-4-group-box-text">We work together, across boundaries, to meet the needs of our customers and to reach our goals.</label>
+                                    <label className="careers-layer-4-group-box-text">Working together helps us achieve a better user experience,
+                                        innovate new solutions, and provide the best care to our customers.
+                                        Teamwork is integral to providing you with the best service.</label>
                                 </div>
 
                             </div>
@@ -105,19 +110,27 @@ class Contact extends Component {
                                 <div className="careers-layer-4-group-box">
                                     <img src="/images/icons/career-values-satisfaction.svg"/>
                                     <label className="careers-layer-4-group-box-title">Customer Satisfaction</label>
-                                    <label className="careers-layer-4-group-box-text">We develop products and provide services that add value to our customers.<br/>&nbsp;</label>
+                                    <label className="careers-layer-4-group-box-text">Every new feature, added benefit, or additional service we deliver is
+                                        designed with user-friendliness and customer satisfaction in mind.
+                                        We value our customers and provide value to them too.</label>
                                 </div>
 
                                 <div className="careers-layer-4-group-box">
                                     <img src="/images/icons/career-values-respect.svg"/>
                                     <label className="careers-layer-4-group-box-title">Respect</label>
-                                    <label className="careers-layer-4-group-box-text">We value each other, encourage development and reward excellence.</label>
+                                    <label className="careers-layer-4-group-box-text">If you have been denied access and equal opportunities to achieve
+                                        financial freedom, we are here to help you. Both within the company
+                                        and in our relationships with our customers and partners, we go the
+                                        extra mile to be respectful, professional and positive in the work we
+                                        do.</label>
                                 </div>
 
                                 <div className="careers-layer-4-group-box">
                                     <img src="/images/icons/career-values-accountability.svg"/>
                                     <label className="careers-layer-4-group-box-title">Accountability</label>
-                                    <label className="careers-layer-4-group-box-text">We take personal responsibility for delivering on our commitments.</label>
+                                    <label className="careers-layer-4-group-box-text">We are honest, transparent, and always take responsibility when
+                                        something doesn't work out. Our commitment to you allows us to do
+                                        everything in our power to deliver the service you need 24/7.</label>
                                 </div>
 
 

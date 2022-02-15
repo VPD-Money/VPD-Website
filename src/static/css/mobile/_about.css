@@ -96,7 +96,7 @@
 .about-layer-2-section:first-child
 {
     width: 100vw;
-    z-index: 99999;
+    z-index: 99;
     margin-top: 20vw;
 }
 

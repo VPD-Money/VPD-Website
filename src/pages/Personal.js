@@ -22,7 +22,7 @@ class Personal extends Component {
         if (isMobile && isPortrait) this.screenImageLetter = '_m';
         else if (isMobile && !isPortrait) this.screenImageLetter = '_d';
 
-        else if (isTablet && isPortrait) this.screenImageLetter = '_t';
+        else if (isTablet && isPortrait) this.screenImageLetter = '_m';
         else if (isTablet && !isPortrait) this.screenImageLetter = '_d';
 
         else if (isDesktopOrLaptop) this.screenImageLetter = '_d';
@@ -41,7 +41,7 @@ class Personal extends Component {
                                 <div className="personal-layer-1-component-sub-1">
                                     <label className="personal-layer-1-component-category">PERSONAL</label>
                                     <label className="personal-layer-1-component-heading">Create your own Banking Experience</label>
-                                    <label className="personal-layer-1-component-heading-mobile">Let's get down to business</label>
+                                    <label className="personal-layer-1-component-heading-mobile">Let's get personal</label>
                                     <label className="personal-layer-1-component-heading-alt">Access all your financial information in one handy screen that keeps you on track.</label>
 
                                     <div className="personal-layer-1-component-sub-1-mini-1">
@@ -100,22 +100,26 @@ class Personal extends Component {
                                             <img src="/images/icons/recurring-transaction.webp"/>
                                             <label>Recurring Transactions</label>
                                         </div>
+                                        {/*<div className="personal-layer-2-slide-icon-group-preview icon-preview-1">*/}
+                                        {/*    <img src="/images/icons/utility-payment.webp"/>*/}
+                                        {/*    <label>Utility Payment</label>*/}
+                                        {/*</div>*/}
                                         <div className="personal-layer-2-slide-icon-group-preview icon-preview-1">
-                                            <img src="/images/icons/utility-payment.webp"/>
-                                            <label>Utility Payment</label>
-                                        </div>
-                                        <div className="personal-layer-2-slide-icon-group-preview icon-preview-2">
                                             <img src="/images/icons/cashback.webp"/>
                                             <label>Cashback</label>
                                         </div>
-                                        <div className="personal-layer-2-slide-icon-group-preview icon-preview-3">
+                                        <div className="personal-layer-2-slide-icon-group-preview icon-preview-2">
                                             <img src="/images/icons/card-transactions.webp"/>
                                             <label>Card Transactions</label>
                                         </div>
-                                        <div className="personal-layer-2-slide-icon-group-preview icon-preview-4">
+                                        <div className="personal-layer-2-slide-icon-group-preview icon-preview-3">
                                             <img src="/images/icons/subaccount.webp"/>
                                             <label>Sub Accounts</label>
                                         </div>
+                                        {/*<div className="personal-layer-2-slide-icon-group-preview icon-preview-5">*/}
+                                        {/*    <img src="/images/icons/subaccount.webp"/>*/}
+                                        {/*    <label>Sub Accounts</label>*/}
+                                        {/*</div>*/}
 
                                         <img id="personal-layer-2-slide-right" src="/images/icons/arrow-right-black.svg"/>
 
@@ -163,16 +167,16 @@ class Personal extends Component {
                     "time.",
                 content2:""
             },
-            {
-                title:"Utility Payment",
-                url:"/images/icons/utility-payment.webp",
-                image:"/images/personal_frame_utility_payment.webp",
-                heading:"Utility Payment",
-                content1:"Never miss a payment again with our recurring payment feature,\n" +
-                    "with specified intervals to ensure everything is paid on time, every\n" +
-                    "time.",
-                content2:""
-            },
+            // {
+            //     title:"Utility Payment",
+            //     url:"/images/icons/utility-payment.webp",
+            //     image:"/images/personal_frame_utility_payment.webp",
+            //     heading:"Utility Payment",
+            //     content1:"Never miss a payment again with our recurring payment feature,\n" +
+            //         "with specified intervals to ensure everything is paid on time, every\n" +
+            //         "time.",
+            //     content2:""
+            // },
             {
                 title:"Cashback",
                 url:"/images/icons/cashback.webp",
@@ -188,7 +192,7 @@ class Personal extends Component {
                 url:"/images/icons/card-transactions.webp",
                 image:"/images/personal_frame_card_transactions.webp",
                 heading:"Card Transactions",
-                content1:"",
+                content1:"All you need is one single card to carry out all your  transactions, at a reduced cost, making your life simple, better and frictionless.",
                 content2:""
             },
             {
@@ -200,24 +204,25 @@ class Personal extends Component {
                     "fingertips? Convert and store your money in individual sub-accounts\n" +
                     "for added financial flexibility, with easy sending to other users.",
                 content2:""
-            },
-            {
-                title:"Analytics",
-                url:"/images/icons/analytics.webp",
-                image:"/images/personal_frame_analytics.webp",
-                heading:"Analytics",
-                content1:"",
-                content2:""
-            },
-            {
-                title:"Borderless Transfer",
-                url:"/images/icons/borderless-transfer.webp",
-                image:"/images/personal_frame_details.webp",
-                heading:"Borderless Transfer",
-                content1:"",
-                content2:""
             }
+            // {
+            //     title:"Analytics",
+            //     url:"/images/icons/analytics.webp",
+            //     image:"/images/personal_frame_analytics.webp",
+            //     heading:"Analytics",
+            //     content1:"",
+            //     content2:""
+            // },
+            // {
+            //     title:"Borderless Transfer",
+            //     url:"/images/icons/borderless-transfer.webp",
+            //     image:"/images/personal_frame_details.webp",
+            //     heading:"Borderless Transfer",
+            //     content1:"",
+            //     content2:""
+            // }
         ];
+
 
         let totalSlideIndex = slider_values.length>0? slider_values.length-1 : 0;
 
@@ -279,6 +284,16 @@ class Personal extends Component {
 
                 if(currentSlideNumber === 0) {
                     $("#personal-layer-2-slide-left").css("cursor","default");
+                    $("#personal-layer-2-slide-left").fadeIn(500);
+                    $("#personal-layer-2-slide-left").css("transform","rotate(0deg)");
+                    $("#personal-layer-2-slide-left").attr("src","/images/icons/arrow-left-black-faded.svg")
+
+                }
+                else
+                {
+                    $("#personal-layer-2-slide-right").fadeIn(500);
+                    $("#personal-layer-2-slide-right").css("transform","rotate(0deg)");
+                    $("#personal-layer-2-slide-right").attr("src","/images/icons/arrow-right-black.svg")
                 }
             }
 
@@ -332,6 +347,17 @@ class Personal extends Component {
 
                 if(currentSlideNumber === totalSlideIndex) {
                     $("#personal-layer-2-slide-right").css("cursor","default");
+                    $("#personal-layer-2-slide-right").fadeIn(500);
+                    $("#personal-layer-2-slide-right").css("transform","rotate(180deg)");
+                    $("#personal-layer-2-slide-right").attr("src","/images/icons/arrow-left-black-faded.svg");
+
+                }
+                else
+                {
+                    $("#personal-layer-2-slide-left").fadeIn(500);
+                    $("#personal-layer-2-slide-left").css("transform","rotate(180deg)");
+                    $("#personal-layer-2-slide-left").attr("src","/images/icons/arrow-right-black.svg");
+
                 }
 
             }
