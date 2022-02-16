@@ -498,3 +498,72 @@
     margin-top: 2vh;
     color: #5A5A5A;
 }
+
+
+/************ NOT Found *************/
+
+.not-found-group
+{
+    background: white;
+    width: 100vw;
+    height: auto;
+    display: block;
+}
+
+.not-found-group-section-1
+{
+    width: 100vw;
+}
+
+.not-found-group-section-1 svg
+{
+    width: 80vw;
+    margin-top: 12vh;
+}
+
+.not-found-group-section-2
+{
+    width: 100vw;
+    padding-bottom: 10vw;
+}
+
+.not-found-group-section-2 h1
+{
+    margin-top: -2vh;
+    font: normal normal 600 15vw Poppins;
+    margin-left: 35vw;
+}
+
+.not-found-group-section-2 h2
+{
+    margin-top: -10vw;
+    margin-left: 20vw;
+    font: normal normal 400 7vw Poppins;
+}
+
+.not-found-group-section-2 p
+{
+    margin-top: -3vw;
+    margin-left: 10vw;
+    font: normal normal 300 4vw Poppins;
+    width: 80vw;
+    text-align: center;
+
+}
+
+.not-found-group-section-2 button
+{
+    font: normal normal 600 3vw Poppins;
+    background: white;
+    color: #0993dc;
+    border-radius: 2vw;
+    padding: 3vw;
+    width: 28vw;
+    margin-top: 6vw;
+    border: 1.5px solid #0993dc;
+    cursor: pointer;
+    margin-left: 35vw;
+    margin-bottom: 15vw;
+}
+
+

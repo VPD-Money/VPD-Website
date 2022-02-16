@@ -312,13 +312,13 @@
 #personal-layer-2-slide-right
 {
     width: 2.5vw;
-    margin-left: 4vw;
+    margin-left: -3vw;
     cursor: pointer;
 }
 
 .personal-layer-2-slide-icon-group
 {
-    margin-right: 8vw;
+    margin-right: 10vw;
 }
 
 .personal-layer-2-slide-icon-group img
@@ -344,10 +344,15 @@
 
 .personal-layer-2-slide-icon-group-preview
 {
-    margin-right: 6vw;
+    margin-right: 12vw;
     opacity: 0.5;
     cursor: pointer;
 }
+
+/*.personal-layer-2-slide-icon-group-preview:last-child*/
+/*{*/
+/*    margin-right: 20vw!important;*/
+/* }*/
 
 .personal-layer-2-slide-icon-group-preview img
 {
@@ -360,7 +365,7 @@
 {
     text-align: left;
     display: block;
-    font: normal normal 500 0.6em Poppins;
+    font: normal normal 500 0.5em Poppins;
     letter-spacing: 0px;
     color: #505050;
     margin-top: 1.5vh;

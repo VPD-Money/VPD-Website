@@ -51,7 +51,7 @@
     opacity: 0.5;
 }
 
-.about-layer-1-component img:first-child
+.about-layer-1-component picture:first-child
 {
     margin-left: -5vw;
 }
@@ -63,7 +63,6 @@
     max-height: 25vh;
     margin-right: 3.5vw;
     margin-top: 4vh;
-    height: 100%;
 }
 
 .about-layer-1-component label span
@@ -169,7 +168,7 @@
 
 }
 
-.about-layer-3-section img
+.about-layer-3-section picture img
 {
     display: block;
     width: 4vw;
@@ -178,7 +177,7 @@
 
 }
 
-.about-layer-3-section:first-child > img
+.about-layer-3-section:first-child picture img
 {
     margin-left: 3.5vw;
 }
@@ -219,7 +218,7 @@
     line-height: 1vw;
 }
 
-/*.about-layer-3-section:nth-child(3) > img*/
+/*.about-layer-3-section:nth-child(3) picture img*/
 /*{*/
 /*    width: 4vw;*/
 /*}*/
@@ -242,7 +241,7 @@
 /*    width: 20vw;*/
 /*}*/
 
-.about-layer-3-section:nth-child(3) > img
+.about-layer-3-section:nth-child(3) picture img
 {
     width: 5vw;
     margin-top: 1.8vw;
@@ -267,7 +266,7 @@
     width: 20vw;
 }
 
-.about-layer-3-section:nth-child(4) > img
+.about-layer-3-section:nth-child(4) picture img
 {
     margin-left: 3.5vw;
     margin-top: -0.2vw;
@@ -294,7 +293,7 @@
     line-height: 1.2em;
 }
 
-.about-layer-3-section:nth-child(5) > img
+.about-layer-3-section:nth-child(5) picture img
 {
     margin-left: 7vw;
     margin-top: 1.5vw;

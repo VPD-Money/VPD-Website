@@ -5,6 +5,7 @@ import $ from 'jquery';
 import media_query_values from "../../data/MediaQuery";
 import store_info from "../../data/Stores";
 import contact_info from "../../data/ContactInfo";
+import ImgWithFallback from "../Animations/ImgWithFallback";
 
 
 class Footer extends Component {
@@ -54,10 +55,38 @@ class Footer extends Component {
                 <div className="footer-section-3-group">
                     <label className="footer-section-3-group-category">Follow us</label>
                     <div className="footer-section-3-group-socials">
-                        <a href={contact_info.instagram}><img src="/images/icons/instagram.webp"/></a>
-                        <a href={contact_info.linkedin}><img src="/images/icons/linkedin.webp"/></a>
-                        <a href={contact_info.twitter}><img src="/images/icons/twitter.webp"/></a>
-                        <a href={contact_info.facebook}><img src="/images/icons/facebook.webp"/></a>
+                        <a href={contact_info.instagram}>
+                            <ImgWithFallback
+                                src={"/images/icons/instagram.webp"}
+                                fallback={"/images/fallback/icons/instagram.png"}
+                                alt="instagram"
+                            />
+                        </a>
+
+                        <a href={contact_info.linkedin}>
+                            <ImgWithFallback
+                                src={"/images/icons/linkedin.webp"}
+                                fallback={"/images/fallback/icons/linkedin.png"}
+                                alt="linkedin"
+                            />
+                        </a>
+
+                        <a href={contact_info.twitter}>
+                            <ImgWithFallback
+                                src={"/images/icons/twitter.webp"}
+                                fallback={"/images/fallback/icons/twitter.png"}
+                                alt="instagram"
+                            />
+                        </a>
+
+                        <a href={contact_info.facebook}>
+                            <ImgWithFallback
+                                src={"/images/icons/facebook.webp"}
+                                fallback={"/images/fallback/icons/facebook.png"}
+                                alt="facebook"
+                            />
+                        </a>
+
                     </div>
 
                     <div className="footer-section-3-group-sub">

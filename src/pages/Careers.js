@@ -7,6 +7,7 @@ import media_query_values from '../data/MediaQuery';
 
 import NavigationLight from '../components/Template/NavigationLight';
 import Footer from '../components/Template/Footer';
+import ImgWithFallback from "../components/Animations/ImgWithFallback";
 
 
 class Contact extends Component {
@@ -39,7 +40,11 @@ class Contact extends Component {
                             <div className="careers-layer-1">
                                 <div className="careers-layer-1-group">
                                     <div className="careers-layer-1-group-section-1">
-                                        <img src={"/images/careers_main_image"+ (this.screenImageLetter) + ".webp"}/>
+                                        <ImgWithFallback
+                                            src={"/images/careers_main_image"+ (this.screenImageLetter) + ".webp"}
+                                            fallback={"/images/fallback/careers_main_image"+ (this.screenImageLetter) + ".png"}
+                                            alt="careers_main_image"
+                                        />
                                     </div>
 
                                     <div className="careers-layer-1-group-section-2">
@@ -52,7 +57,13 @@ class Contact extends Component {
                             </div>
 
                         <div className="careers-layer-2">
-                           <a href="#openings"> <img src="/images/icons/multiple-arrows-down.webp"/></a>
+                           <a href="#openings">
+                               <ImgWithFallback
+                                   src={"/images/icons/multiple-arrows-down.webp"}
+                                   fallback={"/images/fallback/icons/multiple-arrows-down.png"}
+                                   alt="arrows-down"
+                               />
+                           </a>
                         </div>
 
                         <div id="openings" className="careers-layer-3">
@@ -67,7 +78,11 @@ class Contact extends Component {
                                         available on our growing team.</label>
                                 </div>
                                 <div className="careers-layer-3-group-section-2">
-                                    <img src={"/images/career_group" + (this.screenImageLetter) + ".webp"}/>
+                                    <ImgWithFallback
+                                        src={"/images/career_group"+ (this.screenImageLetter) + ".webp"}
+                                        fallback={"/images/fallback/career_group"+ (this.screenImageLetter) + ".png"}
+                                        alt="career_group"
+                                    />
                                 </div>
                             </div>
                         </div>

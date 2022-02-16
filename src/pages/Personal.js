@@ -7,6 +7,7 @@ import Main from '../layouts/Main';
 import media_query_values from '../data/MediaQuery';
 import NavigationDeep from '../components/Template/NavigationDeep';
 import Footer from '../components/Template/Footer';
+import ImgWithFallback from "../components/Animations/ImgWithFallback";
 
 class Personal extends Component {
 
@@ -35,7 +36,12 @@ class Personal extends Component {
                         <NavigationDeep/>
 
                         <div className="personal-layer-1">
-                            <img className="bg_image" src={"/images/business_personal_main_bg" + (this.screenImageLetter) + ".webp"} />
+                            <ImgWithFallback
+                                className="bg_image"
+                                src={"/images/business_personal_main_bg" + (this.screenImageLetter) + ".webp"}
+                                fallback={"/images/fallback/business_personal_main_bg" + (this.screenImageLetter) + ".png"}
+                                alt="bg_image"
+                            />
 
                             <div className="personal-layer-1-component">
                                 <div className="personal-layer-1-component-sub-1">
@@ -58,31 +64,77 @@ class Personal extends Component {
                                             Get the App &nbsp;&nbsp;&nbsp;<img src="/images/icons/arrow-right-white.svg"/>
                                         </button>
                                         <div className="component-icon-group">
-                                            <img label="1" className="component-icon" src="/images/icons/recurring-transaction.webp"/>
+                                            <ImgWithFallback
+                                                label="1"
+                                                className="component-icon"
+                                                src={"/images/icons/recurring-transaction.webp"}
+                                                fallback={"/images/fallback/icons/recurring-transaction.png"}
+                                                alt="component-icon"
+                                            />
                                         </div>
                                         <div className="component-icon-group">
-                                            <img label="2" className="component-icon" src="/images/icons/utility-payment.webp"/>
+                                            <ImgWithFallback
+                                                label="2"
+                                                className="component-icon"
+                                                src={"/images/icons/utility-payment.webp"}
+                                                fallback={"/images/fallback/icons/utility-payment.png"}
+                                                alt="component-icon"
+                                            />
                                         </div>
                                         <div className="component-icon-group">
-                                            <img label="3" className="component-icon" src="/images/icons/cashback.webp"/>
+                                            <ImgWithFallback
+                                                label="3"
+                                                className="component-icon"
+                                                src={"/images/icons/cashback.webp"}
+                                                fallback={"/images/fallback/icons/cashback.png"}
+                                                alt="component-icon"
+                                            />
                                         </div>
                                         <div className="component-icon-group">
-                                            <img label="4" className="component-icon" src="/images/icons/card-transactions.webp"/>
+                                            <ImgWithFallback
+                                                label="4"
+                                                className="component-icon"
+                                                src={"/images/icons/card-transactions.webp"}
+                                                fallback={"/images/fallback/icons/card-transactions.png"}
+                                                alt="component-icon"
+                                            />
                                         </div>
                                         <div className="component-icon-group">
-                                            <img label="5" className="component-icon" src="/images/icons/subaccount.webp"/>
+                                            <ImgWithFallback
+                                                label="5"
+                                                className="component-icon"
+                                                src={"/images/icons/subaccount.webp"}
+                                                fallback={"/images/fallback/icons/subaccount.png"}
+                                                alt="component-icon"
+                                            />
                                         </div>
                                         <div className="component-icon-group">
-                                            <img label="6" className="component-icon" src="/images/icons/analytics.webp"/>
+                                            <ImgWithFallback
+                                                label="6"
+                                                className="component-icon"
+                                                src={"/images/icons/analytics.webp"}
+                                                fallback={"/images/fallback/icons/analytics.png"}
+                                                alt="component-icon"
+                                            />
                                         </div>
                                         <div className="component-icon-group">
-                                            <img label="7" className="component-icon" src="/images/icons/borderless-transfer.webp"/>
+                                            <ImgWithFallback
+                                                label="7"
+                                                className="component-icon"
+                                                src={"/images/icons/borderless-transfer.webp"}
+                                                fallback={"/images/fallback/icons/borderless-transfer.png"}
+                                                alt="component-icon"
+                                            />
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="personal-layer-1-component-sub-2">
-                                    <img src={"/images/personal_main_phone"+ (this.screenImageLetter) + ".webp"}/>
+                                    <ImgWithFallback
+                                        src={"/images/personal_main_phone"+ (this.screenImageLetter) + ".webp"}
+                                        fallback={"/images/fallback/personal_main_phone"+ (this.screenImageLetter) + ".png"}
+                                        alt="personal_main_phone"
+                                    />
                                 </div>
                             </div>
 
@@ -91,13 +143,21 @@ class Personal extends Component {
                         <div id="features" className="personal-layer-2">
                             <div className="personal-layer-2-group">
                                 <div className="personal-layer-2-group-1">
-                                    <img src="/images/personal_frame_recurring.webp"/>
+                                    <ImgWithFallback
+                                        src={"/images/personal_frame_recurring.webp"}
+                                        fallback={"/images/fallback/personal_frame_recurring.png"}
+                                        alt="personal_frame_recurring"
+                                    />
                                 </div>
                                 <div className="personal-layer-2-group-2">
                                     <div className="personal-layer-2-group-2-slider">
                                         <img id="personal-layer-2-slide-left" src="/images/icons/arrow-left-black-faded.svg"/>
                                         <div className="personal-layer-2-slide-icon-group">
-                                            <img src="/images/icons/recurring-transaction.webp"/>
+                                            <ImgWithFallback
+                                                src={"/images/icons/recurring-transaction.webp"}
+                                                fallback={"/images/fallback/icons/recurring-transaction.png"}
+                                                alt="recurring-transaction"
+                                            />
                                             <label>Recurring Transactions</label>
                                         </div>
                                         {/*<div className="personal-layer-2-slide-icon-group-preview icon-preview-1">*/}
@@ -105,15 +165,27 @@ class Personal extends Component {
                                         {/*    <label>Utility Payment</label>*/}
                                         {/*</div>*/}
                                         <div className="personal-layer-2-slide-icon-group-preview icon-preview-1">
-                                            <img src="/images/icons/cashback.webp"/>
+                                            <ImgWithFallback
+                                                src={"/images/icons/cashback.webp"}
+                                                fallback={"/images/fallback/icons/cashback.png"}
+                                                alt="cashback"
+                                            />
                                             <label>Cashback</label>
                                         </div>
                                         <div className="personal-layer-2-slide-icon-group-preview icon-preview-2">
-                                            <img src="/images/icons/card-transactions.webp"/>
+                                            <ImgWithFallback
+                                                src={"/images/icons/card-transactions.webp"}
+                                                fallback={"/images/fallback/icons/card-transactions.png"}
+                                                alt="card-transactions"
+                                            />
                                             <label>Card Transactions</label>
                                         </div>
                                         <div className="personal-layer-2-slide-icon-group-preview icon-preview-3">
-                                            <img src="/images/icons/subaccount.webp"/>
+                                            <ImgWithFallback
+                                                src={"/images/icons/subaccount.webp"}
+                                                fallback={"/images/fallback/icons/subaccount.png"}
+                                                alt="card-transactions"
+                                            />
                                             <label>Sub Accounts</label>
                                         </div>
                                         {/*<div className="personal-layer-2-slide-icon-group-preview icon-preview-5">*/}
@@ -241,9 +313,20 @@ class Personal extends Component {
             if(currentSlideNumber > 0 && currentSlideNumber <= totalSlideIndex)
             {
                 currentSlideNumber--;
-                $(".personal-layer-2-slide-icon-group img").attr("src",slider_values[currentSlideNumber].url);
                 $(".personal-layer-2-slide-icon-group label").text(slider_values[currentSlideNumber].title);
-                $(".personal-layer-2-group-1 img").attr("src",slider_values[currentSlideNumber].image);
+
+                var path = slider_values[currentSlideNumber].url;
+                var fallbackPath = path.replace("/images","/images/fallback")
+                    .replace(".webp",".png");
+                $(".personal-layer-2-slide-icon-group source").attr("srcset", path);
+                $(".personal-layer-2-slide-icon-group img").attr("src",fallbackPath);
+
+                var path = slider_values[currentSlideNumber].image;
+                var fallbackPath = path.replace("/images","/images/fallback")
+                    .replace(".webp",".png");
+                $(".personal-layer-2-group-1 source").attr("srcset", path);
+                $(".personal-layer-2-group-1 img").attr("src",fallbackPath);
+
                 $(".personal-layer-2-group-2-header").text(slider_values[currentSlideNumber].heading);
                 $(".personal-layer-2-group-2-text-1").text(slider_values[currentSlideNumber].content1);
                 $(".personal-layer-2-group-2-text-2").text(slider_values[currentSlideNumber].content2);
@@ -253,7 +336,14 @@ class Personal extends Component {
                 if(totalSlideIndex - currentSlideNumber > 0)
                 {
                     $(".icon-preview-1").css("opacity",0.5);
-                    $(".icon-preview-1 img").attr("src",slider_values[currentSlideNumber + 1].url);
+
+                    var path = slider_values[currentSlideNumber + 1].url;
+                    var fallbackPath = path.replace("/images","/images/fallback")
+                        .replace(".webp",".png");
+
+                    $(".icon-preview-1 source").attr("srcset", path);
+                    $(".icon-preview-1 img").attr("src",fallbackPath);
+
                     $(".icon-preview-1 label").text(slider_values[currentSlideNumber + 1].title);
                 }
                 else $(".icon-preview-1").css("opacity",0);
@@ -261,7 +351,14 @@ class Personal extends Component {
                 if(totalSlideIndex - currentSlideNumber > 1)
                 {
                     $(".icon-preview-2").css("opacity",0.5);
-                    $(".icon-preview-2 img").attr("src",slider_values[currentSlideNumber + 2].url);
+
+                    var path = slider_values[currentSlideNumber + 2].url;
+                    var fallbackPath = path.replace("/images","/images/fallback")
+                        .replace(".webp",".png");
+
+                    $(".icon-preview-2 source").attr("srcset", path);
+                    $(".icon-preview-2 img").attr("src",fallbackPath);
+
                     $(".icon-preview-2 label").text(slider_values[currentSlideNumber + 2].title);
                 }
                 else $(".icon-preview-2").css("opacity",0);
@@ -269,7 +366,14 @@ class Personal extends Component {
                 if(totalSlideIndex - currentSlideNumber > 2)
                 {
                     $(".icon-preview-3").css("opacity",0.5);
-                    $(".icon-preview-3 img").attr("src",slider_values[currentSlideNumber + 3].url);
+
+                    var path = slider_values[currentSlideNumber + 3].url;
+                    var fallbackPath = path.replace("/images","/images/fallback")
+                        .replace(".webp",".png");
+
+                    $(".icon-preview-3 source").attr("srcset", path);
+                    $(".icon-preview-3 img").attr("src",fallbackPath);
+
                     $(".icon-preview-3 label").text(slider_values[currentSlideNumber + 3].title);
                 }
                 else $(".icon-preview-3").css("opacity",0);
@@ -277,7 +381,14 @@ class Personal extends Component {
                 if(totalSlideIndex - currentSlideNumber > 3)
                 {
                     $(".icon-preview-4").css("opacity",0.5);
-                    $(".icon-preview-4 img").attr("src",slider_values[currentSlideNumber + 4].url);
+
+                    var path = slider_values[currentSlideNumber + 4].url;
+                    var fallbackPath = path.replace("/images","/images/fallback")
+                        .replace(".webp",".png");
+
+                    $(".icon-preview-4 source").attr("srcset", path);
+                    $(".icon-preview-4 img").attr("src",fallbackPath);
+
                     $(".icon-preview-4 label").text(slider_values[currentSlideNumber + 4].title);
                 }
                 else $(".icon-preview-4").css("opacity",0);
@@ -304,9 +415,20 @@ class Personal extends Component {
             if(currentSlideNumber < totalSlideIndex)
             {
                 currentSlideNumber++;
-                $(".personal-layer-2-slide-icon-group img").attr("src",slider_values[currentSlideNumber].url);
                 $(".personal-layer-2-slide-icon-group label").text(slider_values[currentSlideNumber].title);
-                $(".personal-layer-2-group-1 img").attr("src",slider_values[currentSlideNumber].image);
+
+                var path = slider_values[currentSlideNumber].url;
+                var fallbackPath = path.replace("/images","/images/fallback")
+                    .replace(".webp",".png");
+                $(".personal-layer-2-slide-icon-group source").attr("srcset", path);
+                $(".personal-layer-2-slide-icon-group img").attr("src",fallbackPath);
+
+                var path = slider_values[currentSlideNumber].image;
+                var fallbackPath = path.replace("/images","/images/fallback")
+                    .replace(".webp",".png");
+                $(".personal-layer-2-group-1 source").attr("srcset", path);
+                $(".personal-layer-2-group-1 img").attr("src",fallbackPath);
+
                 $(".personal-layer-2-group-2-header").text(slider_values[currentSlideNumber].heading);
                 $(".personal-layer-2-group-2-text-1").text(slider_values[currentSlideNumber].content1);
                 $(".personal-layer-2-group-2-text-2").text(slider_values[currentSlideNumber].content2);
@@ -316,7 +438,14 @@ class Personal extends Component {
                 if(totalSlideIndex - currentSlideNumber >0)
                 {
                     $(".icon-preview-1").css("opacity",0.5);
-                    $(".icon-preview-1 img").attr("src",slider_values[currentSlideNumber + 1].url);
+
+                    var path = slider_values[currentSlideNumber + 1].url;
+                    var fallbackPath = path.replace("/images","/images/fallback")
+                        .replace(".webp",".png");
+
+                    $(".icon-preview-1 source").attr("srcset", path);
+                    $(".icon-preview-1 img").attr("src",fallbackPath);
+
                     $(".icon-preview-1 label").text(slider_values[currentSlideNumber + 1].title);
                 }
                 else $(".icon-preview-1").css("opacity",0);
@@ -324,7 +453,14 @@ class Personal extends Component {
                 if(totalSlideIndex - currentSlideNumber > 1)
                 {
                     $(".icon-preview-2").css("opacity",0.5);
-                    $(".icon-preview-2 img").attr("src",slider_values[currentSlideNumber + 2].url);
+
+                    var path = slider_values[currentSlideNumber + 2].url;
+                    var fallbackPath = path.replace("/images","/images/fallback")
+                        .replace(".webp",".png");
+
+                    $(".icon-preview-2 source").attr("srcset", path);
+                    $(".icon-preview-2 img").attr("src",fallbackPath);
+
                     $(".icon-preview-2 label").text(slider_values[currentSlideNumber + 2].title);
                 }
                 else $(".icon-preview-2").css("opacity",0);
@@ -332,7 +468,14 @@ class Personal extends Component {
                 if(totalSlideIndex - currentSlideNumber > 2)
                 {
                     $(".icon-preview-3").css("opacity",0.5);
-                    $(".icon-preview-3 img").attr("src",slider_values[currentSlideNumber + 3].url);
+
+                    var path = slider_values[currentSlideNumber + 3].url;
+                    var fallbackPath = path.replace("/images","/images/fallback")
+                        .replace(".webp",".png");
+
+                    $(".icon-preview-3 source").attr("srcset", path);
+                    $(".icon-preview-3 img").attr("src",fallbackPath);
+
                     $(".icon-preview-3 label").text(slider_values[currentSlideNumber + 3].title);
                 }
                 else $(".icon-preview-3").css("opacity",0);
@@ -340,7 +483,14 @@ class Personal extends Component {
                 if(totalSlideIndex - currentSlideNumber > 3)
                 {
                     $(".icon-preview-4").css("opacity",0.5);
-                    $(".icon-preview-4 img").attr("src",slider_values[currentSlideNumber + 4].url);
+
+                    var path = slider_values[currentSlideNumber + 4].url;
+                    var fallbackPath = path.replace("/images","/images/fallback")
+                        .replace(".webp",".png");
+
+                    $(".icon-preview-4 source").attr("srcset", path);
+                    $(".icon-preview-4 img").attr("src",fallbackPath);
+
                     $(".icon-preview-4 label").text(slider_values[currentSlideNumber + 4].title);
                 }
                 else $(".icon-preview-4").css("opacity",0);

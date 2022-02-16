@@ -6,6 +6,7 @@ import $ from 'jquery';
 import Main from '../layouts/Main';
 import media_query_values from '../data/MediaQuery';
 import MainSplashScreen from '../components/Animations/MainSplashScreen';
+import ImgWithFallback from '../components/Animations/ImgWithFallback';
 import Navigation from '../components/Template/Navigation';
 import Footer from '../components/Template/Footer';
 
@@ -124,7 +125,16 @@ class Index extends Component {
                                                    <label>Utility Payment</label>
                                                </div>
                                                <label className="iphone_frame_pretext">{(this.screenImageLetter === "_d" || this.screenImageLetter === "_b")? "Hover" : "Scroll & tap"} on any box to change phone screen</label>
-                                               <img preview={this.screenImageLetter} className="iphone_frame" src={"/images/iphone_screens/iphone_dashboard.webp"} />
+
+                                               <ImgWithFallback
+                                                   preview={this.screenImageLetter}
+                                                   className="iphone_frame"
+                                                   classNameSrc="iphone_frame_src"
+                                                   src={"/images/iphone_screens/iphone_dashboard.webp"}
+                                                   fallback={"/images/fallback/iphone_screens/iphone_dashboard.png"}
+                                                   alt="iphone frame"
+                                               />
+
                                                <button className={"open-download-overlay"}>{(this.screenImageLetter === "_m")? "Get Started" : "Start Creating your Banking Experience"}&nbsp; &nbsp;&nbsp;<span><img src="/images/icons/arrow-right-white.svg"/><img src="/images/icons/arrow-right-white.svg"/></span></button>
 
                                                <div className="iphone_frame_mobile_cards">
@@ -213,7 +223,13 @@ class Index extends Component {
                                                    <div className="layer-3-ribbon-groups-title">
                                                      <div className="layer-3-ribbon-groups-title-flex">
                                                        <div className="layer-3-ribbon-groups-title-image">
-                                                          <img src={"/images/icons/features_borderless"+ (this.screenImageLetter) + ".webp"}/>
+
+                                                           <ImgWithFallback
+                                                               src={"/images/icons/features_borderless"+ (this.screenImageLetter) + ".webp"}
+                                                               fallback={"/images/fallback/icons/features_borderless"+ (this.screenImageLetter) + ".png"}
+                                                               alt="features_borderless"
+                                                           />
+
                                                        </div>
                                                       <label>Free Borderless<br/>account opening</label>
                                                      </div>
@@ -225,7 +241,12 @@ class Index extends Component {
                                                    <div className="layer-3-ribbon-groups-title">
                                                        <div className="layer-3-ribbon-groups-title-flex">
                                                        <div className="layer-3-ribbon-groups-title-image">
-                                                          <img src={"/images/icons/features_transfer"+ (this.screenImageLetter) + ".webp"}/>
+
+                                                           <ImgWithFallback
+                                                               src={"/images/icons/features_transfer"+ (this.screenImageLetter) + ".webp"}
+                                                               fallback={"/images/fallback/icons/features_transfer"+ (this.screenImageLetter) + ".png"}
+                                                               alt="features_transfer"
+                                                           />
                                                        </div>
                                                        <label>Borderless Funds<br/>Transfer</label>
                                                        </div>
@@ -237,7 +258,11 @@ class Index extends Component {
                                                     <div className="layer-3-ribbon-groups-title">
                                                         <div className="layer-3-ribbon-groups-title-flex">
                                                         <div className="layer-3-ribbon-groups-title-image">
-                                                           <img src={"/images/icons/features_card"+ (this.screenImageLetter) + ".webp"}/>
+                                                            <ImgWithFallback
+                                                                src={"/images/icons/features_card"+ (this.screenImageLetter) + ".webp"}
+                                                                fallback={"/images/fallback/icons/features_card"+ (this.screenImageLetter) + ".png"}
+                                                                alt="features_card"
+                                                            />
                                                         </div>
                                                         <label>Link multiple accounts<br/>to a single card</label>`
                                                         </div>
@@ -266,7 +291,11 @@ class Index extends Component {
                                             </label>
                                        </div>
                                        <div className="layer-4-section">
-                                           <img src={"/images/about_vpd_stack"+ (this.screenImageLetter) + ".webp"}/>
+                                           <ImgWithFallback
+                                               src={"/images/about_vpd_stack"+ (this.screenImageLetter) + ".webp"}
+                                               fallback={"/images/fallback/about_vpd_stack"+ (this.screenImageLetter) + ".png"}
+                                               alt="about_vpd_stack"
+                                           />
                                        </div>
                                    </div>
 
@@ -279,7 +308,11 @@ class Index extends Component {
                                        <div className="layer-5-section-1">
                                          <label className="headingLabel">Personal</label>
                                          <label className="headingLabelAlt">Personal</label>
-                                         <img src={"/images/iphone_screens/index_personal_phone"+ (this.screenImageLetter) + ".webp"}/>
+                                           <ImgWithFallback
+                                               src={"/images/iphone_screens/index_personal_phone"+ (this.screenImageLetter) + ".webp"}
+                                               fallback={"/images/fallback/iphone_screens/index_personal_phone"+ (this.screenImageLetter) + ".png"}
+                                               alt="index_personal_phone"
+                                           />
                                          <div>
                                              Personal is purpose-built for individuals, delivering flexibility with better user experience.
                                              <Link to="/personal"><button>Learn More&nbsp;&nbsp;&nbsp;&nbsp;></button></Link>
@@ -288,7 +321,11 @@ class Index extends Component {
                                        <div className="layer-5-section-2">
                                            <label className="headingLabel">Business</label>
                                            <label className="headingLabelAlt">Business</label>
-                                           <img src={"/images/iphone_screens/index_business_phone"+ (this.screenImageLetter) + ".webp"}/>
+                                           <ImgWithFallback
+                                               src={"/images/iphone_screens/index_business_phone"+ (this.screenImageLetter) + ".webp"}
+                                               fallback={"/images/fallback/iphone_screens/index_business_phone"+ (this.screenImageLetter) + ".png"}
+                                               alt="index_personal_phone"
+                                           />
                                            <div>
                                                Business provides the borderless solution you need to make and take payments in one place.
                                                <Link to="/business"><button>Learn More&nbsp;&nbsp;&nbsp;&nbsp;></button></Link>
@@ -377,24 +414,31 @@ class Index extends Component {
             //     }
             // });
 
+
         }
 
         $(document).on("mouseenter",".iphone-feature-pod",function ()
         {
-                // let screenImageLetter = $(".iphone_frame").attr("preview");
                 var path = $(this).attr("preview") + ".webp";
-                $(".iphone_frame").attr("src", path);
+                var fallbackPath = $(this).attr("preview") + ".png";
+                fallbackPath= fallbackPath.replace("/images","/images/fallback");
+
+                $(".iphone_frame_src").attr("srcset", path);
+                $(".iphone_frame").attr("src",fallbackPath);
+
 
         });
 
         $(document).on("mouseenter",".iphone-feature-pod-mobile",function ()
         {
-            // let screenImageLetter = $(".iphone_frame").attr("preview");
             var path = $(this).attr("preview") + ".webp";
-            $(".iphone_frame").attr("src", path);
+            var fallbackPath = $(this).attr("preview") + ".png";
+            fallbackPath= fallbackPath.replace("/images","/images/fallback");
+
+            $(".iphone_frame_src").attr("srcset", path);
+            $(".iphone_frame").attr("src",fallbackPath);
 
         });
-
 
     }
 

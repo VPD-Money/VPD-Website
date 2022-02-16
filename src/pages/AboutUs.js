@@ -6,6 +6,7 @@ import Main from '../layouts/Main';
 import media_query_values from '../data/MediaQuery';
 import NavigationDeep from '../components/Template/NavigationDeep';
 import Footer from '../components/Template/Footer';
+import ImgWithFallback from "../components/Animations/ImgWithFallback";
 
 class AboutUs extends Component {
 
@@ -36,17 +37,51 @@ class AboutUs extends Component {
                         <NavigationDeep/>
 
                         <div className="about-layer-1">
-                            <img className="about-layer-1-bg" src={"/images/aboutus_main_bg" + (this.screenImageLetter) + ".webp"} />
+
+                            <ImgWithFallback
+                                className="about-layer-1-bg"
+                                src={"/images/aboutus_main_bg" + (this.screenImageLetter) + ".webp"}
+                                fallback={"/images/fallback/aboutus_main_bg" + (this.screenImageLetter) + ".png"}
+                                alt="aboutus_main_bg"
+                            />
+
                             <div className="about-layer-1-component">
-                                <img src={"/images/about_person_1" + (this.screenImageLetter) + ".webp"}/>
-                                <img src={"/images/about_person_2" + (this.screenImageLetter) + ".webp"}/>
+
+                                <ImgWithFallback
+                                    src={"/images/about_person_1" + (this.screenImageLetter) + ".webp"}
+                                    fallback={"/images/fallback/about_person_1" + (this.screenImageLetter) + ".png"}
+                                    alt="about_person_1"
+                                />
+
+                                <ImgWithFallback
+                                    src={"/images/about_person_2" + (this.screenImageLetter) + ".webp"}
+                                    fallback={"/images/fallback/about_person_2" + (this.screenImageLetter) + ".png"}
+                                    alt="about_person_2"
+                                />
+
                                 <div>
                                     <label>We are building a bank for the <span>unbanked</span></label>
                                     <label>VPD Money provides banking for businesses and digital banking for individuals in Africa and beyond. Discover what the bank of you is all about.</label>
                                 </div>
-                                <img src={"/images/about_person_3" + (this.screenImageLetter) + ".webp"}/>
-                                <img src={"/images/about_person_4" + (this.screenImageLetter) + ".webp"}/>
-                                <img src={"/images/about_person_5" + (this.screenImageLetter) + ".webp"}/>
+
+                                <ImgWithFallback
+                                    src={"/images/about_person_3" + (this.screenImageLetter) + ".webp"}
+                                    fallback={"/images/fallback/about_person_3" + (this.screenImageLetter) + ".png"}
+                                    alt="about_person_3"
+                                />
+
+                                <ImgWithFallback
+                                    src={"/images/about_person_4" + (this.screenImageLetter) + ".webp"}
+                                    fallback={"/images/fallback/about_person_4" + (this.screenImageLetter) + ".png"}
+                                    alt="about_person_4"
+                                />
+
+                                <ImgWithFallback
+                                    src={"/images/about_person_5" + (this.screenImageLetter) + ".webp"}
+                                    fallback={"/images/fallback/about_person_5" + (this.screenImageLetter) + ".png"}
+                                    alt="about_person_5"
+                                />
+
                             </div>
 
                         </div>
@@ -54,7 +89,11 @@ class AboutUs extends Component {
                         <div className="about-layer-2">
 
                             <div className="about-layer-2-section">
-                                <img src={"/images/about_group" + (this.screenImageLetter) + ".webp"}/>
+                                <ImgWithFallback
+                                    src={"/images/about_group" + (this.screenImageLetter) + ".webp"}
+                                    fallback={"/images/fallback/about_group" + (this.screenImageLetter) + ".png"}
+                                    alt="about_group"
+                                />
                             </div>
                             <div className="about-layer-2-section">
                                 <div className="about-layer-2-section-group">
@@ -102,31 +141,53 @@ class AboutUs extends Component {
                         <div className="about-layer-3">
 
                             <div className="about-layer-3-section">
-                                <img src="/images/icons/users.webp"/>
+
+                                <ImgWithFallback
+                                    src={"/images/icons/users.webp"}
+                                    fallback={"/images/fallback/icons/users.png"}
+                                    alt="users"
+                                />
+
                                 <label>45,000+</label>
                                 <label>Users</label>
                             </div>
 
                             <div className="about-layer-3-section">
-                                <img src="/images/icons/dollar.webp"/>
+                                <ImgWithFallback
+                                    src={"/images/icons/dollar.webp"}
+                                    fallback={"/images/fallback/icons/dollar.png"}
+                                    alt="transactions"
+                                />
                                 <label>$48 Million+</label>
                                 <label>Processed Transactions</label>
                             </div>
 
                             <div className="about-layer-3-section">
-                                <img src="/images/icons/visa.webp"/>
+                                <ImgWithFallback
+                                    src={"/images/icons/visa.webp"}
+                                    fallback={"/images/fallback/icons/visa.png"}
+                                    alt="visa"
+                                />
                                 <label>Exclusive Partnership</label>
                                 <label>with Visa</label>
                             </div>
 
                             <div className="about-layer-3-section">
-                                <img src="/images/icons/finalist.webp"/>
+                                <ImgWithFallback
+                                    src={"/images/icons/finalist.webp"}
+                                    fallback={"/images/fallback/icons/finalist.png"}
+                                    alt="finalist"
+                                />
                                 <label>Finalist</label>
                                 <label>at the CEMEA Visa Everywhere Initiative</label>
                             </div>
 
                             <div className="about-layer-3-section">
-                                <img src="/images/icons/inclusive_fintech.webp"/>
+                                <ImgWithFallback
+                                    src={"/images/icons/inclusive_fintech.webp"}
+                                    fallback={"/images/fallback/icons/inclusive_fintech.png"}
+                                    alt="inclusive_fintech"
+                                />
                                 <label>Winner</label>
                                 <label>Inclusive Fintech 50 (IF50) competition’s 2021 cohort.</label>
                             </div>
@@ -142,25 +203,41 @@ class AboutUs extends Component {
 
                             <div className="about-layer-4-section">
                                 <div className="about-layer-4-section-element">
-                                    <img src="/images/team/Michael Simeon.webp"/>
+                                    <ImgWithFallback
+                                        src={"/images/team/Michael_Simeon.webp"}
+                                        fallback={"/images/fallback/team/Michael_Simeon.png"}
+                                        alt="Michael Simeon"
+                                    />
                                     <label className="about-layer-4-section-element-name">Michael Simeon</label>
                                     <label className="about-layer-4-section-element-title">Co-Founder & CEO</label>
                                 </div>
 
                                 <div className="about-layer-4-section-element">
-                                    <img src="/images/team/Adeleke Mohammed.webp"/>
+                                    <ImgWithFallback
+                                        src={"/images/team/Adeleke_Mohammed.webp"}
+                                        fallback={"/images/fallback/team/Adeleke_Mohammed.png"}
+                                        alt="Adeleke Mohammed"
+                                    />
                                     <label className="about-layer-4-section-element-name">Adeleke Mohammed</label>
                                     <label className="about-layer-4-section-element-title">Co-Founder and Project Manager</label>
                                 </div>
 
                                 <div className="about-layer-4-section-element">
-                                    <img src="/images/team/Channel Edwards.webp"/>
+                                    <ImgWithFallback
+                                        src={"/images/team/Channel_Edwards.webp"}
+                                        fallback={"/images/fallback/team/Channel_Edwards.png"}
+                                        alt="Channel Edwards"
+                                    />
                                     <label className="about-layer-4-section-element-name">Channel Edwards</label>
                                     <label className="about-layer-4-section-element-title">Business Developer</label>
                                 </div>
 
                                 <div className="about-layer-4-section-element">
-                                    <img src="/images/team/Ayokunle Falade.webp"/>
+                                    <ImgWithFallback
+                                        src={"/images/team/Ayokunle_Falade.webp"}
+                                        fallback={"/images/fallback/team/Ayokunle_Falade.png"}
+                                        alt="Ayokunle Falade"
+                                    />
                                     <label className="about-layer-4-section-element-name">Ayokunle Falade</label>
                                     <label className="about-layer-4-section-element-title">Tech Team Lead</label>
                                 </div>
@@ -175,25 +252,41 @@ class AboutUs extends Component {
                                 {/*</div>*/}
 
                                 <div className="about-layer-4-section-element">
-                                    <img src="/images/team/Damilola Ilesanmi.webp"/>
+                                    <ImgWithFallback
+                                        src={"/images/team/Damilola_Ilesanmi.webp"}
+                                        fallback={"/images/fallback/team/Damilola_Ilesanmi.png"}
+                                        alt="Damilola Ilesanmi"
+                                    />
                                     <label className="about-layer-4-section-element-name">Damilola Ilesanmi</label>
                                     <label className="about-layer-4-section-element-title">Compliance Officer</label>
                                 </div>
 
                                 <div className="about-layer-4-section-element">
-                                    <img src="/images/team/Muyiwa Akinwusi.webp"/>
+                                    <ImgWithFallback
+                                        src={"/images/team/Muyiwa_Akinwusi.webp"}
+                                        fallback={"/images/fallback/team/Muyiwa_Akinwusi.png"}
+                                        alt="Muyiwa Akinwusi"
+                                    />
                                     <label className="about-layer-4-section-element-name">Muyiwa Akinwusi</label>
                                     <label className="about-layer-4-section-element-title">Customer Support Lead</label>
                                 </div>
 
                                 <div className="about-layer-4-section-element">
-                                    <img src="/images/team/Taiwo Bakare.webp"/>
+                                     <ImgWithFallback
+                                        src={"/images/team/Taiwo_Bakare.webp"}
+                                        fallback={"/images/fallback/team/Taiwo_Bakare.png"}
+                                        alt="Taiwo Bakare"
+                                    />
                                     <label className="about-layer-4-section-element-name">Taiwo Bakare</label>
                                     <label className="about-layer-4-section-element-title">Customer Support Officer</label>
                                 </div>
 
                                 <div className="about-layer-4-section-element">
-                                    <img src="/images/team/Osadome Ebie.webp"/>
+                                    <ImgWithFallback
+                                        src={"/images/team/Osadome_Ebie.webp"}
+                                        fallback={"/images/fallback/team/Osadome_Ebie.png"}
+                                        alt="Osadome Ebie"
+                                    />
                                     <label className="about-layer-4-section-element-name">Osadome Ebie</label>
                                     <label className="about-layer-4-section-element-title">Product Designer</label>
                                 </div>
@@ -210,7 +303,11 @@ class AboutUs extends Component {
                                 {/*</div>*/}
 
                                 <div className="about-layer-4-section-element">
-                                    <img src="/images/team/Saheed Oladele.webp"/>
+                                    <ImgWithFallback
+                                        src={"/images/team/Saheed_Oladele.webp"}
+                                        fallback={"/images/fallback/team/Saheed_Oladele.png"}
+                                        alt="Saheed Oladele"
+                                    />
                                     <label className="about-layer-4-section-element-name">Saheed Oladele</label>
                                     <label className="about-layer-4-section-element-title">Software Developer</label>
                                 </div>

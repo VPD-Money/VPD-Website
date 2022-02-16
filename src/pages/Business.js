@@ -7,6 +7,7 @@ import Main from '../layouts/Main';
 import media_query_values from '../data/MediaQuery';
 import NavigationDeep from '../components/Template/NavigationDeep';
 import Footer from '../components/Template/Footer';
+import ImgWithFallback from "../components/Animations/ImgWithFallback";
 
 class Business extends Component {
 
@@ -35,7 +36,12 @@ class Business extends Component {
                         <NavigationDeep/>
 
                         <div className="business-layer-1">
-                            <img className="bg_image" src={"/images/business_personal_main_bg" + (this.screenImageLetter) + ".webp"} />
+                            <ImgWithFallback
+                                className="bg_image"
+                                src={"/images/business_personal_main_bg" + (this.screenImageLetter) + ".webp"}
+                                fallback={"/images/fallback/business_personal_main_bg" + (this.screenImageLetter) + ".png"}
+                                alt="bg_image"
+                            />
 
                             <div className="business-layer-1-component">
                                 <div className="business-layer-1-component-sub-1">
@@ -58,31 +64,78 @@ class Business extends Component {
                                            Get the App &nbsp;&nbsp;&nbsp;<img src="/images/icons/arrow-right-white.svg"/>
                                        </button>
                                        <div className="component-icon-group">
-                                           <img label="1" className="component-icon" src="/images/icons/payroll.webp"/>
+
+                                           <ImgWithFallback
+                                               label="1"
+                                               className="component-icon"
+                                               src={"/images/icons/payroll.webp"}
+                                               fallback={"/images/fallback/icons/payroll.png"}
+                                               alt="component-icon"
+                                           />
                                        </div>
                                        <div className="component-icon-group">
-                                           <img label="2" className="component-icon" src="/images/icons/account-report.webp"/>
+                                           <ImgWithFallback
+                                               label="2"
+                                               className="component-icon"
+                                               src={"/images/icons/account-report.webp"}
+                                               fallback={"/images/fallback/icons/account-report.png"}
+                                               alt="component-icon"
+                                           />
                                        </div>
                                        <div className="component-icon-group">
-                                           <img label="3" className="component-icon" src="/images/icons/invoice.webp"/>
+                                           <ImgWithFallback
+                                               label="3"
+                                               className="component-icon"
+                                               src={"/images/icons/invoice.webp"}
+                                               fallback={"/images/fallback/icons/invoice.png"}
+                                               alt="component-icon"
+                                           />
                                        </div>
                                        <div className="component-icon-group">
-                                           <img label="4" className="component-icon" src="/images/icons/customers.webp"/>
+                                           <ImgWithFallback
+                                               label="4"
+                                               className="component-icon"
+                                               src={"/images/icons/customers.webp"}
+                                               fallback={"/images/fallback/icons/customers.png"}
+                                               alt="component-icon"
+                                           />
                                        </div>
                                        <div className="component-icon-group">
-                                           <img label="5" className="component-icon" src="/images/icons/sub-accounts.webp"/>
+                                           <ImgWithFallback
+                                               label="5"
+                                               className="component-icon"
+                                               src={"/images/icons/sub-accounts.webp"}
+                                               fallback={"/images/fallback/icons/sub-accounts.png"}
+                                               alt="component-icon"
+                                           />
                                        </div>
                                        <div className="component-icon-group">
-                                           <img label="6" className="component-icon" src="/images/icons/payslip.webp"/>
+                                           <ImgWithFallback
+                                               label="6"
+                                               className="component-icon"
+                                               src={"/images/icons/payslip.webp"}
+                                               fallback={"/images/fallback/icons/payslip.png"}
+                                               alt="component-icon"
+                                           />
                                        </div>
                                        <div className="component-icon-group">
-                                           <img label="7" className="component-icon" src="/images/icons/product-services.webp"/>
+                                           <ImgWithFallback
+                                               label="7"
+                                               className="component-icon"
+                                               src={"/images/icons/product-services.webp"}
+                                               fallback={"/images/fallback/icons/product-services.png"}
+                                               alt="component-icon"
+                                           />
                                        </div>
                                 </div>
                                    </div>
 
                                 <div className="business-layer-1-component-sub-2">
-                                    <img src={"/images/business_main_phone"+ (this.screenImageLetter) + ".webp"}/>
+                                    <ImgWithFallback
+                                        src={"/images/business_main_phone"+ (this.screenImageLetter) + ".webp"}
+                                        fallback={"/images/fallback/business_main_phone"+ (this.screenImageLetter) + ".png"}
+                                        alt="business_main_phone"
+                                    />
                                 </div>
                             </div>
 
@@ -91,21 +144,37 @@ class Business extends Component {
                         <div id="features" className="business-layer-2">
                             <div className="business-layer-2-group">
                                 <div className="business-layer-2-group-1">
-                                    <img src="/images/business_frame_payroll.webp"/>
+                                    <ImgWithFallback
+                                        src={"/images/business_frame_payroll.webp"}
+                                        fallback={"/images/fallback/business_frame_payroll.png"}
+                                        alt="business_frame_payroll"
+                                    />
                                 </div>
                                 <div className="business-layer-2-group-2">
                                     <div className="business-layer-2-group-2-slider">
                                         <img id="business-layer-2-slide-left" src="/images/icons/arrow-left-black-faded.svg"/>
                                             <div className="business-layer-2-slide-icon-group">
-                                                <img src="/images/icons/payroll.webp"/>
+                                                <ImgWithFallback
+                                                    src={"/images/icons/payroll.webp"}
+                                                    fallback={"/images/fallback/icons/payroll.png"}
+                                                    alt="payroll"
+                                                />
                                                 <label>Payroll</label>
                                             </div>
                                             <div className="business-layer-2-slide-icon-group-preview icon-preview-1">
-                                                <img src="/images/icons/account-report.webp"/>
+                                                <ImgWithFallback
+                                                    src={"/images/icons/account-report.webp"}
+                                                    fallback={"/images/fallback/icons/account-report.png"}
+                                                    alt="account-report"
+                                                />
                                                 <label>Account Statement</label>
                                             </div>
                                             <div className="business-layer-2-slide-icon-group-preview icon-preview-2">
-                                                <img src="/images/icons/product-services.webp"/>
+                                                <ImgWithFallback
+                                                    src={"/images/icons/product-services.webp"}
+                                                    fallback={"/images/fallback/icons/product-services.png"}
+                                                    alt="product-services"
+                                                />
                                                 <label>Products & Services</label>
                                             </div>
                                             {/*<div className="business-layer-2-slide-icon-group-preview icon-preview-3">*/}
@@ -233,9 +302,21 @@ class Business extends Component {
             if(currentSlideNumber > 0 && currentSlideNumber <= totalSlideIndex)
             {
                 currentSlideNumber--;
-                $(".business-layer-2-slide-icon-group img").attr("src",slider_values[currentSlideNumber].url);
                 $(".business-layer-2-slide-icon-group label").text(slider_values[currentSlideNumber].title);
-                $(".business-layer-2-group-1 img").attr("src",slider_values[currentSlideNumber].image);
+
+                var path = slider_values[currentSlideNumber].url;
+                var fallbackPath = path.replace("/images","/images/fallback")
+                    .replace(".webp",".png");
+                $(".business-layer-2-slide-icon-group source").attr("srcset", path);
+                $(".business-layer-2-slide-icon-group img").attr("src",fallbackPath);
+
+                var path = slider_values[currentSlideNumber].image;
+                var fallbackPath = path.replace("/images","/images/fallback")
+                    .replace(".webp",".png");
+                $(".business-layer-2-group-1 source").attr("srcset", path);
+                $(".business-layer-2-group-1 img").attr("src",fallbackPath);
+
+
                 $(".business-layer-2-group-2-header").text(slider_values[currentSlideNumber].heading);
                 $(".business-layer-2-group-2-text-1").text(slider_values[currentSlideNumber].content1);
                 $(".business-layer-2-group-2-text-2").text(slider_values[currentSlideNumber].content2);
@@ -245,7 +326,14 @@ class Business extends Component {
                 if(totalSlideIndex - currentSlideNumber > 0)
                 {
                     $(".icon-preview-1").css("opacity",0.5);
-                    $(".icon-preview-1 img").attr("src",slider_values[currentSlideNumber + 1].url);
+
+                    var path = slider_values[currentSlideNumber + 1].url;
+                    var fallbackPath = path.replace("/images","/images/fallback")
+                        .replace(".webp",".png");
+
+                    $(".icon-preview-1 source").attr("srcset", path);
+                    $(".icon-preview-1 img").attr("src",fallbackPath);
+
                     $(".icon-preview-1 label").text(slider_values[currentSlideNumber + 1].title);
                 }
                 else $(".icon-preview-1").css("opacity",0);
@@ -253,7 +341,14 @@ class Business extends Component {
                 if(totalSlideIndex - currentSlideNumber > 1)
                 {
                     $(".icon-preview-2").css("opacity",0.5);
-                    $(".icon-preview-2 img").attr("src",slider_values[currentSlideNumber + 2].url);
+
+                    var path = slider_values[currentSlideNumber + 2].url;
+                    var fallbackPath = path.replace("/images","/images/fallback")
+                        .replace(".webp",".png");
+
+                    $(".icon-preview-2 source").attr("srcset", path);
+                    $(".icon-preview-2 img").attr("src",fallbackPath);
+
                     $(".icon-preview-2 label").text(slider_values[currentSlideNumber + 2].title);
                 }
                 else $(".icon-preview-2").css("opacity",0);
@@ -261,7 +356,14 @@ class Business extends Component {
                 if(totalSlideIndex - currentSlideNumber > 2)
                 {
                     $(".icon-preview-3").css("opacity",0.5);
-                    $(".icon-preview-3 img").attr("src",slider_values[currentSlideNumber + 3].url);
+
+                    var path = slider_values[currentSlideNumber + 3].url;
+                    var fallbackPath = path.replace("/images","/images/fallback")
+                        .replace(".webp",".png");
+
+                    $(".icon-preview-3 source").attr("srcset", path);
+                    $(".icon-preview-3 img").attr("src",fallbackPath);
+
                     $(".icon-preview-3 label").text(slider_values[currentSlideNumber + 3].title);
                 }
                 else $(".icon-preview-3").css("opacity",0);
@@ -269,17 +371,30 @@ class Business extends Component {
                 if(totalSlideIndex - currentSlideNumber > 3)
                 {
                     $(".icon-preview-4").css("opacity",0.5);
-                    $(".icon-preview-4 img").attr("src",slider_values[currentSlideNumber + 4].url);
+
+                    var path = slider_values[currentSlideNumber + 4].url;
+                    var fallbackPath = path.replace("/images","/images/fallback")
+                        .replace(".webp",".png");
+
+                    $(".icon-preview-4 source").attr("srcset", path);
+                    $(".icon-preview-4 img").attr("src",fallbackPath);
+
                     $(".icon-preview-4 label").text(slider_values[currentSlideNumber + 4].title);
                 }
                 else $(".icon-preview-4").css("opacity",0);
 
                 if(currentSlideNumber === 0) {
                     $("#business-layer-2-slide-left").css("cursor","default");
+                    $("#business-layer-2-slide-left").fadeIn(500);
+                    $("#business-layer-2-slide-left").css("transform","rotate(0deg)");
+                    $("#business-layer-2-slide-left").attr("src","/images/icons/arrow-left-black-faded.svg")
+
                 }
                 else
                 {
-
+                    $("#business-layer-2-slide-right").fadeIn(500);
+                    $("#business-layer-2-slide-right").css("transform","rotate(0deg)");
+                    $("#business-layer-2-slide-right").attr("src","/images/icons/arrow-right-black.svg")
                 }
             }
 
@@ -290,9 +405,20 @@ class Business extends Component {
             if(currentSlideNumber < totalSlideIndex)
             {
                 currentSlideNumber++;
-                $(".business-layer-2-slide-icon-group img").attr("src",slider_values[currentSlideNumber].url);
                 $(".business-layer-2-slide-icon-group label").text(slider_values[currentSlideNumber].title);
-                $(".business-layer-2-group-1 img").attr("src",slider_values[currentSlideNumber].image);
+
+                var path = slider_values[currentSlideNumber].url;
+                var fallbackPath = path.replace("/images","/images/fallback")
+                    .replace(".webp",".png");
+                $(".business-layer-2-slide-icon-group source").attr("srcset", path);
+                $(".business-layer-2-slide-icon-group img").attr("src",fallbackPath);
+
+                var path = slider_values[currentSlideNumber].image;
+                var fallbackPath = path.replace("/images","/images/fallback")
+                    .replace(".webp",".png");
+                $(".business-layer-2-group-1 source").attr("srcset", path);
+                $(".business-layer-2-group-1 img").attr("src",fallbackPath);
+
                 $(".business-layer-2-group-2-header").text(slider_values[currentSlideNumber].heading);
                 $(".business-layer-2-group-2-text-1").text(slider_values[currentSlideNumber].content1);
                 $(".business-layer-2-group-2-text-2").text(slider_values[currentSlideNumber].content2);
@@ -302,7 +428,14 @@ class Business extends Component {
                 if(totalSlideIndex - currentSlideNumber >0)
                 {
                     $(".icon-preview-1").css("opacity",0.5);
-                    $(".icon-preview-1 img").attr("src",slider_values[currentSlideNumber + 1].url);
+
+                    var path = slider_values[currentSlideNumber + 1].url;
+                    var fallbackPath = path.replace("/images","/images/fallback")
+                        .replace(".webp",".png");
+
+                    $(".icon-preview-1 source").attr("srcset", path);
+                    $(".icon-preview-1 img").attr("src",fallbackPath);
+
                     $(".icon-preview-1 label").text(slider_values[currentSlideNumber + 1].title);
                 }
                 else $(".icon-preview-1").css("opacity",0);
@@ -310,7 +443,14 @@ class Business extends Component {
                 if(totalSlideIndex - currentSlideNumber > 1)
                 {
                     $(".icon-preview-2").css("opacity",0.5);
-                    $(".icon-preview-2 img").attr("src",slider_values[currentSlideNumber + 2].url);
+
+                    var path = slider_values[currentSlideNumber + 2].url;
+                    var fallbackPath = path.replace("/images","/images/fallback")
+                        .replace(".webp",".png");
+
+                    $(".icon-preview-2 source").attr("srcset", path);
+                    $(".icon-preview-2 img").attr("src",fallbackPath);
+
                     $(".icon-preview-2 label").text(slider_values[currentSlideNumber + 2].title);
                 }
                 else $(".icon-preview-2").css("opacity",0);
@@ -318,7 +458,14 @@ class Business extends Component {
                 if(totalSlideIndex - currentSlideNumber > 2)
                 {
                     $(".icon-preview-3").css("opacity",0.5);
-                    $(".icon-preview-3 img").attr("src",slider_values[currentSlideNumber + 3].url);
+
+                    var path = slider_values[currentSlideNumber + 3].url;
+                    var fallbackPath = path.replace("/images","/images/fallback")
+                        .replace(".webp",".png");
+
+                    $(".icon-preview-3 source").attr("srcset", path);
+                    $(".icon-preview-3 img").attr("src",fallbackPath);
+
                     $(".icon-preview-3 label").text(slider_values[currentSlideNumber + 3].title);
                 }
                 else $(".icon-preview-3").css("opacity",0);
@@ -326,13 +473,31 @@ class Business extends Component {
                 if(totalSlideIndex - currentSlideNumber > 3)
                 {
                     $(".icon-preview-4").css("opacity",0.5);
-                    $(".icon-preview-4 img").attr("src",slider_values[currentSlideNumber + 4].url);
+
+                    var path = slider_values[currentSlideNumber + 4].url;
+                    var fallbackPath = path.replace("/images","/images/fallback")
+                        .replace(".webp",".png");
+
+                    $(".icon-preview-4 source").attr("srcset", path);
+                    $(".icon-preview-4 img").attr("src",fallbackPath);
+
                     $(".icon-preview-4 label").text(slider_values[currentSlideNumber + 4].title);
                 }
                 else $(".icon-preview-4").css("opacity",0);
 
                 if(currentSlideNumber === totalSlideIndex) {
                     $("#business-layer-2-slide-right").css("cursor","default");
+                    $("#business-layer-2-slide-right").fadeIn(500);
+                    $("#business-layer-2-slide-right").css("transform","rotate(180deg)");
+                    $("#business-layer-2-slide-right").attr("src","/images/icons/arrow-left-black-faded.svg");
+
+                }
+                else
+                {
+                    $("#business-layer-2-slide-left").fadeIn(500);
+                    $("#business-layer-2-slide-left").css("transform","rotate(180deg)");
+                    $("#business-layer-2-slide-left").attr("src","/images/icons/arrow-right-black.svg");
+
                 }
 
             }

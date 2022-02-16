@@ -2,6 +2,10 @@
 {
   position: relative;
   background-image: url('../../cssimages/blue_soft_bg_2x_plain.webp');
+  background-image: image-set(
+          url('../../cssimages/blue_soft_bg_2x_plain.webp') 1x,
+          url('../../cssimages/blue_soft_bg_2x_plain.png') 1x
+  );
   background-size: cover;
   height: 100vh;
   background-repeat:round;
@@ -162,6 +166,10 @@
 {
   position: relative;
   background-image: url('../../cssimages/blue_soft_bg_2x.webp');
+  background-image: image-set(
+          url('../../cssimages/blue_soft_bg_2x.webp') 1x,
+          url('../../cssimages/blue_soft_bg_2x.png') 1x
+  );
   background-size: cover;
   height: 100vh;
   background-repeat:no-repeat;

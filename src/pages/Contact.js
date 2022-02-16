@@ -7,6 +7,7 @@ import media_query_values from '../data/MediaQuery';
 import contact_info from '../data/ContactInfo';
 import NavigationLight from '../components/Template/NavigationLight';
 import Footer from '../components/Template/Footer';
+import ImgWithFallback from "../components/Animations/ImgWithFallback";
 
 
 class Contact extends Component {
@@ -43,12 +44,22 @@ class Contact extends Component {
                                           {/*<label>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</label>*/}
 
                                           <div className="contact-ng-address">
-                                              <img className="contact-ng-address-img" src="/images/icons/ng.webp"/>
+                                              <ImgWithFallback
+                                                  className="contact-ng-address-img"
+                                                  src={"/images/icons/ng.webp"}
+                                                  fallback={"/images/fallback/icons/ng.png"}
+                                                  alt="ng"
+                                              />
                                               <label>33A, Abba Johnson Crescent, Akora Estate, Off Adeniyi Jones, Ikeja, Lagos State - Nigeria. 100005</label>
                                           </div>
 
                                           <div className="contact-uk-address">
-                                              <img className="contact-uk-address-img"  src="/images/icons/uk.webp"/>
+                                              <ImgWithFallback
+                                                  className="contact-uk-address-img"
+                                                  src={"/images/icons/uk.webp"}
+                                                  fallback={"/images/fallback/icons/uk.png"}
+                                                  alt="uk"
+                                              />
                                               <label>Level 39, One Canada Square, Canary Wharf. London, E14 5Ab, UK</label>
                                           </div>
 
@@ -56,20 +67,56 @@ class Contact extends Component {
                                       <div className="contact-layer-1-section-2">
 
                                           <div className="contact-email-box">
-                                            <img src="/images/icons/email.webp"/>
+                                              <ImgWithFallback
+                                                  className="contact-uk-address-img"
+                                                  src={"/images/icons/email.webp"}
+                                                  fallback={"/images/fallback/icons/email.png"}
+                                                  alt="email"
+                                              />
                                             <a href={"mailto:"+contact_info.email}>{contact_info.email}</a>
                                           </div>
 
                                           <div className="contact-callcenter-box">
-                                              <img src="/images/icons/customer-care.webp"/>
+                                              <ImgWithFallback
+                                                  src={"/images/icons/customer-care.webp"}
+                                                  fallback={"/images/fallback/icons/customer-care.png"}
+                                                  alt="customer-care"
+                                              />
                                               <label>{contact_info.phone}</label>
                                           </div>
 
                                           <div className="contact-social-box">
-                                              <a href={contact_info.instagram}><img src="/images/icons/instagram.webp"/></a>
-                                              <a href={contact_info.linkedin}><img src="/images/icons/linkedin.webp"/></a>
-                                              <a href={contact_info.twitter}><img src="/images/icons/twitter.webp"/></a>
-                                              <a href={contact_info.facebook}><img src="/images/icons/facebook.webp"/></a>
+                                              <a href={contact_info.instagram}>
+                                                  <ImgWithFallback
+                                                      src={"/images/icons/instagram.webp"}
+                                                      fallback={"/images/fallback/icons/instagram.png"}
+                                                      alt="instagram"
+                                                  />
+                                              </a>
+
+                                              <a href={contact_info.linkedin}>
+                                                  <ImgWithFallback
+                                                      src={"/images/icons/linkedin.webp"}
+                                                      fallback={"/images/fallback/icons/linkedin.png"}
+                                                      alt="linkedin"
+                                                  />
+                                              </a>
+
+                                              <a href={contact_info.twitter}>
+                                                  <ImgWithFallback
+                                                      src={"/images/icons/twitter.webp"}
+                                                      fallback={"/images/fallback/icons/twitter.png"}
+                                                      alt="instagram"
+                                                  />
+                                              </a>
+
+                                              <a href={contact_info.facebook}>
+                                                  <ImgWithFallback
+                                                      src={"/images/icons/facebook.webp"}
+                                                      fallback={"/images/fallback/icons/facebook.png"}
+                                                      alt="facebook"
+                                                  />
+                                              </a>
                                               <label>@vpdmoney</label>
                                           </div>
 

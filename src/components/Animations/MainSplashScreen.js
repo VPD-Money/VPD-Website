@@ -7,6 +7,7 @@ import { withKnobs, boolean, number, text } from '@storybook/addon-knobs';
 import {useMediaQuery} from "react-responsive";
 import media_query_values from "../../data/MediaQuery";
 import PropTypes from 'prop-types';
+import ImgWithFallback from "./ImgWithFallback";
 
 class MainSplashScreen extends Component {
 
@@ -73,28 +74,44 @@ class MainSplashScreen extends Component {
             <Carousel {...this.getConfigurableProps()} animationHandler="fade" onChange={onChangeEvent} swipeable={false}
                       className="presentation-mode">
                 <div key="splash_person_box_1" alt="Bank of Sarah">
-                    <img src={"/images/splash_person_1" + (this.screenImageLetter) + ".webp"}/>
+                    <ImgWithFallback
+                        src={"/images/splash_person_1" + (this.screenImageLetter) + ".webp"}
+                        fallback={"/images/fallback/splash_person_1" + (this.screenImageLetter) + ".png"}
+                        alt="splash_person_1"
+                    />
                     <div className="carouselFrameCaption">
                         <span className="carouselFrameCaptionItem1">Bank of</span>
                         <span className="carouselFrameCaptionItem2">Sarah</span>
                     </div>
                 </div>
                 <div key="splash_person_box_2" alt="Bank of Biodun">
-                    <img src={"/images/splash_person_2" + (this.screenImageLetter) + ".webp"}/>
+                    <ImgWithFallback
+                        src={"/images/splash_person_2" + (this.screenImageLetter) + ".webp"}
+                        fallback={"/images/fallback/splash_person_2" + (this.screenImageLetter) + ".png"}
+                        alt="splash_person_2"
+                    />
                     <div className="carouselFrameCaption">
                         <span className="carouselFrameCaptionItem1">Bank of</span>
                         <span className="carouselFrameCaptionItem2">Biodun</span>
                     </div>
                 </div>
                 <div key="splash_person_box_3" alt="Bank of Ashia">
-                    <img src={"/images/splash_person_3" + (this.screenImageLetter) + ".webp"}/>
+                    <ImgWithFallback
+                        src={"/images/splash_person_3" + (this.screenImageLetter) + ".webp"}
+                        fallback={"/images/fallback/splash_person_3" + (this.screenImageLetter) + ".png"}
+                        alt="splash_person_3"
+                    />
                     <div className="carouselFrameCaption">
                         <span className="carouselFrameCaptionItem1">Bank of</span>
                         <span className="carouselFrameCaptionItem2">Ashia</span>
                     </div>
                 </div>
                 <div key="splash_person_box_4" alt="Bank of Chidi">
-                    <img src={"/images/splash_person_4" + (this.screenImageLetter) + ".webp"}/>
+                    <ImgWithFallback
+                        src={"/images/splash_person_4" + (this.screenImageLetter) + ".webp"}
+                        fallback={"/images/fallback/splash_person_4" + (this.screenImageLetter) + ".png"}
+                        alt="splash_person_4"
+                    />
                     <div className="carouselFrameCaption">
                         <span className="carouselFrameCaptionItem1">Bank of</span>
                         <span className="carouselFrameCaptionItem2">Chidi</span>
@@ -140,7 +157,6 @@ function attachDeviceTypeHook(Component) {
         const isRetina = useMediaQuery(media_query_values.retina)
         let objVals = JSON.stringify({isBigScreen, isDesktopOrLaptop, isTablet, isMobile, isPortrait, isRetina});
 
-        console.log(objVals);
         return <Component {...props} deviceType={objVals}/>;
     }
 }

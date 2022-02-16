@@ -5,7 +5,8 @@ const ContactInfo = {
     "instagram": "https://www.instagram.com/vpdmoney/",
     "twitter": "https://twitter.com/vpdmoney",
     "linkedin": "https://www.linkedin.com/company/vpdmoney",
-    "intercom-key": "qvsr6vbj"
+    "intercom-key": "qvsr6vbj",
+    "google-track-id": "G-7VN0VVCLT0"
 };
 
 export default ContactInfo;
