@@ -224,12 +224,12 @@ class AboutUs extends Component {
 
                                 <div className="about-layer-4-section-element">
                                     <ImgWithFallback
-                                        src={"/images/team/Channel_Edwards.webp"}
-                                        fallback={"/images/fallback/team/Channel_Edwards.png"}
-                                        alt="Channel Edwards"
+                                        src={"/images/team/Maggie_Mwase.webp"}
+                                        fallback={"/images/fallback/team/Maggie_Mwase.png"}
+                                        alt="Maggie Mwase"
                                     />
-                                    <label className="about-layer-4-section-element-name">Channel Edwards</label>
-                                    <label className="about-layer-4-section-element-title">Business Developer</label>
+                                    <label className="about-layer-4-section-element-name">Maggie Mwase</label>
+                                    <label className="about-layer-4-section-element-title">Co-founder and Operations Lead</label>
                                 </div>
 
                                 <div className="about-layer-4-section-element">
@@ -245,11 +245,25 @@ class AboutUs extends Component {
                             </div>
 
                             <div className="about-layer-4-section">
-                                {/*<div className="about-layer-4-section-element">*/}
-                                {/*    <img src="/images/team/Michael Simeon.webp"/>*/}
-                                {/*    <label className="about-layer-4-section-element-name">Bimpe Ayeni</label>*/}
-                                {/*    <label className="about-layer-4-section-element-title">Accounting Lead</label>*/}
-                                {/*</div>*/}
+                                <div className="about-layer-4-section-element">
+                                    <ImgWithFallback
+                                        src={"/images/team/Channel_Edwards.webp"}
+                                        fallback={"/images/fallback/team/Channel_Edwards.png"}
+                                        alt="Channel Edwards"
+                                    />
+                                    <label className="about-layer-4-section-element-name">Channel Edwards</label>
+                                    <label className="about-layer-4-section-element-title">Business Developer</label>
+                                </div>
+
+                                <div className="about-layer-4-section-element">
+                                    <ImgWithFallback
+                                        src={"/images/team/Khalid_Oshogwemoh.webp"}
+                                        fallback={"/images/fallback/team/Khalid_Oshogwemoh.png"}
+                                        alt="Khalid Oshogwemoh"
+                                    />
+                                    <label className="about-layer-4-section-element-name">Khalid Oshogwemoh</label>
+                                    <label className="about-layer-4-section-element-title">HR</label>
+                                </div>
 
                                 <div className="about-layer-4-section-element">
                                     <ImgWithFallback
@@ -271,15 +285,11 @@ class AboutUs extends Component {
                                     <label className="about-layer-4-section-element-title">Customer Support Lead</label>
                                 </div>
 
-                                <div className="about-layer-4-section-element">
-                                     <ImgWithFallback
-                                        src={"/images/team/Taiwo_Bakare.webp"}
-                                        fallback={"/images/fallback/team/Taiwo_Bakare.png"}
-                                        alt="Taiwo Bakare"
-                                    />
-                                    <label className="about-layer-4-section-element-name">Taiwo Bakare</label>
-                                    <label className="about-layer-4-section-element-title">Customer Support Officer</label>
-                                </div>
+
+
+                            </div>
+
+                            <div className="about-layer-4-section">
 
                                 <div className="about-layer-4-section-element">
                                     <ImgWithFallback
@@ -291,16 +301,15 @@ class AboutUs extends Component {
                                     <label className="about-layer-4-section-element-title">Product Designer</label>
                                 </div>
 
-                            </div>
-
-                            <div className="about-layer-4-section">
-
-
-                                {/*<div className="about-layer-4-section-element">*/}
-                                {/*    <img src="/images/team/Osadome Ebie.webp"/>*/}
-                                {/*    <label className="about-layer-4-section-element-name">Khalid Oshogwemoh</label>*/}
-                                {/*    <label className="about-layer-4-section-element-title">Human Resource Officer</label>*/}
-                                {/*</div>*/}
+                                <div className="about-layer-4-section-element">
+                                    <ImgWithFallback
+                                        src={"/images/team/Taiwo_Bakare.webp"}
+                                        fallback={"/images/fallback/team/Taiwo_Bakare.png"}
+                                        alt="Taiwo Bakare"
+                                    />
+                                    <label className="about-layer-4-section-element-name">Taiwo Bakare</label>
+                                    <label className="about-layer-4-section-element-title">Customer Support Officer</label>
+                                </div>
 
                                 <div className="about-layer-4-section-element">
                                     <ImgWithFallback
