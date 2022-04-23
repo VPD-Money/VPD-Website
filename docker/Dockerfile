@@ -9,11 +9,9 @@ COPY package.json .
 RUN npm install --production
 # Copy app files
 COPY . .
-RUN ls
-# Build the app
-RUN npm build
 
-RUN ls
+# Build the app
+RUN npm run build
 
 # stage 2 - build the final image and copy the react build files
 FROM nginx:stable-alpine
