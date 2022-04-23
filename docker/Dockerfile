@@ -1,13 +1,25 @@
-# stage1 - build react app first
-FROM node:14 as build
+# pull official base image
+FROM node:14-alpine AS builder
+ENV NODE_ENV production
+# Add a work directory
 WORKDIR /app
-COPY package*.json ./
-RUN npm install
-COPY . ./
-RUN npm run build
+# Cache and Install dependencies
+COPY package.json .
+
+RUN npm install --production
+# Copy app files
+COPY . .
+# Build the app
+RUN npm build
 
 # stage 2 - build the final image and copy the react build files
 FROM nginx:stable-alpine
-COPY --from=build /app/build /usr/share/nginx/html
+ENV NODE_ENV production
+# Copy built assets from builder
+COPY --from=builder /app/build /usr/share/nginx/html
+# Add your nginx.conf
+COPY docker/nginx.conf /etc/nginx/conf.d/default.conf
+# Expose port
 EXPOSE 80
+# Start nginx
 CMD ["nginx", "-g", "daemon off;"]
