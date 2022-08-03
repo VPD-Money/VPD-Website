@@ -158,7 +158,7 @@ class AboutUs extends Component {
                                     fallback={"/images/fallback/icons/dollar.png"}
                                     alt="transactions"
                                 />
-                                <label>$55 Million+</label>
+                                <label>$150 Million+</label>
                                 <label>Processed Transactions</label>
                             </div>
 
