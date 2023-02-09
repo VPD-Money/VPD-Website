@@ -103,7 +103,7 @@ class Footer extends Component {
                 <div className="footer-section-3-group-last">
                     <Link to="/" ><img src="/images/main_logo.png"/></Link>
                     <div></div>
-                    <label>© 2022 VPD Money Technologies. All rights reserved.</label>
+                    <label>© 2023 VPD Money Technologies. All rights reserved.</label>
                 </div>
             </div>
 
