@@ -148,7 +148,7 @@ class AboutUs extends Component {
                                     alt="users"
                                 />
 
-                                <label>45,000+</label>
+                                <label>50,000+</label>
                                 <label>Users</label>
                             </div>
 
@@ -158,7 +158,7 @@ class AboutUs extends Component {
                                     fallback={"/images/fallback/icons/dollar.png"}
                                     alt="transactions"
                                 />
-                                <label>$55 Million+</label>
+                                <label>$200 Million+</label>
                                 <label>Processed Transactions</label>
                             </div>
 
