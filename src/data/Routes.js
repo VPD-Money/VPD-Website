@@ -14,6 +14,10 @@ const routes = [
   {
     label: 'Contact',
     path: '/contactus',
+  },
+  {
+    label: 'Guarantor Service',
+    path: 'https://guarantor.vpd.money',
   }
 ];
 

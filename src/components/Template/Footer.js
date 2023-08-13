@@ -28,6 +28,7 @@ class Footer extends Component {
                     <Link to="/aboutus" ><label>About us</label></Link>
                     <Link to="/contactus" ><label>Contact us</label></Link>
                     <Link to="/careers" ><label>Careers</label></Link>
+                    <Link to="https://guarantor.vpd.money" target="_blank"><label>Guarantor Service</label></Link>
                     {/*<label>FAQ</label>*/}
                 </div>
                 <div className="footer-section-3-group">
